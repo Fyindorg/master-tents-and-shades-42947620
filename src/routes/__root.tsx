@@ -11,6 +11,8 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 function NotFoundComponent() {
   return (
@@ -77,21 +79,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Master Tents and Shades LLC | Tents, Pergolas & Car Parking Shades Dubai" },
+      {
+        name: "description",
+        content:
+          "Master Tents and Shades LLC — supplier and manufacturer of tents, pergolas, car parking shades and tensile shade structures in Dubai and across the UAE.",
+      },
+      { name: "author", content: "Master Tents and Shades LLC" },
+      { property: "og:site_name", content: "Master Tents and Shades" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@mastershade23" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/img/site-icon.jpg", type: "image/jpeg" },
+      { rel: "preconnect", href: "https://fonts.bunny.net" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.bunny.net/css?family=dm-serif-text:400,400i|montserrat:300,400,500,600,700",
+      },
     ],
   }),
   shellComponent: RootShell,
@@ -120,7 +130,9 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+      <Header />
       <Outlet />
+      <Footer />
     </QueryClientProvider>
   );
 }

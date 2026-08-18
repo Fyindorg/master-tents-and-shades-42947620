@@ -90,7 +90,7 @@ export function Header() {
             </a>
             <SiteLink
               href="/we-are-here-to-help/"
-              className="flex items-center gap-2 text-[14px] font-semibold tracking-wide text-mts-navy hover:text-mts-gold"
+              className="flex items-center gap-2 text-[15px] font-medium text-mts-gold hover:text-mts-navy"
             >
               <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
                 <path d="M2 5h20v3H2zm0 5h20v3H2zm0 5h13v3H2z" />

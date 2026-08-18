@@ -134,6 +134,7 @@ function RootComponent() {
       <Header />
       <Outlet />
       <Footer />
+      <MobileFooterUtility />
     </QueryClientProvider>
   );
 }

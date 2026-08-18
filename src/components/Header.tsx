@@ -166,9 +166,9 @@ export function Header() {
             <img
               src="/img/Master-Only-Icon-376x126x0x22x376x80x1720163472.jpg"
               alt="Master Tents and Shades"
-              width={231}
-              height={48}
-              className="h-[48px] w-auto mix-blend-multiply"
+              width={192}
+              height={40}
+              className="h-[40px] w-auto mix-blend-multiply"
             />
           </SiteLink>
           <div className="grid flex-1 grid-cols-1 divide-x divide-white/40 border-l border-white/40 sm:grid-cols-3">

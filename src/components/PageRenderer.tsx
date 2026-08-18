@@ -61,7 +61,7 @@ function BlockView({ block }: { block: Block }) {
     case "list":
       return (
         <ul
-          className="mb-4 list-disc space-y-2 pl-5 leading-[1.7]"
+          className="mb-4 list-disc pl-5 leading-[1.6] marker:text-[0.7em]"
           style={{
             color: block.color ?? undefined,
             textAlign: (block.align as CSSProperties["textAlign"]) ?? undefined,

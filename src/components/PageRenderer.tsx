@@ -10,11 +10,12 @@ import { ReviewCards, type Review } from "./ReviewCards";
 import { OutlineIcon } from "./OutlineIcon";
 
 export type Block =
-  | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null; italic?: boolean }
-  | { t: "list"; items: string[]; align?: string | null; color?: string | null }
+  | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null; italic?: boolean; tight?: boolean }
+  | { t: "list"; items: string[]; align?: string | null; color?: string | null; fs?: number | null }
   | { t: "img"; src: string; alt?: string | null; href?: string | null }
   | { t: "btn"; text: string; href?: string | null }
   | { t: "form" }
+  | { t: "hr" }
   | { t: "accordion"; items: { title: string; body: Block[] }[] }
   | { t: "stats"; items: { label: string; value: number }[] }
   | { t: "posts"; label: string; sublabel: string; items: PostItem[] }
@@ -22,6 +23,7 @@ export type Block =
   | { t: "tiles"; items: { img: string; label: string }[] }
   | { t: "icon"; name: string }
   | { t: "row"; cols: Block[][] };
+
 
 export type Section = {
   bg?: string | null;
@@ -65,17 +67,26 @@ function BlockView({ block }: { block: Block }) {
     }
     case "p":
       return (
-        <p className="mb-4 leading-[1.7]" style={textStyle(block)}>
+        <p className={block.tight ? "mb-0 leading-[1.6]" : "mb-4 leading-[1.7]"} style={textStyle(block)}>
           {block.text}
         </p>
       );
+    case "hr":
+      return <hr className="my-3 border-0 border-t border-mts-navy/40" />;
     case "list": {
-      const centered = block.align === "center";
-      if (centered) {
+      const inline = block.align === "center" || block.align === "right";
+      const fs = block.fs ?? 18;
+      if (inline) {
         return (
           <ul
-            className="mb-4 list-none p-0 text-center text-[18px] font-medium leading-[27px]"
-            style={{ color: block.color ?? "var(--mts-navy)" }}
+            className="mb-4 list-none p-0 font-medium"
+            style={{
+              color: block.color ?? "var(--mts-navy)",
+              fontSize: `${fs}px`,
+              lineHeight: 1.6,
+              fontWeight: block.fs ? 400 : 500,
+              textAlign: block.align as CSSProperties["textAlign"],
+            }}
           >
             {block.items.map((item, i) => (
               <li key={i}>
@@ -88,9 +99,12 @@ function BlockView({ block }: { block: Block }) {
       }
       return (
         <ul
-          className="mb-4 ml-[-5px] list-disc pl-[24px] text-[18px] font-medium leading-[27px] marker:text-[0.7em]"
+          className="mb-4 ml-[-5px] list-disc pl-[24px] marker:text-[0.7em]"
           style={{
             color: block.color ?? "var(--mts-navy)",
+            fontSize: `${fs}px`,
+            lineHeight: 1.6,
+            fontWeight: block.fs ? 400 : 500,
             textAlign: (block.align as CSSProperties["textAlign"]) ?? "justify",
           }}
         >
@@ -102,6 +116,7 @@ function BlockView({ block }: { block: Block }) {
         </ul>
       );
     }
+
 
     case "img": {
       const img = (

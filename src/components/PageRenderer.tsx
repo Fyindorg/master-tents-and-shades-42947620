@@ -145,9 +145,7 @@ function BlockView({ block }: { block: Block }) {
         <div className="mb-2 flex flex-wrap gap-x-8">
           {block.cols.map((col, i) => (
             <div key={i} className="min-w-[280px] flex-1 basis-0">
-              {col.map((b, j) => (
-                <BlockView key={j} block={b} />
-              ))}
+              {renderBlocks(col)}
             </div>
           ))}
         </div>
@@ -216,9 +214,7 @@ function SectionView({ section }: { section: Section }) {
         <div className="absolute inset-0 bg-black/25" aria-hidden="true" />
       ) : null}
       <div className={`mts-container relative ${section.bg || section.slideshow ? "text-white" : ""}`}>
-        {section.blocks.map((b, i) => (
-          <BlockView key={i} block={b} />
-        ))}
+        {renderBlocks(section.blocks)}
       </div>
     </section>
   );

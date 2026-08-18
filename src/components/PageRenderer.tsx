@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 import siteData from "@/data/site.json";
 import { QuoteForm } from "./QuoteForm";
 import { SiteLink } from "./SiteLink";
+import { HeroSlideshow } from "./HeroSlideshow";
 
 export type Block =
   | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null }
@@ -17,6 +18,7 @@ export type Section = {
   bgpos?: string | null;
   bgcolor?: string | null;
   pad?: string | null;
+  slideshow?: string[];
   blocks: Block[];
 };
 
@@ -156,8 +158,11 @@ function SectionView({ section }: { section: Section }) {
 
   return (
     <section style={style} className="relative">
-      {section.bg ? <div className="absolute inset-0 bg-black/25" aria-hidden="true" /> : null}
-      <div className={`mts-container relative ${section.bg ? "text-white" : ""}`}>
+      {section.slideshow ? <HeroSlideshow images={section.slideshow} /> : null}
+      {section.bg || section.slideshow ? (
+        <div className="absolute inset-0 bg-black/25" aria-hidden="true" />
+      ) : null}
+      <div className={`mts-container relative ${section.bg || section.slideshow ? "text-white" : ""}`}>
         {section.blocks.map((b, i) => (
           <BlockView key={i} block={b} />
         ))}

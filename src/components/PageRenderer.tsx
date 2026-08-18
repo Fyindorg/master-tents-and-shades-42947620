@@ -6,6 +6,7 @@ import { SiteLink } from "./SiteLink";
 import { HeroSlideshow } from "./HeroSlideshow";
 import { Counters } from "./Counters";
 import { PostGrid, type PostItem } from "./PostGrid";
+import { ReviewCards, type Review } from "./ReviewCards";
 
 export type Block =
   | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null }
@@ -16,6 +17,7 @@ export type Block =
   | { t: "accordion"; items: { title: string; body: Block[] }[] }
   | { t: "stats"; items: { label: string; value: number }[] }
   | { t: "posts"; label: string; sublabel: string; items: PostItem[] }
+  | { t: "reviews"; rows: Review[][] }
   | { t: "row"; cols: Block[][] };
 
 export type Section = {
@@ -98,10 +100,10 @@ function BlockView({ block }: { block: Block }) {
     }
     case "btn":
       return (
-        <div className="mb-4">
+        <div className="mb-4 text-center">
           <SiteLink
             href={block.href ?? "#"}
-            className="inline-block rounded-full border-2 border-mts-gold px-7 py-3 text-[15px] font-semibold uppercase tracking-wide text-mts-gold transition-colors hover:bg-mts-gold hover:text-white"
+            className="inline-block rounded-[15px] border border-[#9e9e9e] bg-white px-[25px] py-[6px] text-[16px] text-mts-navy transition-colors hover:border-mts-gold hover:text-mts-gold"
           >
             {block.text}
           </SiteLink>
@@ -151,6 +153,8 @@ function BlockView({ block }: { block: Block }) {
       return <Counters items={block.items} />;
     case "posts":
       return <PostGrid label={block.label} sublabel={block.sublabel} items={block.items} />;
+    case "reviews":
+      return <ReviewCards rows={block.rows} />;
     case "row":
       return (
         <div className="mb-2 flex flex-wrap gap-x-8">

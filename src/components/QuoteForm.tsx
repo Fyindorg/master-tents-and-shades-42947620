@@ -29,20 +29,20 @@ export function QuoteForm() {
   }
 
   const input =
-    "w-full border border-black/20 bg-white px-4 py-3 text-[15px] text-mts-navy outline-none focus:border-mts-gold";
+    "w-full rounded-[10px] border border-black/15 bg-white px-5 py-4 text-[16px] text-mts-navy placeholder:text-[#9b9b9b] outline-none transition-colors focus:border-mts-gold";
 
   return (
-    <form onSubmit={onSubmit} className="space-y-3">
+    <form onSubmit={onSubmit} className="space-y-4">
       <input className={input} name="name" placeholder="Name" required />
-      <input className={input} name="email" type="email" placeholder="Email" required />
       <input className={input} name="phone" placeholder="Phone" />
+      <input className={input} name="email" type="email" placeholder="Email" required />
       <textarea className={input} name="message" rows={4} placeholder="Message" />
       <button
         type="submit"
         disabled={status === "sending"}
-        className="w-full bg-mts-gold px-6 py-3 text-[15px] font-semibold uppercase tracking-wide text-white transition-colors hover:bg-mts-navy disabled:opacity-70"
+        className="flex w-full items-center justify-center gap-2 rounded-[10px] bg-[#c6ab84] px-6 py-4 text-[17px] font-medium text-white transition-colors hover:bg-mts-gold disabled:opacity-70"
       >
-        {status === "sending" ? "Sending..." : "Send Enquiry"}
+        {status === "sending" ? "Sending..." : (<>Send <span aria-hidden="true">&#8594;</span></>)}
       </button>
       {message ? (
         <p className={`text-[14px] ${status === "error" ? "text-red-600" : "text-mts-navy"}`}>{message}</p>

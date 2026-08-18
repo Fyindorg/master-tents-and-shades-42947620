@@ -230,7 +230,11 @@ function SectionView({ section }: { section: Section }) {
   );
 }
 
-export function PageRenderer({ page }: { page: Page }) {
+export function PageRenderer({ page, slug }: { page: Page; slug?: string }) {
+  const raw = slug ? RAW_PAGES[slug] : undefined;
+  if (raw) {
+    return <main dangerouslySetInnerHTML={{ __html: raw }} />;
+  }
   return (
     <main className="mts-richtext">
       {page.sections.map((s, i) => (

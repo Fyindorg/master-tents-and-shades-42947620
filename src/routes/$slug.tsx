@@ -32,6 +32,6 @@ export const Route = createFileRoute("/$slug")({
 });
 
 function SlugPage() {
-  const { page } = Route.useLoaderData();
-  return <PageRenderer page={page} />;
+  const { page, slug } = Route.useLoaderData();
+  return <PageRenderer page={page} slug={slug} />;
 }

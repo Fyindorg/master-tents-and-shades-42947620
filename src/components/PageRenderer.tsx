@@ -19,6 +19,7 @@ export type Block =
   | { t: "posts"; label: string; sublabel: string; items: PostItem[] }
   | { t: "reviews"; rows: Review[][] }
   | { t: "tiles"; items: { img: string; label: string }[] }
+  | { t: "icon"; name: string }
   | { t: "row"; cols: Block[][] };
 
 export type Section = {

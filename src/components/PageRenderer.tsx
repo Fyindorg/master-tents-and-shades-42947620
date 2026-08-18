@@ -16,6 +16,7 @@ export type Block =
   | { t: "accordion"; items: { title: string; body: Block[] }[] }
   | { t: "stats"; items: { label: string; value: number }[] }
   | { t: "posts"; label: string; sublabel: string; items: PostItem[] }
+  | { t: "reviews"; rows: Review[][] }
   | { t: "row"; cols: Block[][] };
 
 export type Section = {

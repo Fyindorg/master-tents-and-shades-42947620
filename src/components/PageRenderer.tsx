@@ -108,13 +108,30 @@ function BlockView({ block }: { block: Block }) {
       );
     case "accordion":
       return (
-        <div className="mb-4 divide-y divide-black/10 border border-black/10">
+        <div className="mb-4">
           {block.items.map((item, i) => (
-            <details key={i} className="group px-5 py-4">
-              <summary className="cursor-pointer list-none font-serif text-[20px] text-mts-navy">
-                {item.title}
+            <details
+              key={i}
+              open={i === 0}
+              className="group -mb-px rounded-[10px] border border-[#9e9e9e] bg-white"
+            >
+              <summary
+                className="flex cursor-pointer list-none items-center justify-between gap-3 px-[15px] py-[10px] text-[20px] leading-[1.6] text-[#2d3842]"
+                style={{ fontFamily: "var(--mts-font-serif)", fontWeight: 400 }}
+              >
+                <span>{item.title}</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  className="h-4 w-4 shrink-0 transition-transform group-open:-rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.25"
+                >
+                  <path d="M5 9l7 7 7-7" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
               </summary>
-              <div className="mt-3 leading-[1.7] text-mts-grey">
+              <div className="px-[15px] pb-4 pt-2 leading-[1.7] text-black">
                 {item.body.map((b, j) => (
                   <BlockView key={j} block={b} />
                 ))}

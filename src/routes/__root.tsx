@@ -6,6 +6,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  useParams,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
@@ -13,6 +14,8 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { MobileFooterUtility } from "@/components/MobileFooterUtility";
+import { RAW_PAGES } from "@/data/rawPages";
 
 function NotFoundComponent() {
   return (
@@ -116,7 +119,7 @@ function RootShell({ children }: { children: ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body className="pb-14">
         {children}
         <Scripts />
       </body>
@@ -126,13 +129,16 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const params = useParams({ strict: false });
+  const isRawPage = typeof params.slug === "string" && !!RAW_PAGES[params.slug];
 
   return (
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Header />
       <Outlet />
-      <Footer />
+      {!isRawPage && <Footer />}
+      {!isRawPage && <MobileFooterUtility />}
     </QueryClientProvider>
   );
 }

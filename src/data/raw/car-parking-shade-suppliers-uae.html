@@ -1,0 +1,682 @@
+<style>
+.mts-scope{
+    --navy:#123C63;
+    --navy-deep:#0A2C4A;
+    --orange:#F5A623;
+    --orange-deep:#DD8E0E;
+    --cream:#F4EBD8;
+    --cream-2:#F8F3E6;
+    --slate:#5B6472;
+    --line:#E7DEC6;
+    --white:#fff;
+  }
+  .mts-scope *{box-sizing:border-box; margin:0; padding:0;}
+  .mts-scope{font-family:'Inter',sans-serif; color:var(--slate); background:#fff; line-height:1.65;}
+  .mts-scope h1, .mts-scope h2, .mts-scope h3, .mts-scope h4{font-family:'Poppins',sans-serif; color:var(--navy); font-weight:700; line-height:1.25;}
+  .mts-scope .wrap{max-width:1080px; margin:0 auto; padding:0 24px;}
+  .mts-scope section{padding:60px 0;}
+  @media(max-width:640px){.mts-scope section{padding:38px 0;}}
+  .mts-scope ul{list-style:none;}
+
+  .mts-scope .eyebrow{
+    display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--orange-deep); margin-bottom:10px;
+  }
+  .mts-scope .brand{color:var(--orange-deep); font-weight:700;}
+
+  /* ---------- HERO ---------- */
+  .mts-scope .hero{background:var(--cream);}
+  .mts-scope .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:44px; align-items:center;}
+  @media(max-width:900px){.mts-scope .hero-grid{grid-template-columns:1fr;}}
+  .mts-scope .hero h1{font-size:32px; max-width:18ch; margin-bottom:16px; text-align:left;}
+  @media(max-width:640px){.mts-scope .hero h1{font-size:24px;}}
+  .mts-scope .hero p{max-width:52ch; margin-bottom:26px; font-size:15px; text-align:left;}
+  .mts-scope .badge-row{display:flex; gap:12px; justify-content:flex-start; flex-wrap:wrap;}
+  .mts-scope .badge{
+    display:flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--line);
+    border-radius:100px; padding:9px 18px; font-size:12.5px; font-weight:700; color:var(--navy);
+  }
+  .mts-scope .badge svg{width:16px; height:16px; color:var(--orange-deep);}
+
+  .mts-scope .hero-form{
+    background:#fff; border-radius:14px; padding:28px; box-shadow:0 16px 40px rgba(10,44,74,.14); border:1px solid var(--line);
+  }
+  .mts-scope .hero-call{
+    display:flex; align-items:center; gap:12px; background:var(--navy); color:#fff; border-radius:10px;
+    padding:14px 16px; margin-bottom:18px;
+  }
+  .mts-scope .hero-call .icon{
+    width:38px; height:38px; border-radius:50%; background:var(--orange); display:flex; align-items:center;
+    justify-content:center; flex-shrink:0;
+  }
+  .mts-scope .hero-call .icon svg{width:18px; height:18px; color:#fff;}
+  .mts-scope .hero-call span{display:block; font-size:10.5px; color:#B7CADA; text-transform:uppercase; letter-spacing:.04em;}
+  .mts-scope .hero-call a{font-size:16px; font-weight:700; color:#fff;}
+  .mts-scope .hero-form h3{font-size:16.5px; margin-bottom:14px;}
+  .mts-scope .hero-form input, .mts-scope .hero-form textarea{
+    width:100%; border:1px solid var(--line); background:var(--cream-2); border-radius:7px; padding:11px 13px;
+    font-family:'Inter'; font-size:13.5px; margin-bottom:10px; color:var(--navy);
+  }
+  .mts-scope .hero-form textarea{resize:vertical; min-height:64px;}
+  .mts-scope .hero-form input:focus, .mts-scope .hero-form textarea:focus{outline:2px solid var(--orange); border-color:var(--orange);}
+  .mts-scope .hero-form button{
+    width:100%; background:var(--orange); color:#fff; border:none; border-radius:7px; padding:12px;
+    font-weight:700; font-size:13.5px; cursor:pointer;
+  }
+  .mts-scope .hero-form button:hover{background:var(--orange-deep);}
+
+  /* ---------- SECTION HEAD ---------- */
+  .mts-scope .s-head{max-width:680px; margin:0 auto 34px; text-align:center;}
+  .mts-scope .s-head h2{font-size:26px;}
+  .mts-scope .s-head p{font-size:14.5px; margin-top:10px;}
+  @media(max-width:640px){.mts-scope .s-head h2{font-size:21px;}}
+
+  /* ---------- PRODUCT RANGE ---------- */
+  .mts-scope .range2{background:var(--cream-2);}
+  .mts-scope .range-cat{margin-bottom:36px;}
+  .mts-scope .range-cat:last-child{margin-bottom:0;}
+  .mts-scope .range-cat h3{
+    font-size:16px; margin-bottom:16px; display:flex; align-items:center; gap:10px;
+  }
+  .mts-scope .range-cat h3::after{content:""; flex:1; height:1px; background:var(--line);}
+  .mts-scope .type-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
+  @media(max-width:900px){.mts-scope .type-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:520px){.mts-scope .type-grid{grid-template-columns:1fr;}}
+  .mts-scope .type-card{
+    background:#fff; border:1px solid var(--line); border-radius:10px; padding:18px 18px 16px; text-align:left;
+  }
+  .mts-scope .type-head{display:flex; align-items:center; gap:10px; margin-bottom:12px;}
+  .mts-scope .type-card svg{width:24px; height:24px; color:var(--orange-deep); flex-shrink:0;}
+  .mts-scope .type-head span{font-size:13.5px; font-weight:700; color:var(--navy); line-height:1.3;}
+  .mts-scope .type-specs{border-top:1px dashed var(--line); padding-top:10px;}
+  .mts-scope .type-specs li{
+    display:flex; justify-content:space-between; gap:10px; font-size:11px; color:var(--slate);
+    margin-bottom:5px;
+  }
+  .mts-scope .type-specs li:last-child{margin-bottom:0;}
+  .mts-scope .type-specs li b{color:var(--navy); font-weight:600; white-space:nowrap;}
+  .mts-scope .type-specs li em{font-style:normal; text-align:right;}
+
+  /* ---------- SPEC GRID ---------- */
+  .mts-scope .spec{background:#fff;}
+  .mts-scope .spec-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+  @media(max-width:860px){.mts-scope .spec-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.mts-scope .spec-grid{grid-template-columns:1fr;}}
+  .mts-scope .spec-card{
+    border:1px solid var(--line); border-radius:10px; padding:20px; display:flex; gap:12px; align-items:flex-start;
+  }
+  .mts-scope .spec-card svg{width:22px; height:22px; color:var(--orange-deep); flex-shrink:0; margin-top:2px;}
+  .mts-scope .spec-card h4{font-size:14px; margin-bottom:5px;}
+  .mts-scope .spec-card p{font-size:12.5px;}
+
+  /* ---------- STRUCTURAL ENGINEERING (location cards) ---------- */
+  .mts-scope .engineering{background:#fff;}
+  .mts-scope .eng-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  @media(max-width:800px){.mts-scope .eng-grid{grid-template-columns:1fr;}}
+  .mts-scope .site-card{
+    border:1px solid var(--line); border-radius:12px; overflow:hidden; background:var(--cream-2);
+  }
+  .mts-scope .site-media{height:130px; position:relative; display:flex; align-items:center; justify-content:center;}
+  .mts-scope .site-media svg{width:70%; height:70%;}
+  .mts-scope .site-pin{
+    position:absolute; top:12px; left:12px; background:var(--navy); color:#fff; font-size:11px;
+    font-weight:700; padding:5px 11px; border-radius:100px; display:flex; align-items:center; gap:5px;
+  }
+  .mts-scope .site-pin svg{width:12px; height:12px;}
+  .mts-scope .site-body{padding:18px 20px 22px;}
+  .mts-scope .site-body h4{font-size:16px; margin-bottom:6px;}
+  .mts-scope .site-body p{font-size:13.5px;}
+
+  /* ---------- MATERIAL CARDS ---------- */
+  .mts-scope .materials{background:var(--cream-2);}
+  .mts-scope .mat-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
+  @media(max-width:800px){.mts-scope .mat-grid{grid-template-columns:1fr;}}
+  .mts-scope .mat-card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:26px;}
+  .mts-scope .mat-icon{
+    width:48px; height:48px; border-radius:10px; background:var(--navy); display:flex; align-items:center;
+    justify-content:center; margin-bottom:14px;
+  }
+  .mts-scope .mat-icon svg{width:24px; height:24px; color:var(--orange);}
+  .mts-scope .mat-card h4{font-size:18px; margin-bottom:8px;}
+  .mts-scope .mat-card p{font-size:13.5px; margin-bottom:14px;}
+  .mts-scope .mat-tags{display:flex; gap:8px; flex-wrap:wrap;}
+  .mts-scope .mat-tag{
+    font-size:11px; font-weight:700; color:var(--navy); background:var(--cream); padding:5px 10px; border-radius:6px;
+  }
+  .mts-scope .use-note{
+    display:flex; gap:8px; align-items:flex-start; margin-top:12px; font-size:12.5px; color:var(--orange-deep);
+    font-weight:600; background:#FDF3DE; padding:10px 12px; border-radius:8px;
+  }
+  .mts-scope .use-note svg{width:15px; height:15px; flex-shrink:0; margin-top:1px;}
+
+  /* ---------- FRAMEWORK OPTIONS ---------- */
+  .mts-scope .framework{background:#fff;}
+  .mts-scope .fw-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
+  @media(max-width:800px){.mts-scope .fw-grid{grid-template-columns:1fr;}}
+  .mts-scope .fw-card{
+    border:1px solid var(--line); border-radius:12px; padding:26px; position:relative; overflow:hidden;
+  }
+  .mts-scope .fw-card::before{
+    content:""; position:absolute; top:0; left:0; width:5px; height:100%; background:var(--orange);
+  }
+  .mts-scope .fw-card h4{font-size:17px; margin-bottom:8px; padding-left:10px;}
+  .mts-scope .fw-card p{font-size:13.5px; padding-left:10px;}
+  .mts-scope .fw-resist{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; padding-left:10px;}
+  .mts-scope .fw-resist span{
+    font-size:11px; font-weight:700; color:#fff; background:var(--navy); padding:5px 10px; border-radius:100px;
+  }
+
+  /* ---------- COMPLIANCE ---------- */
+  .mts-scope .compliance{background:var(--navy); color:#EAE6DA;}
+  .mts-scope .compliance .s-head h2{color:#fff;}
+  .mts-scope .compliance .s-head p{color:#C7CADA;}
+  .mts-scope .comp-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:24px;}
+  @media(max-width:700px){.mts-scope .comp-grid{grid-template-columns:1fr;}}
+  .mts-scope .comp-card{
+    background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); border-radius:12px;
+    padding:22px; display:flex; gap:14px; align-items:flex-start;
+  }
+  .mts-scope .comp-card svg{width:26px; height:26px; color:var(--orange); flex-shrink:0;}
+  .mts-scope .comp-card h4{color:#fff; font-size:15.5px; margin-bottom:6px;}
+  .mts-scope .comp-card p{font-size:13px; color:#B7BBCC;}
+  .mts-scope .comp-location{
+    text-align:center; font-size:13.5px; color:#EAE6DA; max-width:60ch; margin:0 auto;
+  }
+  .mts-scope .comp-location b{color:var(--orange);}
+
+  /* ---------- WARRANTY BANNER ---------- */
+  .mts-scope .warranty{background:var(--orange); color:#fff;}
+  .mts-scope .warranty-grid{display:grid; grid-template-columns:auto 1fr; gap:36px; align-items:center;}
+  @media(max-width:700px){.mts-scope .warranty-grid{grid-template-columns:1fr; text-align:center;}}
+  .mts-scope .warranty-stat{
+    background:#fff; color:var(--navy); border-radius:16px; width:150px; height:150px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; margin:0 auto;
+    box-shadow:0 12px 26px rgba(0,0,0,.15);
+  }
+  .mts-scope .warranty-stat b{font-family:'Poppins'; font-size:34px; line-height:1;}
+  .mts-scope .warranty-stat span{font-size:11px; font-weight:700; text-transform:uppercase; margin-top:4px;}
+  .mts-scope .warranty h2{color:#fff; font-size:24px; margin-bottom:10px;}
+  .mts-scope .warranty p{font-size:14.5px; max-width:60ch; color:#FCEBD0;}
+
+/* ---------- FOOTER ---------- */
+.mts-scope .mts-footer{background:var(--navy-deep); color:#B7CADA;}
+.mts-scope .mts-footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:32px; padding:56px 0 36px;}
+@media(max-width:860px){.mts-scope .mts-footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.mts-scope .mts-footer-grid{grid-template-columns:1fr;}}
+.mts-scope .mts-footer h4{color:#fff; font-size:15px; margin-bottom:16px;}
+.mts-scope .mts-footer p{font-size:13px; line-height:1.7; color:#9FB0C4;}
+.mts-scope .mts-footer-contact{display:flex; flex-direction:column; gap:12px;}
+.mts-scope .mts-footer-contact li{display:flex; align-items:center; gap:10px; font-size:13px;}
+.mts-scope .mts-footer-contact svg{width:15px; height:15px; color:var(--orange); flex-shrink:0;}
+.mts-scope .mts-footer-contact a{color:#B7CADA; text-decoration:none;}
+.mts-scope .mts-footer-contact a:hover{color:#fff;}
+.mts-scope .mts-footer-links{display:flex; flex-direction:column; gap:10px;}
+.mts-scope .mts-footer-links a{color:#B7CADA; text-decoration:none; font-size:13px;}
+.mts-scope .mts-footer-links a:hover{color:#fff;}
+.mts-scope .mts-footer-bottom{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:20px 0; border-top:1px solid rgba(255,255,255,.1); font-size:12px; color:#8CA0B8;}
+.mts-scope .mts-footer-social{display:flex; gap:14px;}
+.mts-scope .mts-footer-social a{width:32px; height:32px; border-radius:50%; background:rgba(255,255,255,.08); display:flex; align-items:center; justify-content:center; color:#fff; flex-shrink:0;}
+.mts-scope .mts-footer-social svg{width:15px; height:15px;}
+.mts-scope .mts-footer-social a:hover{background:var(--orange);}
+.mts-scope .mts-footer-utility{display:flex; background:#fff;}
+.mts-scope .mts-footer-utility a{flex:1; display:flex; align-items:center; justify-content:center; gap:8px; padding:14px 8px; font-size:12.5px; font-weight:700; color:var(--navy); text-decoration:none; border-right:1px solid var(--line);}
+.mts-scope .mts-footer-utility a:last-child{border-right:none;}
+.mts-scope .mts-footer-utility svg{width:16px; height:16px; color:var(--orange-deep);}
+@media(max-width:640px){.mts-scope .mts-footer-utility{position:sticky; bottom:0; z-index:20;} .mts-scope .mts-footer-utility a span{display:none;}}
+/* ---------- FULL-WIDTH OVERRIDE ---------- */
+/* The theme (Astra page-builder template) caps .entry-content at --wp--custom--ast-content-width-size.
+   Force it off so this section runs the full width of the page, same as unchecking that rule in DevTools. */
+.ast-page-builder-template .entry-content[data-ast-blocks-layout] > .inherit-container-width > *,
+.entry-content[data-ast-blocks-layout] > *:not(.wp-block-group):not(.uagb-is-root-container) > *,
+.entry-content[data-ast-blocks-layout] > .wp-block-cover .wp-block-cover__inner-container{
+  max-width:100% !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+</style>
+<div class="mts-scope">
+<!-- ============ HERO ============ -->
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow">Manufacturer and Supplier</span>
+<h1>Car Parking Shades Manufacturers and Suppliers in UAE</h1>
+<p>When it comes to durable, weather-resistant vehicle shelters, <span class="brand">Master Tents and Shades</span> stands out among car parking shade manufacturers in Dubai, delivering heavy-duty car parking shades engineered with heat-reflective membranes to combat the UAE’s intense summer temperatures. From cantilever car parking shades to large-scale parking canopy structures, every car parking shade we build is designed as a long-term outdoor shelter, not a short-term fix.</p>
+<div class="badge-row">
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Dubai Municipality Approved</span>
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"></path></svg> Dubai Civil Defense Certified</span>
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg> Car Parking Sahdes with 8–15 Year Service Life</span>
+</div>
+</div>
+<div class="hero-form">
+<div class="hero-call">
+<div class="icon"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg></div>
+<div><span>Call us now</span><a href="tel:+971562221906">+971 56 222 1906</a></div>
+</div>
+<h3>Request A Free Quote</h3>
+<input placeholder="Name *" type="text"/>
+<input placeholder="Phone *" type="tel"/>
+<textarea placeholder="Tell us about your car parking shade needs"></textarea>
+<button type="button">Submit Enquiry</button>
+</div>
+</div>
+</section>
+<!-- ============ CORROSION-RESISTANT ENGINEERING ============ -->
+<section class="engineering">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Structural Engineering</span>
+<h2>Corrosion-Resistant Structural Engineering</h2>
+<p>Every car parking shade structure from <span class="brand">Master Tents and Shades</span> is built on rust-proof steel frameworks, custom-engineered to match the architectural requirements of both residential compounds and commercial facilities across the Emirates. Whether it’s a villa driveway carport in Al Barsha or a multi-level commercial car parking shade in UAE, the steel canopy framework is tailored to the site.</p>
+</div>
+<div class="eng-grid">
+<div class="site-card">
+<div class="site-media" style="position:relative; overflow:hidden;">
+<img alt="Villa driveway car parking shade" decoding="async" loading="lazy" src="/img/villa-driveway-car-parking-shade.webp" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;"/>
+<span class="site-pin" style="position:relative; z-index:1;"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7z"></path></svg> Al Barsha, Dubai</span>
+</div>
+<div class="site-body">
+<h4>Villa Driveway Car Parking Shade</h4>
+<p>Residential-scale cantilever car parking shade framework, sized and finished to suit a private driveway without overwhelming the property’s frontage.</p>
+</div>
+</div>
+<div class="site-card">
+<div class="site-media" style="position:relative; overflow:hidden;">
+<img alt="Commercial multi-level car parking shade" decoding="async" loading="lazy" src="/img/commercial-multi-level-car-parking-shade.webp" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;"/>
+<span class="site-pin" style="background:#123C63; position:relative; z-index:1;"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7z"></path></svg>Dubai</span>
+</div>
+<div class="site-body">
+<h4>Commercial Multi-Level Car Parking Shade</h4>
+<p>Heavier-duty steel car parking shade bays engineered for repeated daily traffic across large commercial and multi-level parking lots.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ FABRIC SELECTION ============ -->
+<section class="materials">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Fabric Selection</span>
+<h2>Premium Fabric Selection for Cantilever and Sail Shades</h2>
+<p>As a trusted supplier of cantilever car parking shades and sail shade car parking structures, <span class="brand">Master Tents and Shades</span> works exclusively with industry-grade membrane materials for every car parking shade we manufacture.</p>
+</div>
+<div class="mat-grid">
+<div class="mat-card">
+<img alt="HDPE car parking shade" decoding="async" loading="lazy" src="/img/hdpe-car-parking-shade.webp" style="width:100%; height:170px; object-fit:cover; border-radius:8px; margin-bottom:14px;"/>
+<div class="mat-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 16c4-8 16-8 20 0"></path><path d="M4 20c4-8 16-8 20 0" opacity=".5"></path></svg></div>
+<h4>HDPE – High-Density Polyethylene</h4>
+<p>A breathable shade fabric that reduces heat accumulation under the car parking shade canopy, ideal for standard car park shade net installations and budget-friendly outdoor car shelters.</p>
+<div class="mat-tags"><span class="mat-tag">Breathable</span><span class="mat-tag">Heat-Reducing</span><span class="mat-tag">Shade Net</span><span class="mat-tag">Car Shelter Fabric</span></div>
+<div class="use-note"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"></path></svg> Best for standard shade net installations</div>
+</div>
+<div class="mat-card">
+<img alt="PVC and PVDF fabric car parking shade" decoding="async" loading="lazy" src="/img/pvc-pvdp-fabrics.webp" style="width:100%; height:170px; object-fit:cover; border-radius:8px; margin-bottom:14px;"/>
+<div class="mat-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 18l8-14 8 14z"></path></svg></div>
+<h4>PVC and PVDF Fabrics</h4>
+<p>Full waterproofing, UV stability, and fire-retardant performance, giving tensile car parking shade structures a sleek, architectural finish suited for high-end developments and premium parking canopy projects.</p>
+<div class="mat-tags"><span class="mat-tag">Waterproof</span><span class="mat-tag">UV-Stable</span><span class="mat-tag">Fire-Retardant</span><span class="mat-tag">Tensile Membrane</span></div>
+<div class="use-note"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"></path></svg> Best for high-end, architectural developments</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ PRODUCT RANGE ============ -->
+<section class="range2">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Product Range</span>
+<h2>Car Parking Shade Designs We Manufacture</h2>
+<p><span class="brand">Master Tents and Shades</span> manufactures the full range of cantilever, umbrella, sail and specialty car parking shade designs – engineered and fabricated to order for villas, commercial lots and everything in between.</p>
+</div>
+<div class="range-cat">
+<h3>Cantilever Car Parking Shades</h3>
+<div class="type-grid">
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M6 20V6M18 20V6M6 6h12"></path></svg><span>Arch Cantilever</span></div>
+<ul class="type-specs">
+<li><b>Frame Material</b><em>Galvanized Steel</em></li>
+<li><b>Fabric Type</b><em>PVC / HDPE</em></li>
+<li><b>Wind Load</b><em>High</em></li>
+<li><b>Vented Canopy</b><em>Yes</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3v9l7 4"></path><circle cx="12" cy="12" r="9"></circle></svg><span>Cone Type Cantilever</span></div>
+<ul class="type-specs">
+<li><b>Frame Material</b><em>Powder-Coated Steel</em></li>
+<li><b>Fabric Type</b><em>PVC</em></li>
+<li><b>UV Protection</b><em>95%+</em></li>
+<li><b>Entry Height</b><em>Adjustable</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3l9 18H3z"></path></svg><span>Pyramid Cantilever</span></div>
+<ul class="type-specs">
+<li><b>Frame Material</b><em>Galvanized Steel</em></li>
+<li><b>Fabric Type</b><em>PVDF</em></li>
+<li><b>Wind Load</b><em>High</em></li>
+<li><b>Solar Integration</b><em>Optional</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 19l8-15 10 15z"></path></svg><span>Flat Sail Cantilever</span></div>
+<ul class="type-specs">
+<li><b>Fabric Type</b><em>PVC</em></li>
+<li><b>Fabric Weight</b><em>650–900 GSM</em></li>
+<li><b>Wind Load</b><em>Moderate–High</em></li>
+<li><b>Vented Canopy</b><em>No (flat profile)</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 18c4-9 12-9 16 0"></path></svg><span>Simple Arch Cantilever</span></div>
+<ul class="type-specs">
+<li><b>Frame Material</b><em>Galvanized Steel</em></li>
+<li><b>Entry Height</b><em>2.2–2.6 m</em></li>
+<li><b>Fabric Type</b><em>HDPE</em></li>
+<li><b>Foundation</b><em>Standard footing</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 15c4-9 12-9 16 0"></path><path d="M12 19V6"></path></svg><span>Bottom Arch Cantilever</span></div>
+<ul class="type-specs">
+<li><b>Frame Material</b><em>Aluminium</em></li>
+<li><b>Wind Load</b><em>High</em></li>
+<li><b>Fabric Type</b><em>PVC</em></li>
+<li><b>Foundation</b><em>Uplift-resistant</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3c4 4 4 8 0 12M12 3c-4 4-4 8 0 12"></path></svg><span>Top Arch Cantilever</span></div>
+<ul class="type-specs">
+<li><b>Frame Material</b><em>Galvanized Steel</em></li>
+<li><b>Fabric Weight</b><em>700+ GSM</em></li>
+<li><b>Vented Canopy</b><em>Yes</em></li>
+<li><b>UV Protection</b><em>High</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 18c2-8 6-8 8 0M12 18c2-8 6-8 8 0"></path></svg><span>Double Bay Cantilever</span></div>
+<ul class="type-specs">
+<li><b>Weight Load</b><em>Dual-bay rated</em></li>
+<li><b>Frame Material</b><em>Heavy Steel</em></li>
+<li><b>Entry Height</b><em>Standard</em></li>
+<li><b>Foundation</b><em>Extended footing</em></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="range-cat">
+<h3>Umbrella and Sail Shades</h3>
+<div class="type-grid">
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3v18M3 11a9 9 0 0 1 18 0z"></path></svg><span>Hanging Umbrella</span></div>
+<ul class="type-specs">
+<li><b>Opening Mechanism</b><em>Manual Crank</em></li>
+<li><b>Tilt and Rotation</b><em>Yes</em></li>
+<li><b>Fabric Type</b><em>PVC</em></li>
+<li><b>Frame Material</b><em>Aluminium</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3v18M3 11a9 9 0 0 1 18 0z"></path></svg><span>Umbrella Type</span></div>
+<ul class="type-specs">
+<li><b>Opening Mechanism</b><em>Manual / Motorised</em></li>
+<li><b>Tilt and Rotation</b><em>Yes</em></li>
+<li><b>Fabric Type</b><em>HDPE / PVC</em></li>
+<li><b>Entry Height</b><em>Adjustable</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3v18M3 11a9 9 0 0 1 18 0z"></path></svg><span>Umbrella Parking Shades</span></div>
+<ul class="type-specs">
+<li><b>Opening Mechanism</b><em>Motorised Available</em></li>
+<li><b>Fabric Type</b><em>PVC</em></li>
+<li><b>Wind Load</b><em>Moderate</em></li>
+<li><b>Frame Material</b><em>Aluminium</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 19l8-15 10 15z"></path></svg><span>Sail Shades</span></div>
+<ul class="type-specs">
+<li><b>Fabric Type</b><em>PVC / PVDF</em></li>
+<li><b>Fabric Weight</b><em>600–850 GSM</em></li>
+<li><b>Frame Material</b><em>Steel Posts</em></li>
+<li><b>UV Protection</b><em>High</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3l9 18H3z"></path></svg><span>Pyramid Type</span></div>
+<ul class="type-specs">
+<li><b>Fabric Type</b><em>PVDF</em></li>
+<li><b>Vented Canopy</b><em>Yes</em></li>
+<li><b>Wind Load</b><em>High</em></li>
+<li><b>Solar Integration</b><em>Optional</em></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="range-cat">
+<h3>Specialty and Solar Car Parking Shades</h3>
+<div class="type-grid">
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10"></path><path d="M4 10h16"></path></svg><span>Wall Mount Shades</span></div>
+<ul class="type-specs">
+<li><b>Frame Material</b><em>Aluminium</em></li>
+<li><b>Foundation</b><em>Wall-anchored</em></li>
+<li><b>Entry Height</b><em>Compact</em></li>
+<li><b>Fabric Type</b><em>PVC</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"></path><circle cx="12" cy="12" r="4"></circle></svg><span>Solar Carports</span></div>
+<ul class="type-specs">
+<li><b>Solar Integration</b><em>PV Panel Mounted</em></li>
+<li><b>Weight Load</b><em>Reinforced for panels</em></li>
+<li><b>Frame Material</b><em>Galvanized Steel</em></li>
+<li><b>Foundation</b><em>Heavy-duty footing</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-dasharray="2 2"></path></svg><span>CNC Pattern Type</span></div>
+<ul class="type-specs">
+<li><b>Frame Material</b><em>Laser-Cut Steel</em></li>
+<li><b>Fabric Type</b><em>Perforated Panel</em></li>
+<li><b>UV Protection</b><em>Moderate–High</em></li>
+<li><b>Vented Canopy</b><em>Yes (perforated)</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10"></path><path d="M4 14h16"></path></svg><span>Pergola Type</span></div>
+<ul class="type-specs">
+<li><b>Frame Material</b><em>Aluminium / Timber-Look</em></li>
+<li><b>Opening Mechanism</b><em>Louvered or Fixed</em></li>
+<li><b>Fabric Type</b><em>Solid Slats</em></li>
+<li><b>Foundation</b><em>Standard footing</em></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ RUST-PROOF FRAMEWORK ============ -->
+<section class="framework">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Framework Options</span>
+<h2>Rust-Proof Framework Options</h2>
+<p>Customers can choose between two car parking shade framework types – both engineered to resist rusting, corrosion, and warping even under prolonged sun and humidity exposure, a critical factor for car parking shade suppliers operating in the UAE’s coastal climate.</p>
+</div>
+<div class="fw-grid">
+<div class="fw-card">
+<h4>Hot-Dip Galvanized Steel</h4>
+<p>A zinc-coated steel car parking shade framework built for maximum structural strength across larger commercial spans.</p>
+<div class="fw-resist"><span>Rust-Resistant</span><span>Corrosion-Resistant</span><span>Warp-Resistant</span></div>
+</div>
+<div class="fw-card">
+<h4>Powder-Coated Aluminium</h4>
+<p>A lighter, corrosion-resistant car parking shade framework well suited to villa carports and coastal-climate installations.</p>
+<div class="fw-resist"><span>Rust-Resistant</span><span>Corrosion-Resistant</span><span>Warp-Resistant</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ SPECIFICATIONS ============ -->
+<section class="spec">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">What We Engineer Around</span>
+<h2>Specifications We Assess for Every Car Parking Shade</h2>
+<p>Every design above is engineered against the same checklist, so the shade performs to spec regardless of which style you choose.</p>
+</div>
+<div class="spec-grid">
+<div class="spec-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg>
+<div><h4>Wind Load Capacity</h4><p>Rated to withstand UAE gusts and storm conditions without excessive fabric flex or frame stress.</p></div>
+</div>
+<div class="spec-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z"></path></svg>
+<div><h4>Weight Load</h4><p>Frame and footing sized to carry the fabric, fittings, and – where fitted – solar panel weight.</p></div>
+</div>
+<div class="spec-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3v18M8 7l4-4 4 4"></path></svg>
+<div><h4>Entry / Clearance Height</h4><p>Set to comfortably clear SUVs, vans and trucks without restricting access to the bay.</p></div>
+</div>
+<div class="spec-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 16c4-8 16-8 20 0"></path></svg>
+<div><h4>Fabric Type</h4><p>HDPE, PVC or PVDF membrane, chosen to match the airflow, waterproofing and finish the site needs.</p></div>
+</div>
+<div class="spec-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+<div><h4>Fabric Weight (GSM)</h4><p>Heavier grams-per-square-metre ratings for a stiffer canopy that holds shape and resists tearing longer.</p></div>
+</div>
+<div class="spec-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M6 20V6M18 20V6M6 6h12"></path></svg>
+<div><h4>Frame Material</h4><p>Hot-dip galvanized steel or powder-coated aluminium, matched to span size and coastal exposure.</p></div>
+</div>
+<div class="spec-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path></svg>
+<div><h4>UV Protection</h4><p>Fabric rated to block a high share of UV radiation, protecting paint, interiors and skin underneath.</p></div>
+</div>
+<div class="spec-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 12l7-4M12 12v8M12 12L5 8"></path><circle cx="12" cy="12" r="9"></circle></svg>
+<div><h4>Tilt and Rotation</h4><p>Adjustable canopy angles on umbrella and select cantilever types to track the sun through the day.</p></div>
+</div>
+<div class="spec-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="16" rx="2" width="16" x="4" y="4"></rect><path d="M4 12h16"></path></svg>
+<div><h4>Opening Mechanism</h4><p>Manual crank or motorised retractable options for umbrella and select sail-type shades.</p></div>
+</div>
+<div class="spec-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 8h16M4 12h16M4 16h10"></path></svg>
+<div><h4>Vented Canopies</h4><p>Top venting built into the pitch to let hot air escape instead of pooling as a heat pocket.</p></div>
+</div>
+<div class="spec-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="6" width="16" x="4" y="14"></rect><path d="M4 14l8-8 8 8"></path></svg>
+<div><h4>Foundation Requirements</h4><p>Footing depth and ballast calculated per design – cantilever posts especially need uplift-resistant footings.</p></div>
+</div>
+<div class="spec-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"></path><circle cx="12" cy="12" r="4"></circle></svg>
+<div><h4>Solar Integrations</h4><p>Optional PV panel mounting on flat and pyramid roof types, adding power generation to the shade.</p></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ MUNICIPALITY APPROVAL ============ -->
+<section class="compliance">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow" style="color:#F5A623;">Compliance</span>
+<h2>Municipality-Approved Car Parking Shade Supplier in Dubai</h2>
+</div>
+<div class="comp-grid">
+<div class="comp-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"></path></svg>
+<div><h4>Dubai Municipality Approval</h4><p>Every car parking shade installation is carried out under valid Dubai Municipality approval, covering both residential and commercial parking shade builds.</p></div>
+</div>
+<div class="comp-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"></path></svg>
+<div><h4>Dubai Civil Defense Certification</h4><p>Every car parking shade structure is certified to Dubai Civil Defense standards, meeting UAE fire safety codes on every project.</p></div>
+</div>
+</div>
+<p class="comp-location"><span class="brand" style="color:#F5A623;">Master Tents and Shades</span> operates as a compliant car parking shade contractor in <b> Dubai</b>, ensuring every installation meets UAE fire safety codes and building regulations from the outset.</p>
+</div>
+</section>
+<!-- ============ WARRANTY ============ -->
+<section class="warranty">
+<div class="wrap warranty-grid">
+<div class="warranty-stat"><b>8–15</b><span>Years Service Life</span></div>
+<div>
+<h2>Long-Lasting Warranty on Car Parking Shade Installations</h2>
+<p>Every car parking shade project delivered by <b>Master Tents and Shades</b> comes with a solid manufacturer’s warranty, with a service life ranging between 8 and 15 years – translating into low maintenance costs and strong long-term value for property owners and facility managers alike.</p>
+</div>
+</div>
+</section>
+<!-- ============ RELATED TERMS ============ -->
+<section style="background:var(--cream-2); padding:40px 0;">
+<div class="wrap">
+<div class="s-head" style="margin-bottom:20px;">
+<span class="eyebrow">Related to Car Parking Shades</span>
+</div>
+<div class="badge-row" style="justify-content:center;">
+<span class="badge">Parking Canopy</span>
+<span class="badge">Vehicle Shelter</span>
+<span class="badge">Tensile Membrane Structure</span>
+<span class="badge">Shade Net Structure</span>
+<span class="badge">Steel Carport</span>
+<span class="badge">Outdoor Car Shelter</span>
+<span class="badge">Weatherproof Canopy</span>
+<span class="badge">UV-Resistant Shade</span>
+<span class="badge">Car Park Shed</span>
+<span class="badge">Sail Shade Structure</span>
+</div>
+</div>
+</section>
+<!-- ============ SITE FOOTER ============ -->
+<footer class="mts-footer">
+<div class="wrap mts-footer-grid">
+<div>
+<h4>About Company</h4>
+<p>Master Tents and Shades is the UAE’s leading manufacturer of steel structure tents, aluminium pergolas, car parking shades, and tensile sail structures — engineered for durability across Dubai, Sharjah, and Abu Dhabi.</p>
+</div>
+<div>
+<h4>Connect with Us</h4>
+<ul class="mts-footer-contact">
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M4 6l8 7 8-7"></path></svg><a href="mailto:info@mastertentsandshades.com">info@mastertentsandshades.com</a></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><a href="tel:+97142203352">+971 4 220 3352</a></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><a href="tel:+971562221906">+971 56 222 1906</a></li>
+</ul>
+</div>
+<div>
+<h4>Quick Links</h4>
+<ul class="mts-footer-links">
+<li><a href="/about/">About Us</a></li>
+<li><a href="/tents-suppliers-in-uae/">Tents</a></li>
+<li><a href="/pergola-shade-suppliers-in-dubai/">Pergola</a></li>
+<li><a href="/car-parking-shade-suppliers-uae/">Parking Shades</a></li>
+<li><a href="/we-are-here-to-help/">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4>Our Address</h4>
+<p># 601, Abraj Almamzar,<br/>P.O.Box: 99160, Dubai,<br/>United Arab Emirates</p>
+</div>
+</div>
+<div class="wrap mts-footer-bottom">
+<span>© 2026 All Rights Reserved. Master Tents and Shades LLC in Dubai, Sharjah, Abu Dhabi All over UAE.</span>
+<div class="mts-footer-social">
+<a aria-label="LinkedIn" href="https://www.linkedin.com/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zM8.5 8h3.8v2.06h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"></path></svg></a>
+<a aria-label="Instagram" href="https://www.instagram.com/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.55.55.9 1.1 1.15 1.76.25.64.42 1.36.47 2.43.05 1.07.06 1.42.06 4.13s-.01 3.06-.06 4.13c-.05 1.07-.22 1.79-.47 2.43-.26.66-.6 1.21-1.15 1.76-.55.55-1.1.9-1.76 1.15-.64.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.06-.01-4.13-.06c-1.07-.05-1.79-.22-2.43-.47-.66-.26-1.21-.6-1.76-1.15-.55-.55-.9-1.1-1.15-1.76-.25-.64-.42-1.36-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.13c.05-1.07.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76.55-.55 1.1-.9 1.76-1.15.64-.25 1.36-.42 2.43-.47C8.94 2.01 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.2-8.4a1.17 1.17 0 100-2.34 1.17 1.17 0 000 2.34z"></path></svg></a>
+<a aria-label="Twitter" href="https://twitter.com/mastershade23"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M23 4.9c-.8.4-1.7.6-2.6.8 1-.6 1.7-1.5 2-2.6-.9.5-1.9.9-3 1.1a4.5 4.5 0 00-7.7 4.1A12.8 12.8 0 012 3.9a4.5 4.5 0 001.4 6 4.5 4.5 0 01-2-.6v.1c0 2.2 1.5 4 3.6 4.4-.6.2-1.3.2-1.9.1.5 1.8 2.2 3.1 4.1 3.1A9 9 0 012 19.6a12.8 12.8 0 006.9 2c8.3 0 12.8-6.9 12.8-12.8v-.6c.9-.6 1.6-1.4 2.3-2.3z"></path></svg></a>
+<a aria-label="Telegram" href="https://web.telegram.org/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M22 4L2.5 11.7c-1 .4-1 1.6.1 1.9l4.9 1.5 1.9 5.9c.3.9 1.4 1.1 2 .3l2.7-3.3 5 3.7c.9.6 2.1.1 2.3-.9L23.9 5.4c.3-1.1-.8-2-1.9-1.4z"></path></svg></a>
+<a aria-label="Facebook" href="https://www.facebook.com/mastershade23"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M13.5 22v-8.3h2.8l.4-3.2h-3.2V8.4c0-.9.3-1.6 1.6-1.6h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2H10V22h3.5z"></path></svg></a>
+<a aria-label="WhatsApp" href="https://wa.me/971562221906"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.7-.8-3.1-1.2-5-4.3-5.2-4.5-.2-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l1.9 1c.2.1.4.2.5.3.1.2.1 1-.1 1.7z"></path></svg></a>
+</div>
+</div>
+<div class="mts-footer-utility">
+<a href="tel:+971562221906"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><span>Call</span></a>
+<a href="mailto:info@mastertentsandshades.com"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M4 6l8 7 8-7"></path></svg><span>Email</span></a>
+<a href="https://wa.me/971562221906"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.7-.8-3.1-1.2-5-4.3-5.2-4.5-.2-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l1.9 1c.2.1.4.2.5.3.1.2.1 1-.1 1.7z"></path></svg><span>WhatsApp</span></a>
+<a href="https://maps.google.com/?q=Abraj+Al+Mamzar+Dubai+UAE" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 22s7-7.4 7-12a7 7 0 10-14 0c0 4.6 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>Location</span></a>
+</div>
+</footer>
+</div>

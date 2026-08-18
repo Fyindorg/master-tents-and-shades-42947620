@@ -1,0 +1,542 @@
+<style>.mts-scope{
+    --navy:#123C63;
+    --navy-deep:#0A2C4A;
+    --orange:#F5A623;
+    --orange-deep:#DD8E0E;
+    --cream:#F4EBD8;
+    --cream-2:#F8F3E6;
+    --slate:#5B6472;
+    --line:#E7DEC6;
+    --white:#fff;
+  }.mts-scope *{box-sizing:border-box; margin:0; padding:0;}.mts-scope body{font-family:'Inter',sans-serif; color:var(--slate); background:#fff; line-height:1.65;}.mts-scope h1,.mts-scope h2,.mts-scope h3,.mts-scope h4{font-family:'Poppins',sans-serif; color:var(--navy); font-weight:700; line-height:1.25;}.mts-scope .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}.mts-scope section{padding:64px 0;}
+  @media(max-width:640px){.mts-scope section{padding:40px 0;}}.mts-scope ul{list-style:none;}.mts-scope .brand{color:var(--orange-deep); font-weight:700;}.mts-scope .eyebrow{
+    display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--orange-deep); margin-bottom:10px;
+  }.mts-scope .s-head{max-width:700px; margin:0 auto 36px; text-align:center;}.mts-scope .s-head h2{font-size:26px;}.mts-scope .s-head p{font-size:14.5px; margin-top:10px;}
+  @media(max-width:640px){.mts-scope .s-head h2{font-size:21px;}}.mts-scope /* ---------- HERO ---------- */
+  .hero{background:var(--cream);}.mts-scope .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:44px; align-items:center;}
+  @media(max-width:900px){.mts-scope .hero-grid{grid-template-columns:1fr;}}.mts-scope .hero h1{font-size:31px; max-width:19ch; margin-bottom:16px; text-align:left;}
+  @media(max-width:640px){.mts-scope .hero h1{font-size:23px;}}.mts-scope .hero p{max-width:54ch; margin-bottom:22px; font-size:15px; text-align:left;}.mts-scope .badge-row{display:flex; gap:12px; flex-wrap:wrap;}.mts-scope .badge{
+    display:flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--line);
+    border-radius:100px; padding:9px 18px; font-size:12.5px; font-weight:700; color:var(--navy);
+  }.mts-scope .badge svg{width:16px; height:16px; color:var(--orange-deep);}.mts-scope .hero-form{
+    background:#fff; border-radius:14px; padding:28px; box-shadow:0 16px 40px rgba(10,44,74,.14); border:1px solid var(--line);
+  }.mts-scope .hero-call{
+    display:flex; align-items:center; gap:12px; background:var(--navy); color:#fff; border-radius:10px;
+    padding:14px 16px; margin-bottom:18px;
+  }.mts-scope .hero-call .icon{
+    width:38px; height:38px; border-radius:50%; background:var(--orange); display:flex; align-items:center;
+    justify-content:center; flex-shrink:0;
+  }.mts-scope .hero-call .icon svg{width:18px; height:18px; color:#fff;}.mts-scope .hero-call span{display:block; font-size:10.5px; color:#B7CADA; text-transform:uppercase; letter-spacing:.04em;}.mts-scope .hero-call a{font-size:16px; font-weight:700; color:#fff;}.mts-scope .hero-form h3{font-size:16.5px; margin-bottom:14px;}.mts-scope .hero-form input,.mts-scope .hero-form select,.mts-scope .hero-form textarea{
+    width:100%; border:1px solid var(--line); background:var(--cream-2); border-radius:7px; padding:11px 13px;
+    font-family:'Inter'; font-size:13.5px; margin-bottom:10px; color:var(--navy);
+  }.mts-scope .hero-form textarea{resize:vertical; min-height:56px;}.mts-scope .hero-form button{
+    width:100%; background:var(--orange); color:#fff; border:none; border-radius:7px; padding:12px;
+    font-weight:700; font-size:13.5px; cursor:pointer;
+  }.mts-scope .hero-form button:hover{background:var(--orange-deep);}.mts-scope /* ---------- COMPARE (commercial vs rental) ---------- */
+  .compare{background:#fff;}.mts-scope .compare-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  @media(max-width:800px){.mts-scope .compare-grid{grid-template-columns:1fr;}}.mts-scope .compare-card{border:1px solid var(--line); border-radius:12px; padding:30px; background:var(--cream-2);}.mts-scope .compare-card .tagpill{
+    display:inline-block; font-size:11px; font-weight:700; color:#fff; background:var(--navy);
+    padding:5px 12px; border-radius:100px; margin-bottom:12px;
+  }.mts-scope .compare-card h3{font-size:20px; margin-bottom:10px;}.mts-scope .compare-card p{font-size:14px; margin-bottom:14px;}.mts-scope .compare-card ul li{font-size:13px; padding-left:16px; position:relative; margin-bottom:7px; color:var(--navy); font-weight:500;}.mts-scope .compare-card ul li::before{content:"-"; position:absolute; left:0; color:var(--orange-deep);}.mts-scope /* ---------- TURNKEY PROCESS ---------- */
+  .process{background:var(--navy); color:#EAE6DA;}.mts-scope .process .s-head h2{color:#fff;}.mts-scope .process .s-head p{color:#C7CADA;}.mts-scope .steps{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap;}.mts-scope .step{flex:1; min-width:150px; text-align:center;}.mts-scope .step .num{font-family:'Poppins'; font-size:13px; color:var(--orange); display:block; margin-bottom:10px; letter-spacing:.08em;}.mts-scope .step h3{color:#fff; font-size:15.5px; margin-bottom:6px;}.mts-scope .step p{font-size:12.5px; color:#B7BBCC;}.mts-scope .steps-line{height:1px; background:linear-gradient(90deg,transparent,#3A4460,transparent); margin-bottom:34px;}.mts-scope /* ---------- COMPLIANCE + CLIMATE (2-col comp cards) ---------- */
+  .assurance{background:var(--cream-2);}.mts-scope .assure-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
+  @media(max-width:800px){.mts-scope .assure-grid{grid-template-columns:1fr;}}.mts-scope .assure-card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:26px;}.mts-scope .assure-card .ic{
+    width:44px; height:44px; border-radius:10px; background:var(--navy); display:flex; align-items:center;
+    justify-content:center; margin-bottom:14px;
+  }.mts-scope .assure-card .ic svg{width:22px; height:22px; color:var(--orange);}.mts-scope .assure-card h3{font-size:17px; margin-bottom:8px;}.mts-scope .assure-card p{font-size:13.5px; margin-bottom:12px;}.mts-scope .assure-card ul li{font-size:13px; display:flex; gap:8px; align-items:flex-start; color:var(--navy); font-weight:500; margin-bottom:7px;}.mts-scope .assure-card ul li svg{width:15px; height:15px; color:var(--orange-deep); flex-shrink:0; margin-top:2px;}.mts-scope /* ---------- MATERIALS (3-card) ---------- */
+  .materials{background:#fff;}.mts-scope .mat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  @media(max-width:860px){.mts-scope .mat-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.mts-scope .mat-grid{grid-template-columns:1fr;}}.mts-scope .mat-card{border:1px solid var(--line); border-radius:12px; padding:24px; background:var(--cream-2);}.mts-scope .mat-card .tag{
+    font-family:'Poppins'; font-size:10.5px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--orange-deep); margin-bottom:8px; display:block; font-weight:700;
+  }.mts-scope .mat-card h4{font-size:16.5px; margin-bottom:8px;}.mts-scope .mat-card p{font-size:13px; margin-bottom:12px;}.mts-scope .mat-tags{display:flex; gap:7px; flex-wrap:wrap;}.mts-scope .mat-tag{font-size:10.5px; font-weight:700; color:var(--navy); background:#fff; border:1px solid var(--line); padding:4px 9px; border-radius:6px;}.mts-scope /* ---------- TENT TYPES GRID ---------- */
+  .types{background:var(--cream-2);}.mts-scope .type-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  @media(max-width:860px){.mts-scope .type-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.mts-scope .type-grid{grid-template-columns:1fr;}}.mts-scope .type-card{background:#fff; border:1px solid var(--line); border-radius:10px; padding:20px;}.mts-scope .type-card svg{width:26px; height:26px; color:var(--orange-deep); margin-bottom:10px;}.mts-scope .type-card h4{font-size:14.5px; margin-bottom:6px;}.mts-scope .type-card p{font-size:12.5px;}.mts-scope /* ---------- TENT SPECS GRID ---------- */
+  .specs{background:#fff;}.mts-scope .spec-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
+  @media(max-width:900px){.mts-scope .spec-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.mts-scope .spec-grid{grid-template-columns:1fr;}}.mts-scope .spec-card{background:var(--cream-2); border:1px solid var(--line); border-radius:10px; padding:18px 18px 16px;}.mts-scope .spec-head{display:flex; align-items:center; gap:10px; margin-bottom:12px;}.mts-scope .spec-card svg{width:22px; height:22px; color:var(--orange-deep); flex-shrink:0;}.mts-scope .spec-head span{font-size:13.5px; font-weight:700; color:var(--navy); line-height:1.3;}.mts-scope .spec-list{border-top:1px dashed var(--line); padding-top:10px;}.mts-scope .spec-list li{display:flex; justify-content:space-between; gap:10px; font-size:11px; color:var(--slate); margin-bottom:5px;}.mts-scope .spec-list li:last-child{margin-bottom:0;}.mts-scope .spec-list li b{color:var(--navy); font-weight:600; white-space:nowrap;}.mts-scope .spec-list li em{font-style:normal; text-align:right;}.mts-scope /* ---------- POSITIONING NARRATIVES ---------- */
+  .narrative{border-top:1px solid var(--line);}.mts-scope .narr-grid{display:grid; grid-template-columns:.9fr 1.1fr; gap:40px; align-items:center;}
+  @media(max-width:860px){.mts-scope .narr-grid{grid-template-columns:1fr;}}.mts-scope .narr-grid.reverse .narr-media{order:2;}
+  @media(max-width:860px){.mts-scope .narr-grid.reverse .narr-media{order:0;}}.mts-scope .narr-media{
+    aspect-ratio:4/3; border-radius:14px; display:flex; align-items:center; justify-content:center; overflow:hidden;
+  }.mts-scope .narr-media svg{width:70%; height:70%;}.mts-scope .narr-copy .eyebrow{margin-bottom:8px;}.mts-scope .narr-copy h2{font-size:24px; margin-bottom:14px; max-width:20ch;}.mts-scope .narr-copy p{font-size:14.5px; margin-bottom:12px; max-width:56ch;}.mts-scope /* ---------- FOOTER CTA ---------- */
+  .cta{background:var(--orange); color:#fff; text-align:center;}.mts-scope .cta h2{color:#fff; font-size:27px; margin-bottom:12px;}.mts-scope .cta p{color:#FCEBD0; margin-bottom:22px; font-size:14.5px;}.mts-scope .btn{display:inline-flex; align-items:center; gap:8px; background:var(--navy); color:#fff; font-weight:700; font-size:13.5px; padding:13px 26px; border-radius:7px; border:none;}
+
+/* ---------- FOOTER ---------- */
+.mts-scope .mts-footer{background:var(--navy-deep); color:#B7CADA;}
+.mts-scope .mts-footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:32px; padding:56px 0 36px;}
+@media(max-width:860px){.mts-scope .mts-footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.mts-scope .mts-footer-grid{grid-template-columns:1fr;}}
+.mts-scope .mts-footer h4{color:#fff; font-size:15px; margin-bottom:16px;}
+.mts-scope .mts-footer p{font-size:13px; line-height:1.7; color:#9FB0C4;}
+.mts-scope .mts-footer-contact{display:flex; flex-direction:column; gap:12px;}
+.mts-scope .mts-footer-contact li{display:flex; align-items:center; gap:10px; font-size:13px;}
+.mts-scope .mts-footer-contact svg{width:15px; height:15px; color:var(--orange); flex-shrink:0;}
+.mts-scope .mts-footer-contact a{color:#B7CADA; text-decoration:none;}
+.mts-scope .mts-footer-contact a:hover{color:#fff;}
+.mts-scope .mts-footer-links{display:flex; flex-direction:column; gap:10px;}
+.mts-scope .mts-footer-links a{color:#B7CADA; text-decoration:none; font-size:13px;}
+.mts-scope .mts-footer-links a:hover{color:#fff;}
+.mts-scope .mts-footer-bottom{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:20px 0; border-top:1px solid rgba(255,255,255,.1); font-size:12px; color:#8CA0B8;}
+.mts-scope .mts-footer-social{display:flex; gap:14px;}
+.mts-scope .mts-footer-social a{width:32px; height:32px; border-radius:50%; background:rgba(255,255,255,.08); display:flex; align-items:center; justify-content:center; color:#fff; flex-shrink:0;}
+.mts-scope .mts-footer-social svg{width:15px; height:15px;}
+.mts-scope .mts-footer-social a:hover{background:var(--orange);}
+.mts-scope .mts-footer-utility{display:flex; background:#fff;}
+.mts-scope .mts-footer-utility a{flex:1; display:flex; align-items:center; justify-content:center; gap:8px; padding:14px 8px; font-size:12.5px; font-weight:700; color:var(--navy); text-decoration:none; border-right:1px solid var(--line);}
+.mts-scope .mts-footer-utility a:last-child{border-right:none;}
+.mts-scope .mts-footer-utility svg{width:16px; height:16px; color:var(--orange-deep);}
+@media(max-width:640px){.mts-scope .mts-footer-utility{position:sticky; bottom:0; z-index:20;} .mts-scope .mts-footer-utility a span{display:none;}}
+/* ---------- FULL-WIDTH OVERRIDE ---------- */
+/* The theme (Astra page-builder template) caps .entry-content at --wp--custom--ast-content-width-size.
+   Force it off so this section runs the full width of the page, same as unchecking that rule in DevTools. */
+.ast-page-builder-template .entry-content[data-ast-blocks-layout] > .inherit-container-width > *,
+.entry-content[data-ast-blocks-layout] > *:not(.wp-block-group):not(.uagb-is-root-container) > *,
+.entry-content[data-ast-blocks-layout] > .wp-block-cover .wp-block-cover__inner-container{
+  max-width:100% !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+</style>
+<div class="mts-scope">
+<!-- ============ HERO ============ -->
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow">Tents and Structures</span>
+<h1>Commercial Tent Solutions in Dubai</h1>
+<p><span class="brand">Master Tents and Shades</span> supplies two distinct paths for tent structures across the UAE: long-term tent structural assets, custom-built at factory-direct pricing for construction and corporate venues, and full-service tent rental for events that only need a structure for a few days.</p>
+<div class="badge-row">
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Dubai Municipality Approved</span>
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"></path></svg> Civil Defense Certified</span>
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg> Factory-Direct Pricing</span>
+</div>
+</div>
+<div class="hero-form">
+<div class="hero-call">
+<div class="icon"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg></div>
+<div><span>Call us now</span><a href="tel:+971562221906">+971 56 222 1906</a></div>
+</div>
+<h3>Request A Tent Quote</h3>
+<input placeholder="Name *" type="text"/>
+<input placeholder="Phone *" type="tel"/>
+<select><option>Commercial Tent Structure</option><option>Tent Rental (Event)</option><option>Not Sure Yet</option></select>
+<textarea placeholder="Tell us about your project or event"></textarea>
+<button type="button">Submit Enquiry</button>
+</div>
+</div>
+</section>
+<!-- ============ COMPARE ============ -->
+<section class="compare">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Two Ways We Work</span>
+<h2>Commercial Tent Solutions vs. Tent Rental</h2>
+<p>Not every project needs the same commitment. Here is how the two paths differ.</p>
+</div>
+<div class="compare-grid">
+<div class="compare-card">
+<span class="tagpill">Long-Term Asset</span>
+<h3>Commercial Tent Solutions</h3>
+<p>Built as a long-term structural asset rather than a temporary cover – sized, engineered and priced factory-direct for construction sites and corporate venues that need a tent on standby for months or years.</p>
+<ul>
+<li>Custom-engineered to the site</li>
+<li>Factory-direct pricing, no rental markup</li>
+<li>Suited to construction sites and corporate campuses</li>
+</ul>
+</div>
+<div class="compare-card">
+<span class="tagpill">Short-Term Event</span>
+<h3>Tent Rental</h3>
+<p>A short-term, full-service setup for weddings, parties or corporate exhibitions – we handle delivery, installation and dismantling so you don’t have to manage any of it yourself.</p>
+<ul>
+<li>Delivery, installation and dismantling included</li>
+<li>Sized for weddings, parties and exhibitions</li>
+<li>Booked per event, not per year</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ TURNKEY PROCESS ============ -->
+<section class="process">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow" style="color:#F5A623;">Turnkey Services</span>
+<h2>End-to-End Management, Start to Finish</h2>
+<p>One team handles the entire lifecycle – from the first structural drawing to the final dismantle.</p>
+</div>
+<div class="steps-line"></div>
+<div class="steps">
+<div class="step"><span class="num">01</span><h3>Structural Design</h3><p>Drawings engineered to the site, load and event requirements.</p></div>
+<div class="step"><span class="num">02</span><h3>Transportation</h3><p>Frame and fabric delivered directly to your location.</p></div>
+<div class="step"><span class="num">03</span><h3>Rapid Installation</h3><p>On-site erection by our certified crew, on a set timeline.</p></div>
+<div class="step"><span class="num">04</span><h3>Dismantling</h3><p>Clean removal once the event or project is complete.</p></div>
+</div>
+</div>
+</section>
+<!-- ============ COMPLIANCE + CLIMATE ============ -->
+<section class="assurance">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Built and Certified For the UAE</span>
+<h2>Compliance and Climate Resilience</h2>
+</div>
+<div class="assure-grid">
+<div class="assure-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"></path></svg></div>
+<h3>Strict Safety Compliance</h3>
+<p>Every tent is built to a documented safety standard, not just a visual finish.</p>
+<ul>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Dubai Municipality regulations</li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Civil Defense fire safety codes</li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> International engineering benchmarks</li>
+</ul>
+</div>
+<div class="assure-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2c4 4 7 8 7 12a7 7 0 1 1-14 0c0-4 3-8 7-12z"></path></svg></div>
+<h3>UAE Climate Resilience</h3>
+<p>Materials are selected specifically for desert conditions, not adapted from a milder climate.</p>
+<ul>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Heavily UV-treated fabric</li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> 100% waterproof membrane</li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Engineered for desert wind and sandstorms</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ MATERIALS ============ -->
+<section class="materials">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Build Quality</span>
+<h2>What Goes Into Every Tent</h2>
+</div>
+<div class="mat-grid">
+<div class="mat-card">
+<span class="tag">Framework</span>
+<h4>Structural Framing</h4>
+<p>High-grade, hard-pressed extruded aluminium alloy (6061/T6) or heavy-duty galvanized steel, chosen for maximum lifespan under repeated setup and teardown.</p>
+<div class="mat-tags"><span class="mat-tag">6061/T6 Aluminium</span><span class="mat-tag">Galvanized Steel</span></div>
+</div>
+<div class="mat-card">
+<span class="tag">Fabric</span>
+<h4>Fabric Quality</h4>
+<p>Premium PVC-coated polyester, 650g/m² to 850g/m², with M2/B1 flame-retardant certification and blackout capability for controlled-light events.</p>
+<div class="mat-tags"><span class="mat-tag">650–850 g/m²</span><span class="mat-tag">M2/B1 Fire Rated</span><span class="mat-tag">Blackout Option</span></div>
+</div>
+<div class="mat-card">
+<span class="tag">Comfort</span>
+<h4>Climate Controls</h4>
+<p>Integrated insulation layers and dedicated connection ports built for heavy-duty industrial AC units, so interiors stay livable through UAE summer heat.</p>
+<div class="mat-tags"><span class="mat-tag">Insulated Lining</span><span class="mat-tag">Industrial AC Ports</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ TENT TYPES ============ -->
+<section class="types">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">What We Build</span>
+<h2>Tent Types We Manufacture and Supply</h2>
+<p>From luxury hospitality tents to job-site labour accommodation, each type is engineered around its own use case.</p>
+</div>
+<div class="type-grid">
+<div class="type-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10"></path><path d="M4 14h16"></path></svg>
+<h4>Luxury Hotel and Restaurant Tents</h4>
+<p>Architectural marquees for hospitality frontages, built with a premium interior finish.</p>
+</div>
+<div class="type-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="11" width="16" x="4" y="9"></rect><path d="M4 9l8-6 8 6"></path></svg>
+<h4>Heavy-Duty Labour Tents</h4>
+<p>Rugged, weatherproof accommodation and site shelter for construction workforces.</p>
+</div>
+<div class="type-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l8 6-3 12H7L4 8z"></path></svg>
+<h4>Custom Polygon Expo Tents</h4>
+<p>Large-format polygon structures engineered for major corporate expos and trade shows.</p>
+</div>
+<div class="type-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20l8-16 8 16z"></path><path d="M4 20h16"></path></svg>
+<h4>Traditional Majlis Tents</h4>
+<p>Premium majlis structures for Abu Dhabi clients, blending heritage design with modern build quality.</p>
+</div>
+<div class="type-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"></path></svg>
+<h4>Climate-Controlled Wedding Tents</h4>
+<p>Rental marquees fitted with AC and insulation, built to stay comfortable through a full event.</p>
+</div>
+<div class="type-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 12a9 9 0 0 1 18 0"></path><path d="M3 12h18"></path></svg>
+<h4>Luxury Dome Marquee Tents</h4>
+<p>Rounded, high-end dome structures for VIP events and standout corporate gatherings.</p>
+</div>
+<div class="type-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 18c2-3 4-3 6 0s4 3 6 0 4-3 6 0"></path><path d="M3 12c2-3 4-3 6 0s4 3 6 0 4-3 6 0"></path></svg>
+<h4>Waterproof Beach Tents</h4>
+<p>Fully waterproof shelters for resort beachfronts, built to handle salt air and sun.</p>
+</div>
+<div class="type-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 16c4-8 16-8 20 0"></path><line x1="4" x2="4" y1="16" y2="21"></line><line x1="20" x2="20" y1="16" y2="21"></line></svg>
+<h4>Outdoor Canopy Party Tents</h4>
+<p>Flexible canopy setups for private parties and rental bookings across Dubai.</p>
+</div>
+<div class="type-card">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3l9 18H3z"></path><path d="M12 3v18"></path></svg>
+<h4>Weatherproof Family Camping Tents</h4>
+<p>Durable camping tents supplied for desert stays and family outdoor trips.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ SPECIFICATIONS BY TENT TYPE ============ -->
+<section class="specs">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Specifications</span>
+<h2>Specifications by Tent Type</h2>
+<p>A quick reference for the frame, fabric and capacity behind each structure we build and supply across the UAE.</p>
+</div>
+<div class="spec-grid">
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10"></path><path d="M4 14h16"></path></svg><span>Hotel and Restaurant Tents</span></div>
+<ul class="spec-list">
+<li><b>Frame Material</b><em>Aluminium 6061/T6</em></li>
+<li><b>Fabric Type</b><em>PVC-Coated, 850 g/m²</em></li>
+<li><b>Climate Control</b><em>AC-Ready</em></li>
+<li><b>Interior</b><em>Luxury Lining</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20l8-16 8 16z"></path><path d="M4 20h16"></path></svg><span>Majlis Tents</span></div>
+<ul class="spec-list">
+<li><b>Frame Material</b><em>Aluminium / Steel Hybrid</em></li>
+<li><b>Fabric Type</b><em>Fire-Retardant PVC</em></li>
+<li><b>Capacity</b><em>20–150 Guests</em></li>
+<li><b>Interior</b><em>Traditional Majlis Lining</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 12a9 9 0 0 1 18 0"></path><path d="M3 12h18"></path></svg><span>Dome Marquee Tents</span></div>
+<ul class="spec-list">
+<li><b>Frame Material</b><em>Aluminium Alloy</em></li>
+<li><b>Shape</b><em>Geodesic Dome</em></li>
+<li><b>Fabric Type</b><em>PVC, Blackout Option</em></li>
+<li><b>Capacity</b><em>Up to 300 Guests</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"></path></svg><span>Event Tents</span></div>
+<ul class="spec-list">
+<li><b>Frame Material</b><em>Aluminium 6061/T6</em></li>
+<li><b>Fabric Type</b><em>PVC-Coated Polyester</em></li>
+<li><b>Fire Rating</b><em>M2/B1 Certified</em></li>
+<li><b>Setup</b><em>Rapid Turnkey Install</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3l9 18H3z"></path><path d="M12 3v18"></path></svg><span>Camping Tents</span></div>
+<ul class="spec-list">
+<li><b>Fabric Type</b><em>Waterproof Ripstop</em></li>
+<li><b>Frame Material</b><em>Lightweight Steel</em></li>
+<li><b>UV Protection</b><em>High</em></li>
+<li><b>Setup</b><em>Field-Assembled</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10"></path><path d="M4 14h16"></path></svg><span>Family Tents</span></div>
+<ul class="spec-list">
+<li><b>Fabric Type</b><em>Waterproof Polyester</em></li>
+<li><b>Frame Material</b><em>Galvanized Steel</em></li>
+<li><b>Capacity</b><em>4–10 Persons</em></li>
+<li><b>Ventilation</b><em>Mesh Vented Panels</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="11" width="16" x="4" y="9"></rect><path d="M4 9l8-6 8 6"></path></svg><span>Labour Tents</span></div>
+<ul class="spec-list">
+<li><b>Frame Material</b><em>Heavy-Duty Galvanized Steel</em></li>
+<li><b>Fabric Type</b><em>Reinforced PVC</em></li>
+<li><b>Fire Rating</b><em>Flame-Retardant</em></li>
+<li><b>Use Case</b><em>Long-Term Site Accommodation</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle></svg><span>Round Tents</span></div>
+<ul class="spec-list">
+<li><b>Frame Material</b><em>Aluminium Alloy</em></li>
+<li><b>Shape</b><em>Circular Span</em></li>
+<li><b>Fabric Type</b><em>PVC-Coated Polyester</em></li>
+<li><b>Capacity</b><em>Up to 200 Guests</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 16c4-8 16-8 20 0"></path><line x1="4" x2="4" y1="16" y2="21"></line><line x1="20" x2="20" y1="16" y2="21"></line></svg><span>Canopy Tents</span></div>
+<ul class="spec-list">
+<li><b>Frame Material</b><em>Aluminium / Steel</em></li>
+<li><b>Fabric Type</b><em>PVC / HDPE</em></li>
+<li><b>Setup</b><em>Rapid, Modular</em></li>
+<li><b>Use Case</b><em>Short-Term Rental</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l8 6-3 12H7L4 8z"></path></svg><span>Polygon Tents</span></div>
+<ul class="spec-list">
+<li><b>Frame Material</b><em>Extruded Aluminium 6061/T6</em></li>
+<li><b>Shape</b><em>Multi-Sided Polygon</em></li>
+<li><b>Fabric Type</b><em>PVC-Coated Polyester</em></li>
+<li><b>Capacity</b><em>500+ Guests</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"></path></svg><span>Wedding Tents</span></div>
+<ul class="spec-list">
+<li><b>Frame Material</b><em>Aluminium Alloy</em></li>
+<li><b>Fabric Type</b><em>Blackout PVC</em></li>
+<li><b>Climate Control</b><em>AC-Ready</em></li>
+<li><b>Interior</b><em>Bespoke Luxury Lining</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 18c2-3 4-3 6 0s4 3 6 0 4-3 6 0"></path><path d="M3 12c2-3 4-3 6 0s4 3 6 0 4-3 6 0"></path></svg><span>Beach Tents</span></div>
+<ul class="spec-list">
+<li><b>Fabric Type</b><em>100% Waterproof PVC</em></li>
+<li><b>Frame Material</b><em>Corrosion-Resistant Aluminium</em></li>
+<li><b>UV Protection</b><em>High</em></li>
+<li><b>Use Case</b><em>Resort Beachfront</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 18c4-9 12-9 16 0"></path></svg><span>Arcum Tents</span></div>
+<ul class="spec-list">
+<li><b>Frame Material</b><em>Curved Aluminium Alloy</em></li>
+<li><b>Shape</b><em>Arched (Arcum) Profile</em></li>
+<li><b>Fabric Type</b><em>PVC-Coated Polyester</em></li>
+<li><b>Wind Load</b><em>High</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10"></path><path d="M4 10h16"></path></svg><span>Party Tents Across the UAE</span></div>
+<ul class="spec-list">
+<li><b>Frame Material</b><em>Aluminium / Steel</em></li>
+<li><b>Fabric Type</b><em>PVC-Coated Polyester</em></li>
+<li><b>Setup</b><em>Delivery + Install + Dismantle</em></li>
+<li><b>Capacity</b><em>Flexible, Small to Large</em></li>
+</ul>
+</div>
+<div class="spec-card">
+<div class="spec-head"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="11" width="16" x="4" y="9"></rect><path d="M4 9l8-6 8 6"></path></svg><span>Event Expo Tent</span></div>
+<ul class="spec-list">
+<li><b>Frame Material</b><em>Extruded Aluminium 6061/T6</em></li>
+<li><b>Fabric Type</b><em>Fire-Retardant PVC (M2/B1)</em></li>
+<li><b>Capacity</b><em>500+ Guests</em></li>
+<li><b>Climate Control</b><em>Industrial AC-Ready</em></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ NARRATIVE 1: DESERT-TESTED ============ -->
+<section class="narrative">
+<div class="wrap narr-grid">
+<div class="narr-media">
+<img alt="the-deser-tested-tent" decoding="async" loading="lazy" src="/img/the-deser-tested-tent.webp" style="width:80%; height:250px; object-fit:cover; border-radius:8px"/>
+</div>
+<div class="narr-copy">
+<span class="eyebrow">Engineering Philosophy</span>
+<h2>The “Desert-Tested” Engineering Guarantee</h2>
+<p>We dont think of our canopies as temporary fabric covers. Every tent is built as a climate-sealed, wind-stabilized temporary venue – engineered specifically for Arabian desert conditions, not adapted from a design built for somewhere milder.</p>
+<p>That means every frame, seam and anchor point is chosen with UAE heat, wind and sand in mind from the first drawing, not patched in afterward.</p>
+</div>
+</div>
+</section>
+<!-- ============ NARRATIVE 2: ZERO-FUSS CORPORATE ============ -->
+<section class="narrative" style="background:var(--cream-2);">
+<div class="wrap narr-grid reverse">
+<div class="narr-copy">
+<span class="eyebrow">For Corporate Event Planners</span>
+<h2>Zero-Fuss On-Site Delivery</h2>
+<p>Busy event planners don’t need another vendor to manage – they need one that disappears into the background and delivers. Our internal logistics team handles transport, rapid assembly, and Civil Defense clearance directly, so the bureaucracy never lands on your desk.</p>
+<p>From the first call to the final walkthrough, the goal is the same: a structure that’s ready on time, cleared to use, and one less thing on your event checklist.</p>
+</div>
+<div class="narr-media">
+<img alt="zero-fuss-on-site-delivery" decoding="async" loading="lazy" src="/img/zero-fuss-on-site-delivery.webp" style="width:80%; height:250px; object-fit:cover; border-radius:8px"/>
+</div>
+</div>
+</section>
+<!-- ============ NARRATIVE 3: HERITAGE MEETS LUXURY ============ -->
+<section class="narrative">
+<div class="wrap narr-grid">
+<div class="narr-media">
+<img alt="heritage-meets-luxury" decoding="async" loading="lazy" src="/img/heritage-meets-luxury.webp" style="width:80%; height:250px; object-fit:cover; border-radius:8px"/>
+</div>
+<div class="narr-copy">
+<span class="eyebrow">Majlis and Wedding Tents</span>
+<h2>Heritage Meets Luxury</h2>
+<p>For majlis and wedding tents, we build around a single idea: authentic Emirati design carried through in a modern, high-end European marquee finish. Bespoke interiors, luxury linings, and hidden structural supports keep the engineering out of sight and the aesthetic front and centre.</p>
+<p>The result is a structure that reads as considered hospitality design, not a rented frame with fabric draped over it.</p>
+</div>
+</div>
+</section>
+<!-- ============ CTA ============ -->
+<section class="cta">
+<div class="wrap">
+<h2>Talk To Our Tent Structures Team</h2>
+<p>Tell us whether you need a long-term commercial structure or a short-term event rental – we will take it from there.</p>
+<a class="btn" href="tel:+971562221906">Call +971 56 222 1906</a>
+</div>
+</section>
+<!-- ============ SITE FOOTER ============ -->
+<footer class="mts-footer">
+<div class="wrap mts-footer-grid">
+<div>
+<h4>About Company</h4>
+<p>Master Tents and Shades is the UAE’s leading manufacturer of steel structure tents, aluminium pergolas, car parking shades, and tensile sail structures — engineered for durability across Dubai, Sharjah, and Abu Dhabi.</p>
+</div>
+<div>
+<h4>Connect with Us</h4>
+<ul class="mts-footer-contact">
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M4 6l8 7 8-7"></path></svg><a href="mailto:info@mastertentsandshades.com">info@mastertentsandshades.com</a></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><a href="tel:+97142203352">+971 4 220 3352</a></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><a href="tel:+971562221906">+971 56 222 1906</a></li>
+</ul>
+</div>
+<div>
+<h4>Quick Links</h4>
+<ul class="mts-footer-links">
+<li><a href="/about/">About Us</a></li>
+<li><a href="/tents-suppliers-in-uae/">Tents</a></li>
+<li><a href="/pergola-shade-suppliers-in-dubai/">Pergola</a></li>
+<li><a href="/car-parking-shade-suppliers-uae/">Parking Shades</a></li>
+<li><a href="/we-are-here-to-help/">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4>Our Address</h4>
+<p># 601, Abraj Almamzar,<br/>P.O.Box: 99160, Dubai,<br/>United Arab Emirates</p>
+</div>
+</div>
+<div class="wrap mts-footer-bottom">
+<span>© 2026 All Rights Reserved. Master Tents and Shades LLC in Dubai, Sharjah, Abu Dhabi All over UAE.</span>
+<div class="mts-footer-social">
+<a aria-label="LinkedIn" href="https://www.linkedin.com/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zM8.5 8h3.8v2.06h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"></path></svg></a>
+<a aria-label="Instagram" href="https://www.instagram.com/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.55.55.9 1.1 1.15 1.76.25.64.42 1.36.47 2.43.05 1.07.06 1.42.06 4.13s-.01 3.06-.06 4.13c-.05 1.07-.22 1.79-.47 2.43-.26.66-.6 1.21-1.15 1.76-.55.55-1.1.9-1.76 1.15-.64.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.06-.01-4.13-.06c-1.07-.05-1.79-.22-2.43-.47-.66-.26-1.21-.6-1.76-1.15-.55-.55-.9-1.1-1.15-1.76-.25-.64-.42-1.36-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.13c.05-1.07.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76.55-.55 1.1-.9 1.76-1.15.64-.25 1.36-.42 2.43-.47C8.94 2.01 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.2-8.4a1.17 1.17 0 100-2.34 1.17 1.17 0 000 2.34z"></path></svg></a>
+<a aria-label="Twitter" href="https://twitter.com/mastershade23"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M23 4.9c-.8.4-1.7.6-2.6.8 1-.6 1.7-1.5 2-2.6-.9.5-1.9.9-3 1.1a4.5 4.5 0 00-7.7 4.1A12.8 12.8 0 012 3.9a4.5 4.5 0 001.4 6 4.5 4.5 0 01-2-.6v.1c0 2.2 1.5 4 3.6 4.4-.6.2-1.3.2-1.9.1.5 1.8 2.2 3.1 4.1 3.1A9 9 0 012 19.6a12.8 12.8 0 006.9 2c8.3 0 12.8-6.9 12.8-12.8v-.6c.9-.6 1.6-1.4 2.3-2.3z"></path></svg></a>
+<a aria-label="Telegram" href="https://web.telegram.org/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M22 4L2.5 11.7c-1 .4-1 1.6.1 1.9l4.9 1.5 1.9 5.9c.3.9 1.4 1.1 2 .3l2.7-3.3 5 3.7c.9.6 2.1.1 2.3-.9L23.9 5.4c.3-1.1-.8-2-1.9-1.4z"></path></svg></a>
+<a aria-label="Facebook" href="https://www.facebook.com/mastershade23"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M13.5 22v-8.3h2.8l.4-3.2h-3.2V8.4c0-.9.3-1.6 1.6-1.6h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2H10V22h3.5z"></path></svg></a>
+<a aria-label="WhatsApp" href="https://wa.me/971562221906"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.7-.8-3.1-1.2-5-4.3-5.2-4.5-.2-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l1.9 1c.2.1.4.2.5.3.1.2.1 1-.1 1.7z"></path></svg></a>
+</div>
+</div>
+<div class="mts-footer-utility">
+<a href="tel:+971562221906"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><span>Call</span></a>
+<a href="mailto:info@mastertentsandshades.com"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M4 6l8 7 8-7"></path></svg><span>Email</span></a>
+<a href="https://wa.me/971562221906"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.7-.8-3.1-1.2-5-4.3-5.2-4.5-.2-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l1.9 1c.2.1.4.2.5.3.1.2.1 1-.1 1.7z"></path></svg><span>WhatsApp</span></a>
+<a href="https://maps.google.com/?q=Abraj+Al+Mamzar+Dubai+UAE" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 22s7-7.4 7-12a7 7 0 10-14 0c0 4.6 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>Location</span></a>
+</div>
+</footer>
+</div>

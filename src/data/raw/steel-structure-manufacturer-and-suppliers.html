@@ -1,0 +1,485 @@
+<style>
+.mts-scope{
+    --navy:#123C63;
+    --navy-deep:#0A2C4A;
+    --orange:#F5A623;
+    --orange-deep:#DD8E0E;
+    --cream:#F4EBD8;
+    --cream-2:#F8F3E6;
+    --slate:#5B6472;
+    --line:#E7DEC6;
+  }
+.mts-scope *{box-sizing:border-box; margin:0; padding:0;}
+.mts-scope{--wp--custom--ast-content-width-size:100vw;}
+.mts-scope{font-family:'Inter',sans-serif; color:var(--slate); background:#fff; line-height:1.65;}
+.mts-scope h1, .mts-scope h2, .mts-scope h3, .mts-scope h4{font-family:'Poppins',sans-serif; color:var(--navy); font-weight:700; line-height:1.25;}
+.mts-scope .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}
+.mts-scope section{padding:64px 0;}
+@media(max-width:640px){.mts-scope section{padding:40px 0;}}
+.mts-scope ul{list-style:none;}
+.mts-scope .brand{color:var(--orange-deep); font-weight:700;}
+.mts-scope .eyebrow{display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--orange-deep); margin-bottom:10px;}
+.mts-scope .s-head{max-width:740px; margin:0 auto 36px; text-align:center;}
+.mts-scope .s-head h2{font-size:26px;}
+.mts-scope .s-head p{font-size:14.5px; margin-top:10px;}
+@media(max-width:640px){.mts-scope .s-head h2{font-size:21px;}}
+.mts-scope .hero{background:var(--cream);}
+.mts-scope .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:44px; align-items:center;}
+@media(max-width:900px){.mts-scope .hero-grid{grid-template-columns:1fr;}}
+.mts-scope .hero h1{font-size:28px; max-width:21ch; margin-bottom:16px; text-align:left;}
+@media(max-width:640px){.mts-scope .hero h1{font-size:22px;}}
+.mts-scope .hero p{max-width:54ch; margin-bottom:22px; font-size:15px; text-align:left;}
+.mts-scope .badge-row{display:flex; gap:12px; flex-wrap:wrap;}
+.mts-scope .badge{display:flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--line); border-radius:100px; padding:9px 18px; font-size:12.5px; font-weight:700; color:var(--navy);}
+.mts-scope .badge svg{width:16px; height:16px; color:var(--orange-deep);}
+.mts-scope .hero-form{background:#fff; border-radius:14px; padding:28px; box-shadow:0 16px 40px rgba(10,44,74,.14); border:1px solid var(--line);}
+.mts-scope .hero-call{display:flex; align-items:center; gap:12px; background:var(--navy); color:#fff; border-radius:10px; padding:14px 16px; margin-bottom:18px;}
+.mts-scope .hero-call .icon{width:38px; height:38px; border-radius:50%; background:var(--orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+.mts-scope .hero-call .icon svg{width:18px; height:18px; color:#fff;}
+.mts-scope .hero-call span{display:block; font-size:10.5px; color:#B7CADA; text-transform:uppercase; letter-spacing:.04em;}
+.mts-scope .hero-call a{font-size:16px; font-weight:700; color:#fff;}
+.mts-scope .hero-form h3{font-size:16.5px; margin-bottom:14px;}
+.mts-scope .hero-form input, .mts-scope .hero-form select, .mts-scope .hero-form textarea{width:100%; border:1px solid var(--line); background:var(--cream-2); border-radius:7px; padding:11px 13px; font-family:'Inter'; font-size:13.5px; margin-bottom:10px; color:var(--navy);}
+.mts-scope .hero-form textarea{resize:vertical; min-height:56px;}
+.mts-scope .hero-form button{width:100%; background:var(--orange); color:#fff; border:none; border-radius:7px; padding:12px; font-weight:700; font-size:13.5px; cursor:pointer;}
+.mts-scope .hero-form button:hover{background:var(--orange-deep);}
+.mts-scope .personas{background:#fff;}
+.mts-scope .persona-single{border:1px solid var(--line); border-radius:12px; padding:30px; background:var(--cream-2); display:grid; grid-template-columns:.4fr .6fr; gap:26px; align-items:center;}
+@media(max-width:760px){.mts-scope .persona-single{grid-template-columns:1fr;}}
+.mts-scope .persona-single h3{font-size:19px; margin-bottom:10px;}
+.mts-scope .persona-single p{font-size:14px;}
+.mts-scope .persona-single .tagpill{display:inline-block; font-size:11px; font-weight:700; color:#fff; background:var(--navy); padding:5px 12px; border-radius:100px; margin-bottom:12px;}
+.mts-scope .assurance{background:var(--cream-2);}
+.mts-scope .assure-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+@media(max-width:860px){.mts-scope .assure-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.mts-scope .assure-grid{grid-template-columns:1fr;}}
+.mts-scope .assure-card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:24px;}
+.mts-scope .assure-card .ic{width:44px; height:44px; border-radius:10px; background:var(--navy); display:flex; align-items:center; justify-content:center; margin-bottom:14px;}
+.mts-scope .assure-card .ic svg{width:22px; height:22px; color:var(--orange);}
+.mts-scope .assure-card h3{font-size:16px; margin-bottom:8px;}
+.mts-scope .assure-card p{font-size:13px;}
+.mts-scope .materials{background:#fff;}
+.mts-scope .mat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+@media(max-width:860px){.mts-scope .mat-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.mts-scope .mat-grid{grid-template-columns:1fr;}}
+.mts-scope .mat-card{border:1px solid var(--line); border-radius:12px; padding:24px; background:var(--cream-2);}
+.mts-scope .mat-card .tag{font-family:'Poppins'; font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--orange-deep); margin-bottom:8px; display:block; font-weight:700;}
+.mts-scope .mat-card h4{font-size:16.5px; margin-bottom:8px;}
+.mts-scope .mat-card p{font-size:13px; margin-bottom:12px;}
+.mts-scope .mat-tags{display:flex; gap:7px; flex-wrap:wrap;}
+.mts-scope .mat-tag{font-size:10.5px; font-weight:700; color:var(--navy); background:#fff; border:1px solid var(--line); padding:4px 9px; border-radius:6px;}
+.mts-scope .types-specs{background:var(--navy); color:#EAE6DA;}
+.mts-scope .types-specs .s-head h2{color:#fff;}
+.mts-scope .types-specs .s-head p{color:#C7CADA;}
+.mts-scope .type-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px;}
+@media(max-width:760px){.mts-scope .type-grid{grid-template-columns:1fr;}}
+.mts-scope .type-card{background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); border-radius:12px; padding:22px; overflow:hidden;}
+.mts-scope .type-photo{margin:0 auto 18px; width:60%; aspect-ratio:16/10; border-radius:8px; overflow:hidden;}
+.mts-scope .type-photo img{width:100%; height:100%; object-fit:cover; display:block;}
+.mts-scope .type-card .ic{width:38px; height:38px; border-radius:9px; background:var(--orange); display:flex; align-items:center; justify-content:center; margin-bottom:14px;}
+.mts-scope .type-card .ic svg{width:19px; height:19px; color:#fff;}
+.mts-scope .type-card h4{color:#fff; font-size:15.5px; margin-bottom:8px;}
+.mts-scope .type-card p{font-size:12.5px; color:#B7BBCC; margin-bottom:12px;}
+.mts-scope .type-specs{border-top:1px dashed rgba(255,255,255,.18); padding-top:10px;}
+.mts-scope .type-specs li{display:flex; justify-content:space-between; gap:8px; font-size:11px; color:#B7BBCC; margin-bottom:5px;}
+.mts-scope .type-specs li:last-child{margin-bottom:0;}
+.mts-scope .type-specs li b{color:#F5A623; font-weight:600; white-space:nowrap;}
+.mts-scope .type-specs li em{font-style:normal; text-align:right; color:#EAE6DA;}
+.mts-scope .narrative{border-top:1px solid var(--line);}
+.mts-scope .narr-grid{display:grid; grid-template-columns:.9fr 1.1fr; gap:40px; align-items:center;}
+@media(max-width:860px){.mts-scope .narr-grid{grid-template-columns:1fr;}}
+.mts-scope .narr-grid.reverse .narr-media{order:2;}
+@media(max-width:860px){.mts-scope .narr-grid.reverse .narr-media{order:0;}}
+.mts-scope .narr-media{aspect-ratio:4/3; border-radius:14px; display:flex; align-items:center; justify-content:center; overflow:hidden;}
+.mts-scope .narr-media svg{width:70%; height:70%;}
+.mts-scope .narr-copy h2{font-size:23px; margin-bottom:14px; max-width:22ch;}
+.mts-scope .narr-copy p{font-size:14.5px; margin-bottom:12px; max-width:56ch;}
+.mts-scope .matrix{background:var(--cream-2);}
+.mts-scope .matrix table{width:100%; border-collapse:collapse; font-size:13.5px; background:#fff; border-radius:10px; overflow:hidden; border:1px solid var(--line);}
+.mts-scope .matrix th{background:var(--navy); color:#fff; text-align:left; padding:12px 16px; font-family:'Poppins'; font-size:12px; text-transform:uppercase; letter-spacing:.04em;}
+.mts-scope .matrix td{padding:12px 16px; border-bottom:1px solid var(--line); color:var(--slate);}
+.mts-scope .matrix tr:last-child td{border-bottom:none;}
+.mts-scope .matrix td:first-child{color:var(--navy); font-weight:600;}
+.mts-scope .types{background:#fff;}
+.mts-scope .kw-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+@media(max-width:860px){.mts-scope .kw-grid{grid-template-columns:1fr;}}
+.mts-scope .kw-card{background:var(--cream-2); border:1px solid var(--line); border-radius:12px; padding:24px;}
+.mts-scope .kw-card .tagpill{display:inline-block; font-size:11px; font-weight:700; color:#fff; background:var(--navy); padding:5px 12px; border-radius:100px; margin-bottom:12px;}
+.mts-scope .kw-card h4{font-size:15.5px; margin-bottom:12px;}
+.mts-scope .kw-chip{display:block; font-size:12px; color:var(--navy); background:#fff; border:1px solid var(--line); padding:8px 10px; border-radius:7px; margin-bottom:8px;}
+.mts-scope .kw-chip:last-child{margin-bottom:0;}
+
+/* ---------- FOOTER ---------- */
+.mts-scope .mts-footer{background:var(--navy-deep); color:#B7CADA;}
+.mts-scope .mts-footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:32px; padding:56px 0 36px;}
+@media(max-width:860px){.mts-scope .mts-footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.mts-scope .mts-footer-grid{grid-template-columns:1fr;}}
+.mts-scope .mts-footer h4{color:#fff; font-size:15px; margin-bottom:16px;}
+.mts-scope .mts-footer p{font-size:13px; line-height:1.7; color:#9FB0C4;}
+.mts-scope .mts-footer-contact{display:flex; flex-direction:column; gap:12px;}
+.mts-scope .mts-footer-contact li{display:flex; align-items:center; gap:10px; font-size:13px;}
+.mts-scope .mts-footer-contact svg{width:15px; height:15px; color:var(--orange); flex-shrink:0;}
+.mts-scope .mts-footer-contact a{color:#B7CADA; text-decoration:none;}
+.mts-scope .mts-footer-contact a:hover{color:#fff;}
+.mts-scope .mts-footer-links{display:flex; flex-direction:column; gap:10px;}
+.mts-scope .mts-footer-links a{color:#B7CADA; text-decoration:none; font-size:13px;}
+.mts-scope .mts-footer-links a:hover{color:#fff;}
+.mts-scope .mts-footer-bottom{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:20px 0; border-top:1px solid rgba(255,255,255,.1); font-size:12px; color:#8CA0B8;}
+.mts-scope .mts-footer-social{display:flex; gap:14px;}
+.mts-scope .mts-footer-social a{width:32px; height:32px; border-radius:50%; background:rgba(255,255,255,.08); display:flex; align-items:center; justify-content:center; color:#fff; flex-shrink:0;}
+.mts-scope .mts-footer-social svg{width:15px; height:15px;}
+.mts-scope .mts-footer-social a:hover{background:var(--orange);}
+.mts-scope .mts-footer-utility{display:flex; background:#fff;}
+.mts-scope .mts-footer-utility a{flex:1; display:flex; align-items:center; justify-content:center; gap:8px; padding:14px 8px; font-size:12.5px; font-weight:700; color:var(--navy); text-decoration:none; border-right:1px solid var(--line);}
+.mts-scope .mts-footer-utility a:last-child{border-right:none;}
+.mts-scope .mts-footer-utility svg{width:16px; height:16px; color:var(--orange-deep);}
+@media(max-width:640px){.mts-scope .mts-footer-utility{position:sticky; bottom:0; z-index:20;} .mts-scope .mts-footer-utility a span{display:none;}}
+.mts-scope .cta{background:var(--orange); color:#fff; text-align:center;}
+.mts-scope .cta h2{color:#fff; font-size:27px; margin-bottom:12px;}
+.mts-scope .cta p{color:#FCEBD0; margin-bottom:22px; font-size:14.5px;}
+.mts-scope .btn{display:inline-flex; align-items:center; gap:8px; background:var(--navy); color:#fff; font-weight:700; font-size:13.5px; padding:13px 26px; border-radius:7px; border:none;}
+.mts-scope footer{background:var(--navy-deep); color:#93A3B8; text-align:center; padding:22px 0; font-size:12px;}
+</style>
+<div class="mts-scope">
+<!-- ============ HERO ============ -->
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow">Industrial Infrastructure</span>
+<h1>Industrial Steel Structure Tents in the UAE</h1>
+<p><span class="brand">Master Tents and Shades</span> builds industrial-grade steel structure tents – clear-span warehouses, workshops, hangars, and labour accommodation – engineered for permanent strength but erected in a fraction of the time a concrete build takes.</p>
+<div class="badge-row">
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Operational in Under 90 Days</span>
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"></path></svg> DM / JAFZA / Trakhees Ready</span>
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="16" rx="2" width="16" x="4" y="4"></rect><path d="M4 9h16"></path></svg> Column-Free Spans</span>
+</div>
+</div>
+<div class="hero-form">
+<div class="hero-call">
+<div class="icon"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg></div>
+<div><span>Call us now</span><a href="tel:+971562221906">+971 56 222 1906</a></div>
+</div>
+<h3>Request A Structural Proposal</h3>
+<input placeholder="Name / Company *" type="text"/>
+<input placeholder="Phone *" type="tel"/>
+<select><option>Warehouse / Logistics</option><option>Workshop / Manufacturing</option><option>Hangar / Aviation</option><option>Labour Accommodation</option><option>Not Sure Yet</option></select>
+<textarea placeholder="Tell us about your site and required span"></textarea>
+<button type="button">Submit Enquiry</button>
+</div>
+</div>
+</section>
+<!-- ============ PERSONA ============ -->
+<section class="personas">
+<div class="wrap">
+<div class="persona-single">
+<div>
+<span class="tagpill">Who We Work With</span>
+<h3>Rapid Space Maximization, Without the Concrete Timeline</h3>
+</div>
+<p>Civil contractors, warehouse logistics managers, agricultural developers, and industrial factory owners come to us needing large-span, load-bearing frameworks for factories, distribution centres, aircraft hangars, or heavy equipment storage – fast. They want a solution that bypasses the slow, expensive, legally complex timeline of traditional concrete construction, without giving up permanent structural strength.</p>
+</div>
+</div>
+</section>
+<!-- ============ GUARANTEES ============ -->
+<section class="assurance">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">What We Guarantee</span>
+<h2>Engineered Speed, Not a Temporary Shortcut</h2>
+</div>
+<div class="assure-grid">
+<div class="assure-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z"></path></svg></div>
+<h3>Off-Site Fabricated Tent Speed</h3>
+<p>Parts are precision-fabricated off-site in a factory setting, leading to ultra-fast on-site bolted assembly that cuts operational downtime.</p>
+</div>
+<div class="assure-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"></path></svg></div>
+<h3>Civil Defense &amp; Structural Certification</h3>
+<p>Every structure comes with complete structural calculations, ready for immediate Dubai Municipality, JAFZA, or Trakhees approval workflows.</p>
+</div>
+<div class="assure-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="12" rx="1" width="16" x="4" y="6"></rect></svg></div>
+<h3>Clear, Column-Free Spans</h3>
+<p>Massive open interior floor plans with no internal support pillars obstructing heavy machinery, forklifts, or inventory storage.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ MATERIALS ============ -->
+<section class="materials">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Build Quality</span>
+<h2>What Goes Into Every Steel Structure</h2>
+</div>
+<div class="mat-grid">
+<div class="mat-card">
+<span class="tag">Steel Grade</span>
+<h4>Steel Grade &amp; Standards</h4>
+<p>Built to international structural steel standards, using high-yield materials rated for large-span, load-bearing performance.</p>
+<div class="mat-tags"><span class="mat-tag">ASTM A36</span><span class="mat-tag">ASTM A572</span><span class="mat-tag">Grade S355</span></div>
+</div>
+<div class="mat-card">
+<span class="tag">Corrosion Protection</span>
+<h4>Anti-Corrosion Hardening</h4>
+<p>Heavy-duty anti-corrosive finishes prevent rusting in humid, high-salinity coastal UAE zones.</p>
+<div class="mat-tags"><span class="mat-tag">Hot-Dip Galvanized, 85+ Microns</span><span class="mat-tag">Marine-Grade Epoxy Primer</span></div>
+</div>
+<div class="mat-card">
+<span class="tag">Cladding</span>
+<h4>Cladding &amp; Insulation Resilience</h4>
+<p>Double-skin sandwich panels combat blistering desert heat and meet strict fire codes at the same time.</p>
+<div class="mat-tags"><span class="mat-tag">Fire-Rated PIR Core</span><span class="mat-tag">Rockwool Core</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ STEEL STRUCTURE TENT TYPES + SPECS ============ -->
+<section class="types-specs">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow" style="color:#F5A623;">Product Range</span>
+<h2>Steel Structure Tent Types We Build</h2>
+<p>Industrial-grade steel structure tents, not flimsy temporary marquees – each type engineered for its specific operational load.</p>
+</div>
+<div class="type-grid">
+<div class="type-card">
+<div class="type-photo"><img alt="Clear-Span Steel Frame Warehouses" decoding="async" loading="lazy" src="/img/clear-span-steel-frame-warehouses.webp"/></div>
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><rect height="11" width="18" x="3" y="9"></rect><path d="M3 9l9-6 9 6"></path></svg></div>
+<h4>Clear-Span Steel Frame Warehouses</h4>
+<p>Massive, pillar-free structures with rigid steel frames and insulated sandwich panel walls – built for logistics hubs and cold storage.</p>
+<ul class="type-specs">
+<li><b>Steel Grade</b><em>ASTM A572 / S355</em></li>
+<li><b>Span</b><em>Column-Free, Wide-Bay</em></li>
+<li><b>Cladding</b><em>Insulated Sandwich Panel</em></li>
+<li><b>Corrosion Protection</b><em>Hot-Dip Galvanized</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-photo"><img alt="Heavy-Duty Industrial Workshop Tents" decoding="async" loading="lazy" src="/img/heavy-duty-industrial-workshop-tents.webp"/></div>
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"></path><circle cx="12" cy="12" r="6"></circle></svg></div>
+<h4>Heavy-Duty Industrial Workshop Tents</h4>
+<p>Built to house active manufacturing, welding, or CNC operations, with integrated ventilation paths and clearance for overhead cranes.</p>
+<ul class="type-specs">
+<li><b>Steel Grade</b><em>ASTM A36</em></li>
+<li><b>Clearance</b><em>Overhead Crane Rated</em></li>
+<li><b>Ventilation</b><em>Integrated Paths</em></li>
+<li><b>Cladding</b><em>PIR-Insulated Panel</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-photo"><img alt="Steel Frame Aircraft &amp; Helicopter Hangars" decoding="async" loading="lazy" src="/img/steel-frame-industrial-tents.webp"/></div>
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M2 16l9-2 3-8 3 8 5 2-5 1-3 5-3-5z"></path></svg></div>
+<h4>Steel Frame Aircraft &amp; Helicopter Hangars</h4>
+<p>Specialised ultra-wide opening structures using structural steel trusses and tensioned PVC or metal skin roofs to house aviation assets.</p>
+<ul class="type-specs">
+<li><b>Frame</b><em>Structural Steel Truss</em></li>
+<li><b>Opening</b><em>Ultra-Wide Clear Bay</em></li>
+<li><b>Roof Skin</b><em>Tensioned PVC / Metal</em></li>
+<li><b>Certification</b><em>DM / Trakhees Ready</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-photo"><img alt="Bulk Material &amp; Mining Storage Tents" decoding="async" loading="lazy" src="/img/storage-tents.webp"/></div>
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20l6-14 5 10 5-6 4 10z"></path></svg></div>
+<h4>Bulk Material &amp; Mining Storage Tents</h4>
+<p>High-clearance, reinforced steel frames designed to withstand internal impacts from earth-moving equipment and protect raw aggregates.</p>
+<ul class="type-specs">
+<li><b>Frame</b><em>Reinforced Steel</em></li>
+<li><b>Impact Rating</b><em>Earth-Moving Equipment Rated</em></li>
+<li><b>Weather Protection</b><em>Wind &amp; Rain Sealed</em></li>
+<li><b>Clearance</b><em>High-Clearance Bay</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-photo"><img alt="Prefabricated Labour Accommodation Tents" decoding="async" loading="lazy" src="/img/labour-accomodation-tents.webp"/></div>
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><rect height="11" width="16" x="4" y="9"></rect><path d="M4 9l8-6 8 6"></path><path d="M9 20v-6h6v6"></path></svg></div>
+<h4>Prefabricated Labour Accommodation Tents</h4>
+<p>Modular steel-framed complexes engineered for rapid deployment on remote oil, gas, or construction sites, built to local safety laws.</p>
+<ul class="type-specs">
+<li><b>Frame</b><em>Modular Steel</em></li>
+<li><b>Deployment</b><em>Rapid, Remote-Site Ready</em></li>
+<li><b>Compliance</b><em>Local Safety Code Optimised</em></li>
+<li><b>Cladding</b><em>Insulated Sandwich Panel</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-photo"><img alt="Large-Scale Exhibition &amp; Expo Steel Halls" decoding="async" loading="lazy" src="/img/expo-steel-halls.webp"/></div>
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 21h18M5 21V9l7-6 7 6v12M9 21v-6h6v6"></path></svg></div>
+<h4>Large-Scale Exhibition &amp; Expo Steel Halls</h4>
+<p>Permanent-grade, semi-temporary steel structures engineered to host thousands of visitors safely, with routing for industrial HVAC.</p>
+<ul class="type-specs">
+<li><b>Grade</b><em>Permanent-Grade Semi-Temporary</em></li>
+<li><b>Capacity</b><em>Thousands of Visitors</em></li>
+<li><b>HVAC</b><em>Hidden Channel Routing</em></li>
+<li><b>Certification</b><em>DM / Civil Defense Ready</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-photo"><img alt="Steel Works Tent Warehouses" decoding="async" loading="lazy" src="/img/steel-works-tents-warehouse.webp"/></div>
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><rect height="16" rx="2" width="16" x="4" y="4"></rect><path d="M4 10h16M10 4v16"></path></svg></div>
+<h4>Steel Works Tent Warehouses</h4>
+<p>Combined fabrication-yard and storage structures, built to keep heavy steel works, tooling, and stock under one weatherproof roof.</p>
+<ul class="type-specs">
+<li><b>Frame</b><em>Structural Steel Portal</em></li>
+<li><b>Floor Loading</b><em>Heavy Equipment Rated</em></li>
+<li><b>Cladding</b><em>Double-Skin Panel</em></li>
+<li><b>Use Case</b><em>Fabrication Yard / Storage</em></li>
+</ul>
+</div>
+<div class="type-card">
+<div class="type-photo"><img alt="Labour Rest Area Tents" decoding="async" loading="lazy" src="/img/labour-res-area-tents.webp"/></div>
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10"></path><path d="M4 14h16"></path></svg></div>
+<h4>Labour Rest Area Tents</h4>
+<p>Ventilated, insulated rest and break structures for on-site workforces, sized to sit alongside a larger labour camp or job site.</p>
+<ul class="type-specs">
+<li><b>Frame</b><em>Light-Industrial Steel</em></li>
+<li><b>Ventilation</b><em>Cross-Flow Vented</em></li>
+<li><b>Cladding</b><em>Insulated Panel / PVC</em></li>
+<li><b>Use Case</b><em>Site Rest &amp; Break Area</em></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ NARRATIVE 1: 90-DAY ============ -->
+<section class="narrative">
+<div class="wrap narr-grid">
+<div class="narr-media" style="background:var(--navy);">
+<svg viewbox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#F5A623" height="80" width="160" x="20" y="60"></rect>
+<path d="M20 60l70-35 90 35" fill="none" stroke="#F5A623" stroke-linejoin="round" stroke-width="6"></path>
+<rect fill="#0A2C4A" height="50" width="20" x="40" y="90"></rect>
+<rect fill="#0A2C4A" height="50" width="20" x="140" y="90"></rect>
+</svg>
+</div>
+<div class="narr-copy">
+<span class="eyebrow">For Project Managers</span>
+<h2>The 90-Day Concept-to-Key Timeline</h2>
+<p>Why wait 12 months for a concrete warehouse? A steel structure tent is a direct antidote to concrete delays – fully engineered, permitted, and operational in under 90 days, with zero compromise on wind or structural integrity.</p>
+</div>
+</div>
+</section>
+<!-- ============ NARRATIVE 2: ZERO-PERMIT FRICTION ============ -->
+<section class="narrative" style="background:var(--cream-2);">
+<div class="wrap narr-grid reverse">
+<div class="narr-copy">
+<span class="eyebrow">Regulatory Guarantee</span>
+<h2>Zero-Permit Friction</h2>
+<p>The legal headache stays with us, not the buyer. Our in-house engineering team works directly with UAE regulatory bodies, and every structure is delivered with pre-compiled structural calculation books, stamped engineering designs, and flame-retardant certifications.</p>
+<p>The goal is straightforward: pass Trakhees or Civil Defense inspection on the first attempt, every time.</p>
+</div>
+<div class="narr-media">
+<img alt="Certified steel structure installation with electrical and safety compliance, UAE" decoding="async" loading="lazy" src="/img/zero-permit-friction.webp" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+</div>
+</section>
+<!-- ============ COST MATRIX ============ -->
+<section class="matrix">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Total Cost of Ownership</span>
+<h2>Lifecycle Cost-Efficiency: Steel vs. Concrete</h2>
+<p>Hot-dip galvanized steel frames paired with specialised insulated panels change the total cost picture, not just the build speed.</p>
+</div>
+<table>
+<thead><tr><th>Factor</th><th>Steel Structure Tent</th><th>Traditional Concrete</th></tr></thead>
+<tbody>
+<tr><td>Time to Operational</td><td>Under 90 Days</td><td>12+ Months</td></tr>
+<tr><td>Initial Capital Expenditure</td><td>Lower</td><td>Higher</td></tr>
+<tr><td>Relocation Flexibility</td><td>High – Leased Land Friendly</td><td>None – Permanent Only</td></tr>
+<tr><td>HVAC Cooling Cost</td><td>Up to 30% Lower (Insulated Panels)</td><td>Standard, Uninsulated Sheet Metal Baseline</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- ============ WHERE THIS FITS ============ -->
+<section class="types">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Where This Fits</span>
+<h2>By Project Type</h2>
+</div>
+<div class="kw-grid">
+<div class="kw-card">
+<span class="tagpill">Industrial &amp; Warehousing</span>
+<h4>Logistics &amp; Storage</h4>
+<span class="kw-chip">Steel structure tent manufacturing, warehouse-grade</span>
+<span class="kw-chip">Heavy-duty industrial steel workshop tents</span>
+<span class="kw-chip">Large-span steel frame fabric tents for logistics</span>
+</div>
+<div class="kw-card">
+<span class="tagpill">Regulatory &amp; Technical</span>
+<h4>Certified &amp; Compliant Builds</h4>
+<span class="kw-chip">Dubai Municipality approved steel structure works</span>
+<span class="kw-chip">Hot-dip galvanized steel structure fabric tents, JAFZA</span>
+<span class="kw-chip">Fire-rated insulated steel structure tents, Abu Dhabi</span>
+</div>
+<div class="kw-card">
+<span class="tagpill">Specialized Assets</span>
+<h4>Aviation, Labour &amp; Events</h4>
+<span class="kw-chip">Custom structural steel aircraft hangar supply</span>
+<span class="kw-chip">Prefabricated steel frame labour camps for construction sites</span>
+<span class="kw-chip">Temporary steel structure exhibition halls for rent</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ CTA ============ -->
+<section class="cta">
+<div class="wrap">
+<h2>Talk To Our Structural Engineering Team</h2>
+<p>Tell us the span, the site, and the deadline – we’ll come back with an engineered proposal, not a rough guess.</p>
+<a class="btn" href="tel:+971562221906">Call +971 56 222 1906</a>
+</div>
+</section>
+<!-- ============ SITE FOOTER ============ -->
+<footer class="mts-footer">
+<div class="wrap mts-footer-grid">
+<div>
+<h4>About Company</h4>
+<p>Master Tents and Shades is the UAE’s leading manufacturer of steel structure tents, aluminium pergolas, car parking shades, and tensile sail structures — engineered for durability across Dubai, Sharjah, and Abu Dhabi.</p>
+</div>
+<div>
+<h4>Connect with Us</h4>
+<ul class="mts-footer-contact">
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M4 6l8 7 8-7"></path></svg><a href="mailto:info@mastertentsandshades.com">info@mastertentsandshades.com</a></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><a href="tel:+97142203352">+971 4 220 3352</a></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><a href="tel:+971562221906">+971 56 222 1906</a></li>
+</ul>
+</div>
+<div>
+<h4>Quick Links</h4>
+<ul class="mts-footer-links">
+<li><a href="/about/">About Us</a></li>
+<li><a href="/tents-suppliers-in-uae/">Tents</a></li>
+<li><a href="/pergola-shade-suppliers-in-dubai/">Pergola</a></li>
+<li><a href="/car-parking-shade-suppliers-uae/">Parking Shades</a></li>
+<li><a href="/we-are-here-to-help/">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4>Our Address</h4>
+<p># 601, Abraj Almamzar,<br/>P.O.Box: 99160, Dubai,<br/>United Arab Emirates</p>
+</div>
+</div>
+<div class="wrap mts-footer-bottom">
+<span>© 2026 All Rights Reserved. Master Tents and Shades LLC in Dubai, Sharjah, Abu Dhabi All over UAE.</span>
+<div class="mts-footer-social">
+<a aria-label="LinkedIn" href="https://www.linkedin.com/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zM8.5 8h3.8v2.06h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"></path></svg></a>
+<a aria-label="Instagram" href="https://www.instagram.com/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.55.55.9 1.1 1.15 1.76.25.64.42 1.36.47 2.43.05 1.07.06 1.42.06 4.13s-.01 3.06-.06 4.13c-.05 1.07-.22 1.79-.47 2.43-.26.66-.6 1.21-1.15 1.76-.55.55-1.1.9-1.76 1.15-.64.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.06-.01-4.13-.06c-1.07-.05-1.79-.22-2.43-.47-.66-.26-1.21-.6-1.76-1.15-.55-.55-.9-1.1-1.15-1.76-.25-.64-.42-1.36-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.13c.05-1.07.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76.55-.55 1.1-.9 1.76-1.15.64-.25 1.36-.42 2.43-.47C8.94 2.01 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.2-8.4a1.17 1.17 0 100-2.34 1.17 1.17 0 000 2.34z"></path></svg></a>
+<a aria-label="Twitter" href="https://twitter.com/mastershade23"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M23 4.9c-.8.4-1.7.6-2.6.8 1-.6 1.7-1.5 2-2.6-.9.5-1.9.9-3 1.1a4.5 4.5 0 00-7.7 4.1A12.8 12.8 0 012 3.9a4.5 4.5 0 001.4 6 4.5 4.5 0 01-2-.6v.1c0 2.2 1.5 4 3.6 4.4-.6.2-1.3.2-1.9.1.5 1.8 2.2 3.1 4.1 3.1A9 9 0 012 19.6a12.8 12.8 0 006.9 2c8.3 0 12.8-6.9 12.8-12.8v-.6c.9-.6 1.6-1.4 2.3-2.3z"></path></svg></a>
+<a aria-label="Telegram" href="https://web.telegram.org/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M22 4L2.5 11.7c-1 .4-1 1.6.1 1.9l4.9 1.5 1.9 5.9c.3.9 1.4 1.1 2 .3l2.7-3.3 5 3.7c.9.6 2.1.1 2.3-.9L23.9 5.4c.3-1.1-.8-2-1.9-1.4z"></path></svg></a>
+<a aria-label="Facebook" href="https://www.facebook.com/mastershade23"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M13.5 22v-8.3h2.8l.4-3.2h-3.2V8.4c0-.9.3-1.6 1.6-1.6h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2H10V22h3.5z"></path></svg></a>
+<a aria-label="WhatsApp" href="https://wa.me/971562221906"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.7-.8-3.1-1.2-5-4.3-5.2-4.5-.2-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l1.9 1c.2.1.4.2.5.3.1.2.1 1-.1 1.7z"></path></svg></a>
+</div>
+</div>
+<div class="mts-footer-utility">
+<a href="tel:+971562221906"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><span>Call</span></a>
+<a href="mailto:info@mastertentsandshades.com"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M4 6l8 7 8-7"></path></svg><span>Email</span></a>
+<a href="https://wa.me/971562221906"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.7-.8-3.1-1.2-5-4.3-5.2-4.5-.2-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l1.9 1c.2.1.4.2.5.3.1.2.1 1-.1 1.7z"></path></svg><span>WhatsApp</span></a>
+<a href="https://maps.google.com/?q=Abraj+Al+Mamzar+Dubai+UAE" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 22s7-7.4 7-12a7 7 0 10-14 0c0 4.6 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>Location</span></a>
+</div>
+</footer>
+</div>

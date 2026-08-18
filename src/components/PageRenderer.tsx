@@ -145,9 +145,7 @@ function BlockView({ block }: { block: Block }) {
         <div className="mb-2 flex flex-wrap gap-x-8">
           {block.cols.map((col, i) => (
             <div key={i} className="min-w-[280px] flex-1 basis-0">
-              {col.map((b, j) => (
-                <BlockView key={j} block={b} />
-              ))}
+              {renderBlocks(col)}
             </div>
           ))}
         </div>
@@ -157,7 +155,42 @@ function BlockView({ block }: { block: Block }) {
   }
 }
 
+function renderBlocks(blocks: Block[]) {
+  const out: React.ReactNode[] = [];
+  let i = 0;
+  while (i < blocks.length) {
+    const b = blocks[i]!;
+    if (b.t === "img") {
+      let j = i;
+      while (j < blocks.length && blocks[j]!.t === "img") j++;
+      const run = blocks.slice(i, j) as Extract<Block, { t: "img" }>[];
+      if (run.length >= 4) {
+        out.push(
+          <div key={`g${i}`} className="my-4 grid grid-cols-2 gap-x-1 gap-y-2 sm:grid-cols-3 lg:grid-cols-6">
+            {run.map((img, k) => (
+              <div key={k} className="flex items-center justify-center">
+                <img
+                  src={img.src}
+                  alt={img.alt || ""}
+                  loading="lazy"
+                  className="h-[189px] w-full object-contain"
+                />
+              </div>
+            ))}
+          </div>,
+        );
+        i = j;
+        continue;
+      }
+    }
+    out.push(<BlockView key={i} block={b} />);
+    i++;
+  }
+  return out;
+}
+
 function SectionView({ section }: { section: Section }) {
+
   const style: CSSProperties = {};
   if (section.pad) {
     const parts = section.pad.split(" ");
@@ -181,9 +214,7 @@ function SectionView({ section }: { section: Section }) {
         <div className="absolute inset-0 bg-black/25" aria-hidden="true" />
       ) : null}
       <div className={`mts-container relative ${section.bg || section.slideshow ? "text-white" : ""}`}>
-        {section.blocks.map((b, i) => (
-          <BlockView key={i} block={b} />
-        ))}
+        {renderBlocks(section.blocks)}
       </div>
     </section>
   );

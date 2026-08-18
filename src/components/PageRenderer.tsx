@@ -9,7 +9,7 @@ import { PostGrid, type PostItem } from "./PostGrid";
 import { ReviewCards, type Review } from "./ReviewCards";
 
 export type Block =
-  | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null }
+  | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null; italic?: boolean }
   | { t: "list"; items: string[]; align?: string | null; color?: string | null }
   | { t: "img"; src: string; alt?: string | null; href?: string | null }
   | { t: "btn"; text: string; href?: string | null }
@@ -42,6 +42,7 @@ function textStyle(b: TextBlock): CSSProperties {
   if (b.fs) style.fontSize = `${b.fs}px`;
   style.fontWeight = b.fw ?? (isHeading ? 400 : undefined);
   if (b.color) style.color = b.color;
+  if (b.italic) style.fontStyle = "italic";
   style.fontFamily = b.ff === "serif" ? "var(--mts-font-serif)" : "var(--mts-font-sans)";
   style.textAlign = (b.align as CSSProperties["textAlign"]) ?? "left";
   return style;

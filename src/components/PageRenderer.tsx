@@ -100,10 +100,10 @@ function BlockView({ block }: { block: Block }) {
     }
     case "btn":
       return (
-        <div className="mb-4">
+        <div className="mb-4 text-center">
           <SiteLink
             href={block.href ?? "#"}
-            className="inline-block rounded-full border-2 border-mts-gold px-7 py-3 text-[15px] font-semibold uppercase tracking-wide text-mts-gold transition-colors hover:bg-mts-gold hover:text-white"
+            className="inline-block rounded-[15px] border border-[#9e9e9e] bg-white px-[25px] py-[6px] text-[16px] text-mts-navy transition-colors hover:border-mts-gold hover:text-mts-gold"
           >
             {block.text}
           </SiteLink>

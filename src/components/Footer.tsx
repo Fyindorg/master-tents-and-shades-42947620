@@ -51,7 +51,7 @@ export function Footer() {
                 className="h-[139px] w-auto"
               />
             </SiteLink>
-            <SocialIcons className="mt-2 gap-3" color="text-white hover:text-mts-gold" />
+            <SocialIcons className="mt-2 gap-3 [&_svg]:h-7 [&_svg]:w-7" color="text-white hover:text-mts-gold" />
           </div>
 
           {/* Products */}

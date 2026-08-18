@@ -14,7 +14,6 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { MobileFooterUtility } from "@/components/MobileFooterUtility";
 import { RAW_PAGES } from "@/data/rawPages";
 
 function NotFoundComponent() {
@@ -119,7 +118,7 @@ function RootShell({ children }: { children: ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body className="pb-14">
+      <body>
         {children}
         <Scripts />
       </body>
@@ -138,7 +137,6 @@ function RootComponent() {
       <Header />
       <Outlet />
       {!isRawPage && <Footer />}
-      {!isRawPage && <MobileFooterUtility />}
     </QueryClientProvider>
   );
 }

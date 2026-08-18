@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { MENU, CONTACT, type NavItem } from "@/data/nav";
 import { SocialIcons } from "./SocialIcons";
 import { SiteLink } from "./SiteLink";
+import logoAsset from "@/assets/mastr-tents-and-shades-logo.jpg.asset.json";
 
 function DropdownList({ items, level = 0 }: { items: NavItem[]; level?: number }) {
   return (
@@ -106,11 +107,11 @@ export function Header() {
         <div className="mts-container flex items-center justify-between py-3">
           <SiteLink href="/" ariaLabel="Master Tents and Shades">
             <img
-              src="/img/site-icon.jpg"
+              src={logoAsset.url}
               alt="Master Tents and Shades"
-              width={117}
-              height={60}
-              className="h-[60px] w-auto"
+              width={231}
+              height={48}
+              className="h-[48px] w-auto sm:h-[60px]"
             />
           </SiteLink>
 

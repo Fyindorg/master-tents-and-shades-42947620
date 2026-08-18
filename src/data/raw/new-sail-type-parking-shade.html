@@ -1,0 +1,476 @@
+<style>.mts-scope{
+    --navy:#123C63;
+    --navy-deep:#0A2C4A;
+    --orange:#F5A623;
+    --orange-deep:#DD8E0E;
+    --cream:#F4EBD8;
+    --cream-2:#F8F3E6;
+    --slate:#5B6472;
+    --line:#E7DEC6;
+  }.mts-scope *{box-sizing:border-box; margin:0; padding:0;}.mts-scope body{font-family:'Inter',sans-serif; color:var(--slate); background:#fff; line-height:1.65;}.mts-scope h1,.mts-scope h2,.mts-scope h3,.mts-scope h4{font-family:'Poppins',sans-serif; color:var(--navy); font-weight:700; line-height:1.25;}.mts-scope .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}.mts-scope section{padding:64px 0;}
+  @media(max-width:640px){.mts-scope section{padding:40px 0;}}.mts-scope ul{list-style:none;}.mts-scope .brand{color:var(--orange-deep); font-weight:700;}.mts-scope .eyebrow{display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--orange-deep); margin-bottom:10px;}.mts-scope .s-head{max-width:720px; margin:0 auto 36px; text-align:center;}.mts-scope .s-head h2{font-size:26px;}.mts-scope .s-head p{font-size:14.5px; margin-top:10px;}
+  @media(max-width:640px){.mts-scope .s-head h2{font-size:21px;}}.mts-scope /* ---------- HERO ---------- */
+  .hero{background:var(--cream);}.mts-scope .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:44px; align-items:center;}
+  @media(max-width:900px){.mts-scope .hero-grid{grid-template-columns:1fr;}}.mts-scope .hero h1{font-size:29px; max-width:20ch; margin-bottom:16px; text-align:left;}
+  @media(max-width:640px){.mts-scope .hero h1{font-size:22px;}}.mts-scope .hero p{max-width:54ch; margin-bottom:22px; font-size:15px; text-align:left;}.mts-scope .badge-row{display:flex; gap:12px; flex-wrap:wrap;}.mts-scope .badge{display:flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--line); border-radius:100px; padding:9px 18px; font-size:12.5px; font-weight:700; color:var(--navy);}.mts-scope .badge svg{width:16px; height:16px; color:var(--orange-deep);}.mts-scope .hero-form{background:#fff; border-radius:14px; padding:28px; box-shadow:0 16px 40px rgba(10,44,74,.14); border:1px solid var(--line);}.mts-scope .hero-call{display:flex; align-items:center; gap:12px; background:var(--navy); color:#fff; border-radius:10px; padding:14px 16px; margin-bottom:18px;}.mts-scope .hero-call .icon{width:38px; height:38px; border-radius:50%; background:var(--orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;}.mts-scope .hero-call .icon svg{width:18px; height:18px; color:#fff;}.mts-scope .hero-call span{display:block; font-size:10.5px; color:#B7CADA; text-transform:uppercase; letter-spacing:.04em;}.mts-scope .hero-call a{font-size:16px; font-weight:700; color:#fff;}.mts-scope .hero-form h3{font-size:16.5px; margin-bottom:14px;}.mts-scope .hero-form input,.mts-scope .hero-form select,.mts-scope .hero-form textarea{width:100%; border:1px solid var(--line); background:var(--cream-2); border-radius:7px; padding:11px 13px; font-family:'Inter'; font-size:13.5px; margin-bottom:10px; color:var(--navy);}.mts-scope .hero-form textarea{resize:vertical; min-height:56px;}.mts-scope .hero-form button{width:100%; background:var(--orange); color:#fff; border:none; border-radius:7px; padding:12px; font-weight:700; font-size:13.5px; cursor:pointer;}.mts-scope .hero-form button:hover{background:var(--orange-deep);}.mts-scope /* ---------- PERSONAS ---------- */
+  .personas{background:#fff;}.mts-scope .persona-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  @media(max-width:800px){.mts-scope .persona-grid{grid-template-columns:1fr;}}.mts-scope .persona-card{border:1px solid var(--line); border-radius:12px; padding:28px; background:var(--cream-2);}.mts-scope .persona-card .tagpill{display:inline-block; font-size:11px; font-weight:700; color:#fff; background:var(--navy); padding:5px 12px; border-radius:100px; margin-bottom:12px;}.mts-scope .persona-card h3{font-size:19px; margin-bottom:10px;}.mts-scope .persona-card p{font-size:14px;}.mts-scope /* ---------- ASSURANCE CARDS ---------- */
+  .assurance{background:var(--cream-2);}.mts-scope .assure-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  @media(max-width:860px){.mts-scope .assure-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.mts-scope .assure-grid{grid-template-columns:1fr;}}.mts-scope .assure-card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:24px;}.mts-scope .assure-card .ic{width:44px; height:44px; border-radius:10px; background:var(--navy); display:flex; align-items:center; justify-content:center; margin-bottom:14px;}.mts-scope .assure-card .ic svg{width:22px; height:22px; color:var(--orange);}.mts-scope .assure-card h3{font-size:16px; margin-bottom:8px;}.mts-scope .assure-card p{font-size:13px;}.mts-scope /* ---------- MATERIALS ---------- */
+  .materials{background:#fff;}.mts-scope .mat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  @media(max-width:860px){.mts-scope .mat-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.mts-scope .mat-grid{grid-template-columns:1fr;}}.mts-scope .mat-card{border:1px solid var(--line); border-radius:12px; padding:24px; background:var(--cream-2);}.mts-scope .mat-card .tag{font-family:'Poppins'; font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--orange-deep); margin-bottom:8px; display:block; font-weight:700;}.mts-scope .mat-card h4{font-size:16.5px; margin-bottom:8px;}.mts-scope .mat-card p{font-size:13px; margin-bottom:12px;}.mts-scope .mat-tags{display:flex; gap:7px; flex-wrap:wrap;}.mts-scope .mat-tag{font-size:10.5px; font-weight:700; color:var(--navy); background:#fff; border:1px solid var(--line); padding:4px 9px; border-radius:6px;}.mts-scope /* ---------- HARDENING + SAFETY ---------- */
+  .harden{background:var(--navy); color:#EAE6DA;}.mts-scope .harden .s-head h2{color:#fff;}.mts-scope .harden .s-head p{color:#C7CADA;}.mts-scope .harden-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
+  @media(max-width:800px){.mts-scope .harden-grid{grid-template-columns:1fr;}}.mts-scope .harden-card{background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); border-radius:12px; padding:24px;}.mts-scope .harden-card h3{color:#fff; font-size:16.5px; margin-bottom:10px;}.mts-scope .harden-card p{font-size:13.5px; color:#B7BBCC; margin-bottom:12px;}.mts-scope .cert-row{display:flex; gap:8px; flex-wrap:wrap;}.mts-scope .cert-row span{font-size:11px; font-weight:700; color:var(--navy); background:var(--orange); padding:5px 10px; border-radius:6px;}.mts-scope /* ---------- RETAIL SAIL PRODUCTS ---------- */
+  .retail{background:var(--cream-2);}.mts-scope .retail .s-head{margin-bottom:28px;}.mts-scope .sub-head{font-size:16px; margin-bottom:16px; display:flex; align-items:center; gap:10px;}.mts-scope .sub-head::after{content:""; flex:1; height:1px; background:var(--line);}.mts-scope .prod-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:40px;}
+  @media(max-width:900px){.mts-scope .prod-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.mts-scope .prod-grid{grid-template-columns:1fr;}}.mts-scope .prod-card{background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px 16px 14px;}.mts-scope .prod-card h4{font-size:12.5px; margin-bottom:10px; line-height:1.35; min-height:34px;}.mts-scope .prod-list{border-top:1px dashed var(--line); padding-top:9px;}.mts-scope .prod-list li{display:flex; justify-content:space-between; gap:8px; font-size:11px; color:var(--slate); margin-bottom:4px;}.mts-scope .prod-list li:last-child{margin-bottom:0;}.mts-scope .prod-list li b{color:var(--navy); font-weight:600; white-space:nowrap;}.mts-scope .prod-list li em{font-style:normal; text-align:right;}.mts-scope .layout-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:14px;}
+  @media(max-width:900px){.mts-scope .layout-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.mts-scope .layout-grid{grid-template-columns:1fr;}}.mts-scope .layout-card{background:#fff; border:1px solid var(--line); border-radius:10px; padding:18px;}.mts-scope .layout-card .ic{width:34px; height:34px; border-radius:8px; background:var(--navy); display:flex; align-items:center; justify-content:center; margin-bottom:12px;}.mts-scope .layout-card .ic svg{width:17px; height:17px; color:var(--orange);}.mts-scope .layout-card h4{font-size:13.5px; margin-bottom:6px;}.mts-scope .layout-card p{font-size:12px;}.mts-scope /* ---------- SAIL DESIGNS ---------- */
+  .designs{background:#fff;}.mts-scope .design-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:20px;}
+  @media(max-width:700px){.mts-scope .design-grid{grid-template-columns:1fr;}}.mts-scope .design-card{display:flex; gap:16px; border:1px solid var(--line); border-radius:12px; padding:22px; background:var(--cream-2);}.mts-scope .design-card .ic{width:44px; height:44px; border-radius:10px; background:var(--orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;}.mts-scope .design-card .ic svg{width:22px; height:22px; color:#fff;}.mts-scope .design-card h4{font-size:15.5px; margin-bottom:6px;}.mts-scope .design-card p{font-size:13px;}.mts-scope /* ---------- THERMAL NARRATIVE ---------- */
+  .thermal{background:var(--orange); color:#fff;}.mts-scope .thermal-grid{display:grid; grid-template-columns:auto 1fr; gap:36px; align-items:center;}
+  @media(max-width:700px){.mts-scope .thermal-grid{grid-template-columns:1fr; text-align:center;}}.mts-scope .thermal-stat{background:#fff; color:var(--navy); border-radius:16px; width:160px; height:160px; display:flex; flex-direction:column; align-items:center; justify-content:center; margin:0 auto; box-shadow:0 12px 26px rgba(0,0,0,.15);}.mts-scope .thermal-stat b{font-family:'Poppins'; font-size:28px; line-height:1;}.mts-scope .thermal-stat span{font-size:10.5px; font-weight:700; text-transform:uppercase; margin-top:4px; text-align:center;}.mts-scope .thermal h2{color:#fff; font-size:24px; margin-bottom:10px;}.mts-scope .thermal p{font-size:14.5px; max-width:60ch; color:#FCEBD0;}.mts-scope /* ---------- NARRATIVE ---------- */
+  .narrative{border-top:1px solid var(--line);}.mts-scope .narr-grid{display:grid; grid-template-columns:.9fr 1.1fr; gap:40px; align-items:center;}
+  @media(max-width:860px){.mts-scope .narr-grid{grid-template-columns:1fr;}}.mts-scope .narr-grid.reverse .narr-media{order:2;}
+  @media(max-width:860px){.mts-scope .narr-grid.reverse .narr-media{order:0;}}.mts-scope .narr-media{aspect-ratio:4/3; border-radius:14px; display:flex; align-items:center; justify-content:center; overflow:hidden;}.mts-scope .narr-media svg{width:70%; height:70%;}.mts-scope .narr-copy h2{font-size:23px; margin-bottom:14px; max-width:22ch;}.mts-scope .narr-copy p{font-size:14.5px; margin-bottom:12px; max-width:56ch;}.mts-scope /* ---------- PROJECT TYPES ---------- */
+  .types{background:var(--cream-2);}.mts-scope .type-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  @media(max-width:860px){.mts-scope .type-grid{grid-template-columns:1fr;}}.mts-scope .type-card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:24px;}.mts-scope .type-card .tagpill{display:inline-block; font-size:11px; font-weight:700; color:#fff; background:var(--navy); padding:5px 12px; border-radius:100px; margin-bottom:12px;}.mts-scope .type-card h4{font-size:15.5px; margin-bottom:12px;}.mts-scope .kw-chip{display:block; font-size:12px; color:var(--navy); background:var(--cream-2); border:1px solid var(--line); padding:8px 10px; border-radius:7px; margin-bottom:8px;}.mts-scope .kw-chip:last-child{margin-bottom:0;}.mts-scope /* ---------- CTA ---------- */
+  .cta{background:var(--orange); color:#fff; text-align:center;}.mts-scope .cta h2{color:#fff; font-size:27px; margin-bottom:12px;}.mts-scope .cta p{color:#FCEBD0; margin-bottom:22px; font-size:14.5px;}.mts-scope .btn{display:inline-flex; align-items:center; gap:8px; background:var(--navy); color:#fff; font-weight:700; font-size:13.5px; padding:13px 26px; border-radius:7px; border:none;}
+
+/* ---------- FOOTER ---------- */
+.mts-scope .mts-footer{background:var(--navy-deep); color:#B7CADA;}
+.mts-scope .mts-footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:32px; padding:56px 0 36px;}
+@media(max-width:860px){.mts-scope .mts-footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.mts-scope .mts-footer-grid{grid-template-columns:1fr;}}
+.mts-scope .mts-footer h4{color:#fff; font-size:15px; margin-bottom:16px;}
+.mts-scope .mts-footer p{font-size:13px; line-height:1.7; color:#9FB0C4;}
+.mts-scope .mts-footer-contact{display:flex; flex-direction:column; gap:12px;}
+.mts-scope .mts-footer-contact li{display:flex; align-items:center; gap:10px; font-size:13px;}
+.mts-scope .mts-footer-contact svg{width:15px; height:15px; color:var(--orange); flex-shrink:0;}
+.mts-scope .mts-footer-contact a{color:#B7CADA; text-decoration:none;}
+.mts-scope .mts-footer-contact a:hover{color:#fff;}
+.mts-scope .mts-footer-links{display:flex; flex-direction:column; gap:10px;}
+.mts-scope .mts-footer-links a{color:#B7CADA; text-decoration:none; font-size:13px;}
+.mts-scope .mts-footer-links a:hover{color:#fff;}
+.mts-scope .mts-footer-bottom{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:20px 0; border-top:1px solid rgba(255,255,255,.1); font-size:12px; color:#8CA0B8;}
+.mts-scope .mts-footer-social{display:flex; gap:14px;}
+.mts-scope .mts-footer-social a{width:32px; height:32px; border-radius:50%; background:rgba(255,255,255,.08); display:flex; align-items:center; justify-content:center; color:#fff; flex-shrink:0;}
+.mts-scope .mts-footer-social svg{width:15px; height:15px;}
+.mts-scope .mts-footer-social a:hover{background:var(--orange);}
+.mts-scope .mts-footer-utility{display:flex; background:#fff;}
+.mts-scope .mts-footer-utility a{flex:1; display:flex; align-items:center; justify-content:center; gap:8px; padding:14px 8px; font-size:12.5px; font-weight:700; color:var(--navy); text-decoration:none; border-right:1px solid var(--line);}
+.mts-scope .mts-footer-utility a:last-child{border-right:none;}
+.mts-scope .mts-footer-utility svg{width:16px; height:16px; color:var(--orange-deep);}
+@media(max-width:640px){.mts-scope .mts-footer-utility{position:sticky; bottom:0; z-index:20;} .mts-scope .mts-footer-utility a span{display:none;}}
+/* ---------- FULL-WIDTH OVERRIDE ---------- */
+/* The theme (Astra page-builder template) caps .entry-content at --wp--custom--ast-content-width-size.
+   Force it off so this section runs the full width of the page, same as unchecking that rule in DevTools. */
+.ast-page-builder-template .entry-content[data-ast-blocks-layout] > .inherit-container-width > *,
+.entry-content[data-ast-blocks-layout] > *:not(.wp-block-group):not(.uagb-is-root-container) > *,
+.entry-content[data-ast-blocks-layout] > .wp-block-cover .wp-block-cover__inner-container{
+  max-width:100% !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+</style>
+<div class="mts-scope">
+<!-- ============ HERO ============ -->
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow">Tensile Structures and Sail Shades</span>
+<h1>Tensile Shade Structures and Sail Shades in the UAE</h1>
+<p>From building-code-compliant shade over parking lots and school yards to emergency retensioning for a sagging villa pool sail, <span class="brand">Master Tents and Shades</span> designs, builds and maintains tensile shade structures engineered for the UAE’s heat, UV index, and seasonal Shamal winds.</p>
+<div class="badge-row">
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> DM, Trakhees and DCD Compliant</span>
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg> 10–15 Year Lifespan</span>
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg> Wind-Rated to 140 km/h</span>
+</div>
+</div>
+<div class="hero-form">
+<div class="hero-call">
+<div class="icon"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg></div>
+<div><span>Call us now</span><a href="tel:+971562221906">+971 56 222 1906</a></div>
+</div>
+<h3>Request A Site Assessment</h3>
+<input placeholder="Name *" type="text"/>
+<input placeholder="Phone *" type="tel"/>
+<select><option>New Installation</option><option>Repair / Retensioning</option><option>Not Sure Yet</option></select>
+<textarea placeholder="Tell us about your site or existing structure"></textarea>
+<button type="button">Submit Enquiry</button>
+</div>
+</div>
+</section>
+<!-- ============ PERSONAS ============ -->
+<section class="personas">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Who We Work With</span>
+<h2>Two Kinds of Enquiry, One Team</h2>
+</div>
+<div class="persona-grid">
+<div class="persona-card">
+<span class="tagpill">New Infrastructure Sail Shades</span>
+<h3>Shades for Facilities, Schools and Municipal Sites</h3>
+<p>Asset managers, school principals, and municipal procurement officers typically need fixed, building-code-compliant shade over parking lots, school yards, restaurant terraces, or public parks – infrastructure that has to pass inspection, not just look good.</p>
+</div>
+<div class="persona-card">
+<span class="tagpill">Immediate Fix Sail Shades</span>
+<h3>Shades for Villa and Hospitality Owners</h3>
+<p>Villa owners and hospitality operators usually come to us with a direct pain point – a garden, pool or patio that needs cooling down, or an existing sail sagging under summer heat that needs urgent inspection, retensioning, or fabric replacement.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ ASSURANCE ============ -->
+<section class="assurance">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">What We Guarantee</span>
+<h2>Engineering You Don’t Have to Take on Faith</h2>
+</div>
+<div class="assure-grid">
+<div class="assure-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M9 11l3 3L22 4M12 21a9 9 0 1 1 8-13"></path></svg></div>
+<h3>Regulatory Approvals Handled</h3>
+<p>Dubai Municipality, Trakhees, and Dubai Civil Defense submissions are managed on the client’s behalf, from first drawing to final sign-off.</p>
+</div>
+<div class="assure-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></div>
+<h3>The 10–15 Year Lifespan Promise</h3>
+<p>Steel is chosen to resist oxidation and fabric is chosen to resist UV-driven discoloring and cracking – backed by a clear, stated lifespan.</p>
+</div>
+<div class="assure-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg></div>
+<h3>In-House 3D Wind Load Analysis</h3>
+<p>Every frame is modelled before it’s built, confirming it withstands seasonal Shamal sandstorms and winds up to 120–140 km/h.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ MATERIALS ============ -->
+<section class="materials">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Fabric Composition</span>
+<h2>Choosing Between Airflow and Full Waterproofing Shades</h2>
+<p>Every fabric option trades off differently between breathability and complete water resistance.</p>
+</div>
+<div class="mat-grid">
+<div class="mat-card">
+<img alt="Breathable HDPE sail shade canopy" decoding="async" loading="lazy" src="/img/breathable-hdpe-sail-shades.webp" style="width:100%; height:170px; object-fit:cover; border-radius:8px; margin-bottom:14px;"/>
+<span class="tag">Breathable</span>
+<h4>HDPE, 320–340 gsm</h4>
+<p>A knitted mesh that blocks around 98% of UV rays while letting air move freely beneath the canopy.</p>
+<div class="mat-tags"><span class="mat-tag">98% UV Block</span><span class="mat-tag">Max Airflow</span></div>
+</div>
+<div class="mat-card">
+<img alt="PVC-coated polyester shade structure" decoding="async" loading="lazy" src="/img/pvc-coated-polyster.webp" style="width:100%; height:170px; object-fit:cover; border-radius:8px; margin-bottom:14px;"/>
+<span class="tag">Waterproof</span>
+<h4>PVC-Coated Polyester, 650–850 gsm</h4>
+<p>A fully sealed, 100% waterproof membrane built for permanent commercial installations that need complete rain cover.</p>
+<div class="mat-tags"><span class="mat-tag">100% Waterproof</span><span class="mat-tag">Commercial-Grade</span></div>
+</div>
+<div class="mat-card">
+<img alt="PTFE Teflon-coated premium shade canopy" decoding="async" loading="lazy" src="/img/ptfe-teflon-coated-shades.webp" style="width:100%; height:170px; object-fit:cover; border-radius:8px; margin-bottom:14px;"/>
+<span class="tag">Premium</span>
+<h4>PTFE (Teflon-Coated)</h4>
+<p>A self-cleaning, long-life fabric reserved for landmark permanent structures where finish and longevity outweigh upfront cost.</p>
+<div class="mat-tags"><span class="mat-tag">Self-Cleaning</span><span class="mat-tag">Decades-Long Finish</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ HARDENING + SAFETY ============ -->
+<section class="harden">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow" style="color:#F5A623;">Structural Integrity</span>
+<h2>Hardening and Certification</h2>
+</div>
+<div class="harden-grid">
+<div class="harden-card">
+<h3>Structural and Marine Hardening</h3>
+<p>Frames use hot-dip galvanized steel finished with anti-corrosive powder coating. Tension cables and turnbuckles are Grade 316 marine-grade stainless steel, specifically chosen to stop rust developing at high-friction connection points.</p>
+</div>
+<div class="harden-card">
+<h3>Safety Certifications</h3>
+<p>Fabric and frame components carry documented flame-retardancy certification against recognised international benchmarks – a paper trail available on request, not just a verbal assurance.</p>
+<div class="cert-row"><span>BS 7837</span><span>DIN 4102 B1</span><span>NFPA 701</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ SAIL DESIGNS ============ -->
+<section class="designs">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Product Range</span>
+<h2>Sail Shade Designs We Build</h2>
+</div>
+<div class="design-grid">
+<div class="design-card">
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 6l16 4-4 4 4 8-16-4z"></path></svg></div>
+<div><h4>Hyperbolic Paraboloid (Hypar) Sail Shades</h4><p>A twisted-surface sail with two high and two low attachment points, which naturally optimises tension and helps deflect high winds.</p></div>
+</div>
+<div class="design-card">
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 19l8-15 10 15z"></path><path d="M8 19l6-11 5 11z" opacity=".6"></path></svg></div>
+<div><h4>Triangular and Multi-Tiered Sail Shades</h4><p>Overlapping fabric layers anchored at staggered heights, creating a dynamic, layered look over pools and lounge decks.</p></div>
+</div>
+<div class="design-card">
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M10 45 L10 20 L45 30 L10 45" transform="translate(-4,-14) scale(0.85)"></path></svg></div>
+<div><h4>Cantilevered Hanging Sail Shades</h4><p>Heavy-duty, single-post structures for commercial parking lines and walkways that need to keep ground space clear.</p></div>
+</div>
+<div class="design-card">
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 16c4-8 16-8 20 0"></path><path d="M4 16v2M24 16v2" transform="translate(-2,0)"></path></svg></div>
+<div><h4>Pre-Tensioned Cable-Edge Shade Sails</h4><p>Large-span membranes with hidden internal perimeter cables that stop fabric sagging over school playgrounds or resort lawns.</p></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ RETAIL SAIL PRODUCTS ============ -->
+<section class="retail">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Off-The-Shelf Options</span>
+<h2>Pre-Made Sail Shade Specifications</h2>
+<p>For smaller gardens and patios that don’t need a full custom install, these are the common pre-made formats we can supply or match – alongside fully custom, fixed sails made to order.</p>
+</div>
+<h3 class="sub-head">Pre-Made and Retail-Style Sail Shades</h3>
+<div class="prod-grid">
+<div class="prod-card">
+<h4>12’×16′ Cream Rectangle, Curved Edge, Commercial Grade</h4>
+<ul class="prod-list">
+<li><b>Shape</b><em>Rectangle</em></li>
+<li><b>Size</b><em>12′ × 16′</em></li>
+<li><b>Edge Style</b><em>Curved</em></li>
+<li><b>Fabric Weight</b><em>185 GSM</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Garden Sail Canopy with Fixing Kit</h4>
+<ul class="prod-list">
+<li><b>Type</b><em>Garden Canopy Sail</em></li>
+<li><b>Includes</b><em>Fixing Kit</em></li>
+<li><b>Water Resistance</b><em>Water-Resistant</em></li>
+<li><b>Best For</b><em>Outdoor Garden Shade</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Triangular Awning with Mounting Ropes</h4>
+<ul class="prod-list">
+<li><b>Shape</b><em>Triangular</em></li>
+<li><b>Includes</b><em>Mounting Ropes</em></li>
+<li><b>UV Protection</b><em>Yes</em></li>
+<li><b>Wind Protection</b><em>Yes</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Retractable Wave Awning Canopy, 98% UV</h4>
+<ul class="prod-list">
+<li><b>Type</b><em>Retractable Wave</em></li>
+<li><b>Water Resistance</b><em>Water-Resistant</em></li>
+<li><b>UV Block</b><em>98%</em></li>
+<li><b>Mechanism</b><em>Manual Retract</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>12’×16′ Beige Rectangle Canopy, Permeable Screen</h4>
+<ul class="prod-list">
+<li><b>Size</b><em>12′ × 16′</em></li>
+<li><b>Color</b><em>Beige</em></li>
+<li><b>Shape</b><em>Rectangle</em></li>
+<li><b>Fabric</b><em>Permeable Cloth Screen</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Retractable Wave Sail, 140×850 cm, PES</h4>
+<ul class="prod-list">
+<li><b>Type</b><em>Retractable Wave</em></li>
+<li><b>Size</b><em>140 × 850 cm</em></li>
+<li><b>Fabric</b><em>PES (Polyester)</em></li>
+<li><b>Fabric Weight</b><em>180 g/m²</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>+Plus Furl Breathable Square/Rectangular Sail</h4>
+<ul class="prod-list">
+<li><b>Style</b><em>Furl / Retracting</em></li>
+<li><b>Shape</b><em>Square or Rectangular</em></li>
+<li><b>Breathability</b><em>Breathable Weave</em></li>
+<li><b>Mechanism</b><em>Furling</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>12’×16′ Rectangle Canopy, 95% UV Block, Permeable</h4>
+<ul class="prod-list">
+<li><b>Size</b><em>12′ × 16′</em></li>
+<li><b>Shape</b><em>Rectangle</em></li>
+<li><b>UV Block</b><em>95%</em></li>
+<li><b>Fabric Weight</b><em>185 GSM</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Fixed Shade Sails – Custom Made to Order, Dubai</h4>
+<ul class="prod-list">
+<li><b>Type</b><em>Fixed, Permanent Mount</em></li>
+<li><b>Order Type</b><em>Custom Made-to-Order</em></li>
+<li><b>Manufactured</b><em>Dubai, UAE</em></li>
+<li><b>Best For</b><em>Long-Term Installations</em></li>
+</ul>
+</div>
+</div>
+<h3 class="sub-head">Layout and Installation Guidance</h3>
+<div class="layout-grid">
+<div class="layout-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3l9 18H3z"></path></svg></div>
+<h4>Triangle Shade Sail Layout</h4>
+<p>A single or paired triangular sail anchored at three points – the simplest layout for tight corners, small patios, or a single seating area.</p>
+</div>
+<div class="layout-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20l6-14 5 10 5-6 4 10z"></path></svg></div>
+<h4>Multi-Sail Design Layouts</h4>
+<p>Combining several sails at varying heights and angles to cover larger areas while adding visual depth rather than one flat panel.</p>
+</div>
+<div class="layout-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 19l7-13 9 4-4 9z"></path><path d="M9 12l7-4 5 9-9 4z" opacity=".55"></path></svg></div>
+<h4>Overlapping Shade Sails</h4>
+<p>Staggering sails so their edges layer over one another, removing gaps in coverage and increasing shade between panels through the day.</p>
+</div>
+<div class="layout-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10"></path><path d="M4 10h16"></path><circle cx="12" cy="14" fill="currentColor" r="1.5" stroke="none"></circle></svg></div>
+<h4>Attaching a Sail to a House Wall</h4>
+<p>Uses a wall-mounted eye plate rated for the sail’s tension load, paired with a turnbuckle so tension can be adjusted after install.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ THERMAL COMFORT ============ -->
+<section class="thermal">
+<div class="wrap thermal-grid">
+<div class="thermal-stat"><b>10–15°C</b><span>Ambient Temperature Drop</span></div>
+<div>
+<h2>Thermal Comfort, Not Just Sun Cover</h2>
+<p>Breathable HDPE open-mesh fabric avoids the greenhouse effect that solid plastic or sealed covers create – trapped hot air with nowhere to go. A correctly specified open-mesh shade can drop the ambient temperature underneath it by roughly 10°C to 15°C, a measurable outcome you can plan around, not just a comfort claim.</p>
+</div>
+</div>
+</section>
+<!-- ============ NARRATIVE: ZERO-LIABILITY ============ -->
+<section class="narrative">
+<div class="wrap narr-grid">
+<div class="narr-media">
+<img alt="zero-liability-turnkey-regulatory-guarante" decoding="async" loading="lazy" src="/img/zero-liability-turnkey-regulatory-guarante.webp" style="width:80%; height:250px; object-fit:cover; border-radius:8px"/>
+</div>
+<div class="narr-copy">
+<span class="eyebrow">For Developers and Facility Managers</span>
+<h2>A Zero-Liability, Turnkey Regulatory Guarantee</h2>
+<p>For commercial developers, facility managers, and school administrators, the offer is simple: <span class="brand">Master Tents and Shades</span> manages engineering load analysis, foundation soil testing, and municipality permit processing end to end.</p>
+<p>No legal risk or compliance stress passes to the client – the structure arrives approved, not pending approval.</p>
+</div>
+</div>
+</section>
+<!-- ============ NARRATIVE: ARCHITECTURAL VALUE ============ -->
+<section class="narrative" style="background:var(--cream-2);">
+<div class="wrap narr-grid reverse">
+<div class="narr-copy">
+<span class="eyebrow">For Villas and Boutique Hotels</span>
+<h2>Architectural Value, Not Just Fabric</h2>
+<p>A well-designed shade system should read as a permanent investment in the property, not a temporary fabric patch. A custom Hypar design or a premium material selection can turn an outdoor space into an architectural feature.</p>
+<p>For luxury villa owners, boutique hotels, and residential developers, that feature plays a real role in the property’s total appraised value – not just its comfort on a hot afternoon.</p>
+</div>
+<div class="narr-media">
+<img alt="architectural-valve-not-just-fabric" decoding="async" loading="lazy" src="/img/architectural-valve-not-just-fabric.webp" style="width:80%; height:250px; object-fit:cover; border-radius:8px"/>
+</div>
+</div>
+</section>
+<!-- ============ PROJECT TYPES ============ -->
+<section class="types">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Where This Fits</span>
+<h2>By Project Type</h2>
+</div>
+<div class="type-grid">
+<div class="type-card">
+<span class="tagpill">Commercial and Educational</span>
+<h4>Institutional Sites</h4>
+<span class="kw-chip">Commercial tensile shade structure manufacturing</span>
+<span class="kw-chip">UV-blocking school playground shade sails</span>
+<span class="kw-chip">Heavy-duty PVC car parking shade structures</span>
+</div>
+<div class="type-card">
+<span class="tagpill">Residential and Custom</span>
+<h4>Villas and Boutique Hospitality</h4>
+<span class="kw-chip">Luxury villa swimming pool sail shade installation</span>
+<span class="kw-chip">Custom architectural fabric shade structure design</span>
+<span class="kw-chip">Waterproof fabric shade structures for restaurant terraces</span>
+</div>
+<div class="type-card">
+<span class="tagpill">Maintenance and Remediation</span>
+<h4>Repair and Upkeep</h4>
+<span class="kw-chip">Emergency tensile shade fabric repair and replacement</span>
+<span class="kw-chip">Retensioning and cleaning for tensioned shade structures</span>
+<span class="kw-chip">Shade sail steel frame maintenance</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ CTA ============ -->
+<section class="cta">
+<div class="wrap">
+<h2>Talk To Our Shade Structures Team</h2>
+<p>New installation or an existing structure that needs attention – either way, we’ll take it from here.</p>
+<a class="btn" href="tel:+971562221906">Call +971 56 222 1906</a>
+</div>
+</section>
+<!-- ============ SITE FOOTER ============ -->
+<footer class="mts-footer">
+<div class="wrap mts-footer-grid">
+<div>
+<h4>About Company</h4>
+<p>Master Tents and Shades is the UAE’s leading manufacturer of steel structure tents, aluminium pergolas, car parking shades, and tensile sail structures — engineered for durability across Dubai, Sharjah, and Abu Dhabi.</p>
+</div>
+<div>
+<h4>Connect with Us</h4>
+<ul class="mts-footer-contact">
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M4 6l8 7 8-7"></path></svg><a href="mailto:info@mastertentsandshades.com">info@mastertentsandshades.com</a></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><a href="tel:+97142203352">+971 4 220 3352</a></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><a href="tel:+971562221906">+971 56 222 1906</a></li>
+</ul>
+</div>
+<div>
+<h4>Quick Links</h4>
+<ul class="mts-footer-links">
+<li><a href="/about/">About Us</a></li>
+<li><a href="/tents-suppliers-in-uae/">Tents</a></li>
+<li><a href="/pergola-shade-suppliers-in-dubai/">Pergola</a></li>
+<li><a href="/car-parking-shade-suppliers-uae/">Parking Shades</a></li>
+<li><a href="/we-are-here-to-help/">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4>Our Address</h4>
+<p># 601, Abraj Almamzar,<br/>P.O.Box: 99160, Dubai,<br/>United Arab Emirates</p>
+</div>
+</div>
+<div class="wrap mts-footer-bottom">
+<span>© 2026 All Rights Reserved. Master Tents and Shades LLC in Dubai, Sharjah, Abu Dhabi All over UAE.</span>
+<div class="mts-footer-social">
+<a aria-label="LinkedIn" href="https://www.linkedin.com/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zM8.5 8h3.8v2.06h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"></path></svg></a>
+<a aria-label="Instagram" href="https://www.instagram.com/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.55.55.9 1.1 1.15 1.76.25.64.42 1.36.47 2.43.05 1.07.06 1.42.06 4.13s-.01 3.06-.06 4.13c-.05 1.07-.22 1.79-.47 2.43-.26.66-.6 1.21-1.15 1.76-.55.55-1.1.9-1.76 1.15-.64.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.06-.01-4.13-.06c-1.07-.05-1.79-.22-2.43-.47-.66-.26-1.21-.6-1.76-1.15-.55-.55-.9-1.1-1.15-1.76-.25-.64-.42-1.36-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.13c.05-1.07.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76.55-.55 1.1-.9 1.76-1.15.64-.25 1.36-.42 2.43-.47C8.94 2.01 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.2-8.4a1.17 1.17 0 100-2.34 1.17 1.17 0 000 2.34z"></path></svg></a>
+<a aria-label="Twitter" href="https://twitter.com/mastershade23"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M23 4.9c-.8.4-1.7.6-2.6.8 1-.6 1.7-1.5 2-2.6-.9.5-1.9.9-3 1.1a4.5 4.5 0 00-7.7 4.1A12.8 12.8 0 012 3.9a4.5 4.5 0 001.4 6 4.5 4.5 0 01-2-.6v.1c0 2.2 1.5 4 3.6 4.4-.6.2-1.3.2-1.9.1.5 1.8 2.2 3.1 4.1 3.1A9 9 0 012 19.6a12.8 12.8 0 006.9 2c8.3 0 12.8-6.9 12.8-12.8v-.6c.9-.6 1.6-1.4 2.3-2.3z"></path></svg></a>
+<a aria-label="Telegram" href="https://web.telegram.org/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M22 4L2.5 11.7c-1 .4-1 1.6.1 1.9l4.9 1.5 1.9 5.9c.3.9 1.4 1.1 2 .3l2.7-3.3 5 3.7c.9.6 2.1.1 2.3-.9L23.9 5.4c.3-1.1-.8-2-1.9-1.4z"></path></svg></a>
+<a aria-label="Facebook" href="https://www.facebook.com/mastershade23"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M13.5 22v-8.3h2.8l.4-3.2h-3.2V8.4c0-.9.3-1.6 1.6-1.6h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2H10V22h3.5z"></path></svg></a>
+<a aria-label="WhatsApp" href="https://wa.me/971562221906"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.7-.8-3.1-1.2-5-4.3-5.2-4.5-.2-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l1.9 1c.2.1.4.2.5.3.1.2.1 1-.1 1.7z"></path></svg></a>
+</div>
+</div>
+<div class="mts-footer-utility">
+<a href="tel:+971562221906"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><span>Call</span></a>
+<a href="mailto:info@mastertentsandshades.com"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M4 6l8 7 8-7"></path></svg><span>Email</span></a>
+<a href="https://wa.me/971562221906"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.7-.8-3.1-1.2-5-4.3-5.2-4.5-.2-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l1.9 1c.2.1.4.2.5.3.1.2.1 1-.1 1.7z"></path></svg><span>WhatsApp</span></a>
+<a href="https://maps.google.com/?q=Abraj+Al+Mamzar+Dubai+UAE" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 22s7-7.4 7-12a7 7 0 10-14 0c0 4.6 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>Location</span></a>
+</div>
+</footer>
+</div>

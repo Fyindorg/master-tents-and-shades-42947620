@@ -1,0 +1,575 @@
+<style>
+.mts-scope{
+    --navy:#123C63;
+    --navy-deep:#0A2C4A;
+    --orange:#F5A623;
+    --orange-deep:#DD8E0E;
+    --cream:#F4EBD8;
+    --cream-2:#F8F3E6;
+    --slate:#5B6472;
+    --line:#E7DEC6;
+  }
+.mts-scope *{box-sizing:border-box; margin:0; padding:0;}
+.mts-scope{--wp--custom--ast-content-width-size:100vw;}
+.mts-scope{font-family:'Inter',sans-serif; color:var(--slate); background:#fff; line-height:1.65;}
+.mts-scope h1, .mts-scope h2, .mts-scope h3, .mts-scope h4{font-family:'Poppins',sans-serif; color:var(--navy); font-weight:700; line-height:1.25;}
+.mts-scope .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}
+.mts-scope section{padding:64px 0;}
+@media(max-width:640px){.mts-scope section{padding:40px 0;}}
+.mts-scope ul{list-style:none;}
+.mts-scope .brand{color:var(--orange-deep); font-weight:700;}
+.mts-scope .eyebrow{display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--orange-deep); margin-bottom:10px;}
+.mts-scope .s-head{max-width:720px; margin:0 auto 36px; text-align:center;}
+.mts-scope .s-head h2{font-size:26px;}
+.mts-scope .s-head p{font-size:14.5px; margin-top:10px;}
+@media(max-width:640px){.mts-scope .s-head h2{font-size:21px;}}
+.mts-scope .hero{background:var(--cream);}
+.mts-scope .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:44px; align-items:center;}
+@media(max-width:900px){.mts-scope .hero-grid{grid-template-columns:1fr;}}
+.mts-scope .hero h1{font-size:30px; max-width:18ch; margin-bottom:16px; text-align:left;}
+@media(max-width:640px){.mts-scope .hero h1{font-size:23px;}}
+.mts-scope .hero p{max-width:54ch; margin-bottom:22px; font-size:15px; text-align:left;}
+.mts-scope .badge-row{display:flex; gap:12px; flex-wrap:wrap;}
+.mts-scope .badge{display:flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--line); border-radius:100px; padding:9px 18px; font-size:12.5px; font-weight:700; color:var(--navy);}
+.mts-scope .badge svg{width:16px; height:16px; color:var(--orange-deep);}
+.mts-scope .hero-form{background:#fff; border-radius:14px; padding:28px; box-shadow:0 16px 40px rgba(10,44,74,.14); border:1px solid var(--line);}
+.mts-scope .hero-call{display:flex; align-items:center; gap:12px; background:var(--navy); color:#fff; border-radius:10px; padding:14px 16px; margin-bottom:18px;}
+.mts-scope .hero-call .icon{width:38px; height:38px; border-radius:50%; background:var(--orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+.mts-scope .hero-call .icon svg{width:18px; height:18px; color:#fff;}
+.mts-scope .hero-call span{display:block; font-size:10.5px; color:#B7CADA; text-transform:uppercase; letter-spacing:.04em;}
+.mts-scope .hero-call a{font-size:16px; font-weight:700; color:#fff;}
+.mts-scope .hero-form h3{font-size:16.5px; margin-bottom:14px;}
+.mts-scope .hero-form input, .mts-scope .hero-form select, .mts-scope .hero-form textarea{width:100%; border:1px solid var(--line); background:var(--cream-2); border-radius:7px; padding:11px 13px; font-family:'Inter'; font-size:13.5px; margin-bottom:10px; color:var(--navy);}
+.mts-scope .hero-form textarea{resize:vertical; min-height:56px;}
+.mts-scope .hero-form button{width:100%; background:var(--orange); color:#fff; border:none; border-radius:7px; padding:12px; font-weight:700; font-size:13.5px; cursor:pointer;}
+.mts-scope .hero-form button:hover{background:var(--orange-deep);}
+.mts-scope .personas{background:#fff;}
+.mts-scope .persona-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+@media(max-width:800px){.mts-scope .persona-grid{grid-template-columns:1fr;}}
+.mts-scope .persona-card{border:1px solid var(--line); border-radius:12px; padding:28px; background:var(--cream-2);}
+.mts-scope .persona-card .tagpill{display:inline-block; font-size:11px; font-weight:700; color:#fff; background:var(--navy); padding:5px 12px; border-radius:100px; margin-bottom:12px;}
+.mts-scope .persona-card h3{font-size:19px; margin-bottom:10px;}
+.mts-scope .persona-card p{font-size:14px;}
+.mts-scope .assurance{background:var(--cream-2);}
+.mts-scope .assure-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+@media(max-width:860px){.mts-scope .assure-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.mts-scope .assure-grid{grid-template-columns:1fr;}}
+.mts-scope .assure-card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:24px;}
+.mts-scope .assure-card .ic{width:44px; height:44px; border-radius:10px; background:var(--navy); display:flex; align-items:center; justify-content:center; margin-bottom:14px;}
+.mts-scope .assure-card .ic svg{width:22px; height:22px; color:var(--orange);}
+.mts-scope .assure-card h3{font-size:16px; margin-bottom:8px;}
+.mts-scope .assure-card p{font-size:13px;}
+.mts-scope .materials{background:#fff;}
+.mts-scope .mat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+@media(max-width:860px){.mts-scope .mat-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.mts-scope .mat-grid{grid-template-columns:1fr;}}
+.mts-scope .mat-card{border:1px solid var(--line); border-radius:12px; padding:24px; background:var(--cream-2);}
+.mts-scope .mat-card .tag{font-family:'Poppins'; font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--orange-deep); margin-bottom:8px; display:block; font-weight:700;}
+.mts-scope .mat-card h4{font-size:16.5px; margin-bottom:8px;}
+.mts-scope .mat-card p{font-size:13px; margin-bottom:12px;}
+.mts-scope .mat-tags{display:flex; gap:7px; flex-wrap:wrap;}
+.mts-scope .mat-tag{font-size:10.5px; font-weight:700; color:var(--navy); background:#fff; border:1px solid var(--line); padding:4px 9px; border-radius:6px;}
+.mts-scope .variations{background:var(--navy); color:#EAE6DA;}
+.mts-scope .variations .s-head h2{color:#fff;}
+.mts-scope .variations .s-head p{color:#C7CADA;}
+.mts-scope .var-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+@media(max-width:860px){.mts-scope .var-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.mts-scope .var-grid{grid-template-columns:1fr;}}
+.mts-scope .var-card{background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); border-radius:12px; padding:22px;}
+.mts-scope .var-card .ic{width:38px; height:38px; border-radius:9px; background:var(--orange); display:flex; align-items:center; justify-content:center; margin-bottom:14px;}
+.mts-scope .var-card .ic svg{width:19px; height:19px; color:#fff;}
+.mts-scope .var-card h4{color:#fff; font-size:15px; margin-bottom:8px;}
+.mts-scope .var-card p{font-size:12.5px; color:#B7BBCC; margin-bottom:12px;}
+.mts-scope .var-card.wide{grid-column:span 1;}
+.mts-scope .var-specs{border-top:1px dashed rgba(255,255,255,.18); padding-top:10px;}
+.mts-scope .var-specs li{display:flex; justify-content:space-between; gap:8px; font-size:11px; color:#B7BBCC; margin-bottom:5px;}
+.mts-scope .var-specs li:last-child{margin-bottom:0;}
+.mts-scope .var-specs li b{color:#F5A623; font-weight:600; white-space:nowrap;}
+.mts-scope .var-specs li em{font-style:normal; text-align:right; color:#EAE6DA;}
+.mts-scope .retail{background:var(--cream-2);}
+.mts-scope .prod-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
+@media(max-width:900px){.mts-scope .prod-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.mts-scope .prod-grid{grid-template-columns:1fr;}}
+.mts-scope .prod-card{background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px 16px 14px;}
+.mts-scope .prod-card h4{font-size:12.5px; margin-bottom:10px; line-height:1.35; min-height:48px;}
+.mts-scope .prod-list{border-top:1px dashed var(--line); padding-top:9px;}
+.mts-scope .prod-list li{display:flex; justify-content:space-between; gap:8px; font-size:11px; color:var(--slate); margin-bottom:4px;}
+.mts-scope .prod-list li:last-child{margin-bottom:0;}
+.mts-scope .prod-list li b{color:var(--navy); font-weight:600; white-space:nowrap;}
+.mts-scope .prod-list li em{font-style:normal; text-align:right;}
+.mts-scope .narrative{border-top:1px solid var(--line);}
+.mts-scope .narr-grid{display:grid; grid-template-columns:.9fr 1.1fr; gap:40px; align-items:center;}
+@media(max-width:860px){.mts-scope .narr-grid{grid-template-columns:1fr;}}
+.mts-scope .narr-grid.reverse .narr-media{order:2;}
+@media(max-width:860px){.mts-scope .narr-grid.reverse .narr-media{order:0;}}
+.mts-scope .narr-media{aspect-ratio:4/3; border-radius:14px; display:flex; align-items:center; justify-content:center; overflow:hidden;}
+.mts-scope .narr-media svg{width:70%; height:70%;}
+.mts-scope .narr-copy h2{font-size:23px; margin-bottom:14px; max-width:22ch;}
+.mts-scope .narr-copy p{font-size:14.5px; margin-bottom:12px; max-width:56ch;}
+.mts-scope .types{background:var(--cream-2);}
+.mts-scope .type-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+@media(max-width:860px){.mts-scope .type-grid{grid-template-columns:1fr;}}
+.mts-scope .type-card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:24px;}
+.mts-scope .type-card .tagpill{display:inline-block; font-size:11px; font-weight:700; color:#fff; background:var(--navy); padding:5px 12px; border-radius:100px; margin-bottom:12px;}
+.mts-scope .type-card h4{font-size:15.5px; margin-bottom:12px;}
+.mts-scope .kw-chip{display:block; font-size:12px; color:var(--navy); background:var(--cream-2); border:1px solid var(--line); padding:8px 10px; border-radius:7px; margin-bottom:8px;}
+.mts-scope .kw-chip:last-child{margin-bottom:0;}
+
+/* ---------- CROSS-SELL ---------- */
+.mts-scope .cross-sell{background:#fff;}
+.mts-scope .cross-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+@media(max-width:760px){.mts-scope .cross-grid{grid-template-columns:1fr;}}
+.mts-scope .cross-card{display:block; border:1px solid var(--line); border-radius:12px; overflow:hidden; text-decoration:none; background:var(--cream-2); transition:box-shadow .2s;}
+.mts-scope .cross-card:hover{box-shadow:0 10px 24px rgba(10,44,74,.12);}
+.mts-scope .cross-photo{aspect-ratio:4/3; overflow:hidden;}
+.mts-scope .cross-photo img{width:100%; height:100%; object-fit:cover; display:block;}
+.mts-scope .cross-card h4{font-size:15px; padding:16px 18px; text-align:center;}
+
+/* ---------- FOOTER ---------- */
+.mts-scope .mts-footer{background:var(--navy-deep); color:#B7CADA;}
+.mts-scope .mts-footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:32px; padding:56px 0 36px;}
+@media(max-width:860px){.mts-scope .mts-footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.mts-scope .mts-footer-grid{grid-template-columns:1fr;}}
+.mts-scope .mts-footer h4{color:#fff; font-size:15px; margin-bottom:16px;}
+.mts-scope .mts-footer p{font-size:13px; line-height:1.7; color:#9FB0C4;}
+.mts-scope .mts-footer-contact{display:flex; flex-direction:column; gap:12px;}
+.mts-scope .mts-footer-contact li{display:flex; align-items:center; gap:10px; font-size:13px;}
+.mts-scope .mts-footer-contact svg{width:15px; height:15px; color:var(--orange); flex-shrink:0;}
+.mts-scope .mts-footer-contact a{color:#B7CADA; text-decoration:none;}
+.mts-scope .mts-footer-contact a:hover{color:#fff;}
+.mts-scope .mts-footer-links{display:flex; flex-direction:column; gap:10px;}
+.mts-scope .mts-footer-links a{color:#B7CADA; text-decoration:none; font-size:13px;}
+.mts-scope .mts-footer-links a:hover{color:#fff;}
+.mts-scope .mts-footer-bottom{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:20px 0; border-top:1px solid rgba(255,255,255,.1); font-size:12px; color:#8CA0B8;}
+.mts-scope .mts-footer-social{display:flex; gap:14px;}
+.mts-scope .mts-footer-social a{width:32px; height:32px; border-radius:50%; background:rgba(255,255,255,.08); display:flex; align-items:center; justify-content:center; color:#fff; flex-shrink:0;}
+.mts-scope .mts-footer-social svg{width:15px; height:15px;}
+.mts-scope .mts-footer-social a:hover{background:var(--orange);}
+.mts-scope .mts-footer-utility{display:flex; background:#fff;}
+.mts-scope .mts-footer-utility a{flex:1; display:flex; align-items:center; justify-content:center; gap:8px; padding:14px 8px; font-size:12.5px; font-weight:700; color:var(--navy); text-decoration:none; border-right:1px solid var(--line);}
+.mts-scope .mts-footer-utility a:last-child{border-right:none;}
+.mts-scope .mts-footer-utility svg{width:16px; height:16px; color:var(--orange-deep);}
+@media(max-width:640px){.mts-scope .mts-footer-utility{position:sticky; bottom:0; z-index:20;} .mts-scope .mts-footer-utility a span{display:none;}}
+.mts-scope .cta{background:var(--orange); color:#fff; text-align:center;}
+.mts-scope .cta h2{color:#fff; font-size:27px; margin-bottom:12px;}
+.mts-scope .cta p{color:#FCEBD0; margin-bottom:22px; font-size:14.5px;}
+.mts-scope .btn{display:inline-flex; align-items:center; gap:8px; background:var(--navy); color:#fff; font-weight:700; font-size:13.5px; padding:13px 26px; border-radius:7px; border:none;}
+.mts-scope footer{background:var(--navy-deep); color:#93A3B8; text-align:center; padding:22px 0; font-size:12px;}
+</style>
+<div class="mts-scope">
+<!-- ============ HERO ============ -->
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow">Aluminium Pergolas</span>
+<h1>Aluminium Pergolas in the UAE</h1>
+<p><span class="brand">Master Tents and Shades</span> designs and builds motorised, structural-grade aluminium pergolas for villa gardens, pool decks, and commercial terraces – engineered to handle desert heat, coastal salt air, and UAE wind loads without the upkeep wood or iron demand.</p>
+<div class="badge-row">
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Zero-Maintenance Aluminium</span>
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg> Wind-Rated to 120 km/h</span>
+<span class="badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M9 11l3 3L22 4M12 21a9 9 0 1 1 8-13"></path></svg> Full Turnkey Execution</span>
+</div>
+</div>
+<div class="hero-form">
+<div class="hero-call">
+<div class="icon"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg></div>
+<div><span>Call us now</span><a href="tel:+971562221906">+971 56 222 1906</a></div>
+</div>
+<h3>Request A 3D Rendering</h3>
+<input placeholder="Name *" type="text"/>
+<input placeholder="Phone *" type="tel"/>
+<select><option>Residential Villa</option><option>Hotel / Restaurant Terrace</option><option>Not Sure Yet</option></select>
+<textarea placeholder="Tell us about your space"></textarea>
+<button type="button">Submit Enquiry</button>
+</div>
+</div>
+</section>
+<!-- ============ PERSONAS ============ -->
+<section class="personas">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Who We Work With</span>
+<h2>Aluminium Pergolas Built For Two Kinds of Outdoor Space</h2>
+</div>
+<div class="persona-grid">
+<div class="persona-card">
+<span class="tagpill">Luxury Residential</span>
+<h3>Villa Owners in Premium Developments</h3>
+<p>High-net-worth villa owners in developments like Emirates Hills, Arabian Ranches, or Yas Island, looking to extend indoor living space outside with an aluminium pergola – a modern lounge, an outdoor kitchen backdrop, or a shaded poolside retreat.</p>
+</div>
+<div class="persona-card">
+<span class="tagpill">Commercial Hospitality</span>
+<h3>Hotels, Beach Clubs &amp; Restaurants</h3>
+<p>Boutique hotels, beach clubs, and fine-dining restaurants using a commercial pergola to maximise outdoor seating capacity year-round – especially through the shoulder seasons when guests move between indoor and outdoor dining.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ GUARANTEES ============ -->
+<section class="assurance">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">What We Guarantee</span>
+<h2>Aluminium Pergolas Built to Outlast Wood and Iron</h2>
+</div>
+<div class="assure-grid">
+<div class="assure-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M9 11l3 3L22 4M12 21a9 9 0 1 1 8-13"></path></svg></div>
+<h3>Zero-Maintenance Aluminium Pergola</h3>
+<p>Wood cracks and warps in UAE humidity; iron rusts. A powder-coated aluminium pergola needs no oiling, sanding, or chemical treatment.</p>
+</div>
+<div class="assure-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="16" rx="3" width="16" x="4" y="4"></rect><path d="M8 4v16M16 4v16M4 8h16M4 16h16"></path></svg></div>
+<h3>True Smart Home Integration</h3>
+<p>Motorised pergola systems connect directly to Apple HomeKit, Google Home, Control4, or Somfy – controlled by voice or app.</p>
+</div>
+<div class="assure-card">
+<div class="ic"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"></path></svg></div>
+<h3>Full Turnkey Pergola Execution</h3>
+<p>Architectural design, foundation calculations, municipal approvals, and on-site pergola assembly – handled as one process.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ MATERIALS ============ -->
+<section class="materials">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Build Quality</span>
+<h2>Aluminium Pergolas Engineered for Desert &amp; Coastal Conditions</h2>
+</div>
+<div class="mat-grid">
+<div class="mat-card">
+<span class="tag">Structure</span>
+<h4>Pergola Aluminium Profile &amp; Thickness</h4>
+<p>Heavy-duty, structural-grade extruded aluminium alloy, with pergola profile thickness engineered to support heavy spans without sagging.</p>
+<div class="mat-tags"><span class="mat-tag">6063-T6 Alloy</span><span class="mat-tag">No-Sag Spans</span></div>
+</div>
+<div class="mat-card">
+<span class="tag">Finish</span>
+<h4>Pergola Powder Coating Excellence</h4>
+<p>Architectural-grade coating on every aluminium pergola that actively resists salt-air corrosion, chalking, and bleaching under 50°C+ summer UV.</p>
+<div class="mat-tags"><span class="mat-tag">Qualicoat Class 2</span><span class="mat-tag">AkzoNobel</span></div>
+</div>
+<div class="mat-card">
+<span class="tag">Engineering</span>
+<h4>Pergola Wind &amp; Water Management</h4>
+<p>Internal gutter systems hidden inside the pergola posts channel winter rain away, with structural engineering certified for high wind loads.</p>
+<div class="mat-tags"><span class="mat-tag">Hidden Gutters</span><span class="mat-tag">120 km/h Rated</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ ARCHITECTURAL VARIATIONS ============ -->
+<section class="variations">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow" style="color:#F5A623;">Product Range</span>
+<h2>Architectural Variations We Build</h2>
+</div>
+<div class="var-grid">
+<div class="var-card">
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 8h16M4 12h16M4 16h16"></path></svg></div>
+<h4>Bioclimatic Motorized Louvered Pergolas</h4>
+<p>Automated, rotating louvers that open for ventilation, tilt to block sun, or seal completely into a waterproof roof.</p>
+<ul class="var-specs">
+<li><b>Frame Material</b><em>6063-T6 Aluminium</em></li>
+<li><b>Louver Control</b><em>Motorized, App/Remote</em></li>
+<li><b>Waterproofing</b><em>100% When Sealed</em></li>
+<li><b>Wind Rating</b><em>Up to 120 km/h</em></li>
+</ul>
+</div>
+<div class="var-card">
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 18V8l8-4 8 4v10"></path><path d="M4 12h16"></path></svg></div>
+<h4>Retractable Fabric Roof Pergolas</h4>
+<p>A rigid aluminium frame paired with a motorised, folding fabric canopy that stacks away at the press of a button.</p>
+<ul class="var-specs">
+<li><b>Frame Material</b><em>Extruded Aluminium</em></li>
+<li><b>Canopy Fabric</b><em>PVC / Polyurethane</em></li>
+<li><b>Operation</b><em>Motorized Retract</em></li>
+<li><b>Best For</b><em>Seasonal Shade Control</em></li>
+</ul>
+</div>
+<div class="var-card">
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><rect height="14" rx="2" width="14" x="5" y="5"></rect><path d="M5 5l14 14M19 5L5 19" opacity=".4"></path></svg></div>
+<h4>Freestanding Island Pergolas</h4>
+<p>Self-supporting, four-post structures built for open lawns, expansive villa gardens, or beachside resort lounges.</p>
+<ul class="var-specs">
+<li><b>Support</b><em>Four-Post, Self-Supporting</em></li>
+<li><b>Foundation</b><em>Independent Footings</em></li>
+<li><b>Finish</b><em>Qualicoat Class 2</em></li>
+<li><b>Best For</b><em>Open Lawns, Beachfront</em></li>
+</ul>
+</div>
+<div class="var-card">
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20V10l8-6 8 6v10"></path><path d="M4 10h16"></path></svg></div>
+<h4>Wall-Mounted / Attached Pergolas</h4>
+<p>Anchored directly to the villa or restaurant facade, creating a pillar-free transition from indoor space to patio.</p>
+<ul class="var-specs">
+<li><b>Mounting</b><em>Facade-Anchored</em></li>
+<li><b>Support Posts</b><em>Front Posts Only</em></li>
+<li><b>Drainage</b><em>Hidden Internal Gutter</em></li>
+<li><b>Best For</b><em>Restaurant / Villa Terraces</em></li>
+</ul>
+</div>
+<div class="var-card">
+<div class="ic"><svg fill="none" stroke="#fff" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"></path><circle cx="12" cy="12" r="4"></circle></svg></div>
+<h4>Integrated Smart Pergola Systems</h4>
+<p>Hidden LED lighting, misting nozzles, built-in heaters, and motorised zip-screens for wind and privacy control.</p>
+<ul class="var-specs">
+<li><b>Lighting</b><em>Hidden Perimeter LED</em></li>
+<li><b>Cooling</b><em>Integrated Misting</em></li>
+<li><b>Heating</b><em>Built-In Outdoor Heaters</em></li>
+<li><b>Privacy</b><em>Motorized Zip-Screens</em></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ RETAIL PERGOLA PRODUCTS ============ -->
+<section class="retail">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Configurable Options</span>
+<h2>Pre-Made &amp; Configurable Pergola Specifications</h2>
+<p>For smaller balconies and standard-size patios, these are the common configurable aluminium pergola formats we can supply or match, alongside our fully custom, engineered pergola installations.</p>
+</div>
+<div class="prod-grid">
+<div class="prod-card">
+<h4>6000 Series Extruded Aluminium Stand Column, Louvered</h4>
+<ul class="prod-list">
+<li><b>Material</b><em>6000 Series Aluminium</em></li>
+<li><b>Finish</b><em>Powder Coated</em></li>
+<li><b>Component</b><em>Stand Column</em></li>
+<li><b>Louver Type</b><em>Louvered</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Folding Aluminium Pavilion, 3×6 m, Courtyard/Terrace</h4>
+<ul class="prod-list">
+<li><b>Type</b><em>Folding Pavilion</em></li>
+<li><b>Size</b><em>3 m × 6 m</em></li>
+<li><b>Frame</b><em>Aluminium</em></li>
+<li><b>Use Case</b><em>Courtyard / Terrace</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Customizable Automatic Pergola with LED Louvers</h4>
+<ul class="prod-list">
+<li><b>Type</b><em>Motorized Louvered</em></li>
+<li><b>Lighting</b><em>Integrated LED Louvers</em></li>
+<li><b>Customization</b><em>Configurable Size</em></li>
+<li><b>Use Case</b><em>Balcony Gazebo</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Waterproof UV-Resistant Retractable Gazebo Pergola</h4>
+<ul class="prod-list">
+<li><b>Type</b><em>Retractable Canopy</em></li>
+<li><b>Waterproofing</b><em>Waterproof</em></li>
+<li><b>UV Protection</b><em>UV-Resistant</em></li>
+<li><b>Use Case</b><em>Garden, Party, Wedding</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Deluxe Full Aluminium Pergola</h4>
+<ul class="prod-list">
+<li><b>Frame</b><em>100% Aluminium</em></li>
+<li><b>Grade</b><em>Deluxe / Premium</em></li>
+<li><b>Finish</b><em>Powder Coated</em></li>
+<li><b>Best For</b><em>Full-Coverage Installs</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Bioclimatic Large-Format Motorized Louvered Gazebo</h4>
+<ul class="prod-list">
+<li><b>Type</b><em>Bioclimatic Louvered</em></li>
+<li><b>Size</b><em>Large Format</em></li>
+<li><b>Control</b><em>Motorized</em></li>
+<li><b>Use Case</b><em>Patio, Garden, Party</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Motorized Louvered Pergola, Hidden Drainage &amp; LED</h4>
+<ul class="prod-list">
+<li><b>Color Options</b><em>White / Black / Gray</em></li>
+<li><b>Rating</b><em>Waterproof &amp; Windproof</em></li>
+<li><b>Drainage</b><em>Hidden Internal</em></li>
+<li><b>Lighting</b><em>Integrated LED</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Luxury Large-Size Motorized Bioclimatic Canopy</h4>
+<ul class="prod-list">
+<li><b>Grade</b><em>Luxury</em></li>
+<li><b>Size</b><em>Large Format</em></li>
+<li><b>Type</b><em>Motorized Bioclimatic</em></li>
+<li><b>Best For</b><em>Statement Outdoor Spaces</em></li>
+</ul>
+</div>
+<div class="prod-card">
+<h4>Retractable Louvered Pergola, Electric with Remote</h4>
+<ul class="prod-list">
+<li><b>Type</b><em>Retractable Louvered</em></li>
+<li><b>Control</b><em>Motorized Electric + Remote</em></li>
+<li><b>Use Case</b><em>Garden Pavilion</em></li>
+<li><b>Configuration</b><em>Multiple Layouts</em></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ NARRATIVE 1: 365-DAY LIVING ROOM ============ -->
+<section class="narrative">
+<div class="wrap narr-grid">
+<div class="narr-media">
+<img alt="Motorized aluminium louvered pergola over a villa patio, UAE" decoding="async" loading="lazy" src="/img/pergola-living-room.webp" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+<div class="narr-copy">
+<span class="eyebrow">Positioning</span>
+<h2>The 365-Day Outdoor Living Room</h2>
+<p>The right way to see a bioclimatic pergola isn’t as a shading product – it’s an asset class. Integrated misting, automated zip-screens, and heavy insulation turn a blistering July patio into a functional, breezy outdoor lounge.</p>
+<p>Framed this way, it isn’t covering square footage – it’s adding climate-controlled square footage to the property.</p>
+</div>
+</div>
+</section>
+<!-- ============ NARRATIVE 2: DESERT-PROOFED ============ -->
+<section class="narrative" style="background:var(--cream-2);">
+<div class="wrap narr-grid reverse">
+<div class="narr-copy">
+<span class="eyebrow">Positioning</span>
+<h2>Desert-Proofed Pergola Surface Engineering</h2>
+<p>It’s not enough to say a pergola is durable – the contrast with standard market offerings needs to be explicit. Our architectural-grade powder coating is chosen specifically to resist the abrasive sandblasting of desert winds and the aggressive salt-air oxidation found along the UAE coast.</p>
+<p>Those are exactly the two conditions that wear a standard-grade finish down within a couple of seasons.</p>
+</div>
+<div class="narr-media">
+<img alt="Desert-proofed powder-coated aluminium pergola over a commercial entrance canopy" decoding="async" loading="lazy" src="/img/desert-proofed-pergola.webp"/>
+</div>
+</div>
+</section>
+<!-- ============ NARRATIVE 3: WHITE-GLOVE ============ -->
+<section class="narrative">
+<div class="wrap narr-grid">
+<div class="narr-media">
+<img alt="White-glove installed motorized louvered pergola over a villa terrace with outdoor lounge seating" decoding="async" loading="lazy" src="/img/zero-fuss-white-glove-pergola.webp"/>
+</div>
+<div class="narr-copy">
+<span class="eyebrow">Positioning</span>
+<h2>Zero-Fuss, White-Glove Pergola Installation</h2>
+<p>Busy professionals and luxury homeowners share one frustration with construction: delays. The promise here is a frictionless pergola installation process – a 3D rendering within 48 hours, modular engineering pre-fabricated off-site at the factory, and on-site pergola assembly completed in under 48 hours.</p>
+<p>No mess left behind, and no damage to the surrounding landscape.</p>
+</div>
+</div>
+</section>
+<!-- ============ WHERE THIS FITS ============ -->
+<section class="types">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Where This Fits</span>
+<h2>Aluminium Pergolas By Project Type</h2>
+</div>
+<div class="type-grid">
+<div class="type-card">
+<span class="tagpill">Luxury &amp; Residential</span>
+<h4>Villa Pergolas &amp; Private Gardens</h4>
+<span class="kw-chip">Motorised bioclimatic aluminium pergola supply</span>
+<span class="kw-chip">Automated pergola installation for luxury villa gardens</span>
+<span class="kw-chip">Custom freestanding aluminium pergolas for pool decks</span>
+</div>
+<div class="type-card">
+<span class="tagpill">Commercial &amp; Hospitality</span>
+<h4>Hotel &amp; Restaurant Pergolas</h4>
+<span class="kw-chip">Heavy-duty commercial aluminium pergolas for restaurants</span>
+<span class="kw-chip">Waterproof retractable pergola systems for hotel terraces</span>
+<span class="kw-chip">Weatherproof powder-coated aluminium pergola manufacturing</span>
+</div>
+<div class="type-card">
+<span class="tagpill">Feature-Specific</span>
+<h4>Smart &amp; Low-Maintenance Pergolas</h4>
+<span class="kw-chip">Smart home integrated louvered pergolas</span>
+<span class="kw-chip">Aluminium pergolas with misting systems and LED lighting</span>
+<span class="kw-chip">Low-maintenance UV-resistant modern aluminium pergolas</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ EXPLORE MORE ============ -->
+<section class="cross-sell">
+<div class="wrap">
+<div class="s-head">
+<span class="eyebrow">Explore More</span>
+<h2>Other Shade Solutions From Master Tents and Shades</h2>
+</div>
+<div class="cross-grid">
+<a class="cross-card" href="/car-parking-shade-suppliers-uae/">
+<div class="cross-photo"><img alt="Awning shade canopy" decoding="async" loading="lazy" src="/img/awning-shade-cross.webp"/></div>
+<h4>Car Parking Shades</h4>
+</a>
+<a class="cross-card" href="/new-awning-shades-in-dubai/">
+<div class="cross-photo"><img alt="Car parking shade sail" decoding="async" loading="lazy" src="/img/car-parking-shade-cross.webp"/></div>
+<h4>Awning Shades</h4>
+</a>
+<a class="cross-card" href="/new-swimming-pool-shades-in-dubai/">
+<div class="cross-photo"><img alt="Swimming pool sail shade" decoding="async" loading="lazy" src="/img/pool-shade-cross.webp"/></div>
+<h4>Swimming Pool Shades</h4>
+</a>
+</div>
+</div>
+</section>
+<!-- ============ CTA ============ -->
+<section class="cta">
+<div class="wrap">
+<h2>Talk To Our Aluminium Pergola Design Team</h2>
+<p>Villa garden, pool deck, or hotel terrace – tell us about your pergola project and we will have a 3D rendering back to you within 48 hours.</p>
+<a class="btn" href="tel:+971562221906">Call +971 56 222 1906</a>
+</div>
+</section>
+<!-- ============ SITE FOOTER ============ -->
+<footer class="mts-footer">
+<div class="wrap mts-footer-grid">
+<div>
+<h4>About Company</h4>
+<p>Master Tents and Shades is the UAE’s leading manufacturer of steel structure tents, aluminium pergolas, car parking shades, and tensile sail structures — engineered for durability across Dubai, Sharjah, and Abu Dhabi.</p>
+</div>
+<div>
+<h4>Connect with Us</h4>
+<ul class="mts-footer-contact">
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M4 6l8 7 8-7"></path></svg><a href="mailto:info@mastertentsandshades.com">info@mastertentsandshades.com</a></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><a href="tel:+97142203352">+971 4 220 3352</a></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><a href="tel:+971562221906">+971 56 222 1906</a></li>
+</ul>
+</div>
+<div>
+<h4>Quick Links</h4>
+<ul class="mts-footer-links">
+<li><a href="/about/">About Us</a></li>
+<li><a href="/tents-suppliers-in-uae/">Tents</a></li>
+<li><a href="/pergola-shade-suppliers-in-dubai/">Pergola</a></li>
+<li><a href="/car-parking-shade-suppliers-uae/">Parking Shades</a></li>
+<li><a href="/we-are-here-to-help/">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4>Our Address</h4>
+<p># 601, Abraj Almamzar,<br/>P.O.Box: 99160, Dubai,<br/>United Arab Emirates</p>
+</div>
+</div>
+<div class="wrap mts-footer-bottom">
+<span>© 2026 All Rights Reserved. Master Tents and Shades LLC in Dubai, Sharjah, Abu Dhabi All over UAE.</span>
+<div class="mts-footer-social">
+<a aria-label="LinkedIn" href="https://www.linkedin.com/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zM8.5 8h3.8v2.06h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"></path></svg></a>
+<a aria-label="Instagram" href="https://www.instagram.com/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.55.55.9 1.1 1.15 1.76.25.64.42 1.36.47 2.43.05 1.07.06 1.42.06 4.13s-.01 3.06-.06 4.13c-.05 1.07-.22 1.79-.47 2.43-.26.66-.6 1.21-1.15 1.76-.55.55-1.1.9-1.76 1.15-.64.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.06-.01-4.13-.06c-1.07-.05-1.79-.22-2.43-.47-.66-.26-1.21-.6-1.76-1.15-.55-.55-.9-1.1-1.15-1.76-.25-.64-.42-1.36-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.13c.05-1.07.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76.55-.55 1.1-.9 1.76-1.15.64-.25 1.36-.42 2.43-.47C8.94 2.01 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.2-8.4a1.17 1.17 0 100-2.34 1.17 1.17 0 000 2.34z"></path></svg></a>
+<a aria-label="Twitter" href="https://twitter.com/mastershade23"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M23 4.9c-.8.4-1.7.6-2.6.8 1-.6 1.7-1.5 2-2.6-.9.5-1.9.9-3 1.1a4.5 4.5 0 00-7.7 4.1A12.8 12.8 0 012 3.9a4.5 4.5 0 001.4 6 4.5 4.5 0 01-2-.6v.1c0 2.2 1.5 4 3.6 4.4-.6.2-1.3.2-1.9.1.5 1.8 2.2 3.1 4.1 3.1A9 9 0 012 19.6a12.8 12.8 0 006.9 2c8.3 0 12.8-6.9 12.8-12.8v-.6c.9-.6 1.6-1.4 2.3-2.3z"></path></svg></a>
+<a aria-label="Telegram" href="https://web.telegram.org/"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M22 4L2.5 11.7c-1 .4-1 1.6.1 1.9l4.9 1.5 1.9 5.9c.3.9 1.4 1.1 2 .3l2.7-3.3 5 3.7c.9.6 2.1.1 2.3-.9L23.9 5.4c.3-1.1-.8-2-1.9-1.4z"></path></svg></a>
+<a aria-label="Facebook" href="https://www.facebook.com/mastershade23"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M13.5 22v-8.3h2.8l.4-3.2h-3.2V8.4c0-.9.3-1.6 1.6-1.6h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2H10V22h3.5z"></path></svg></a>
+<a aria-label="WhatsApp" href="https://wa.me/971562221906"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.7-.8-3.1-1.2-5-4.3-5.2-4.5-.2-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l1.9 1c.2.1.4.2.5.3.1.2.1 1-.1 1.7z"></path></svg></a>
+</div>
+</div>
+<div class="mts-footer-utility">
+<a href="tel:+971562221906"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"></path></svg><span>Call</span></a>
+<a href="mailto:info@mastertentsandshades.com"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M4 6l8 7 8-7"></path></svg><span>Email</span></a>
+<a href="https://wa.me/971562221906"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.7-.8-3.1-1.2-5-4.3-5.2-4.5-.2-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l1.9 1c.2.1.4.2.5.3.1.2.1 1-.1 1.7z"></path></svg><span>WhatsApp</span></a>
+<a href="https://maps.google.com/?q=Abraj+Al+Mamzar+Dubai+UAE" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 22s7-7.4 7-12a7 7 0 10-14 0c0 4.6 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>Location</span></a>
+</div>
+</footer>
+</div>

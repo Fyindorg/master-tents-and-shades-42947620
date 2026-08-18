@@ -8552,146 +8552,48 @@
     "pad": "15px 0px 15px 0px",
     "blocks": [
      {
-      "t": "row",
-      "cols": [
-       [
-        {
-         "t": "row",
-         "cols": [
-          [
-           {
-            "t": "img",
-            "src": "/img/Wooden-Pergola-Shade-306x230x36x0x232x230x1721992958.webp",
-            "alt": "",
-            "href": "/wp-content/uploads/2024/07/Wooden-Pergola-Shade.webp"
-           },
-           {
-            "t": "p",
-            "text": "Outdoor Pergola",
-            "align": "center",
-            "fs": 18,
-            "fw": 500
-           }
-          ],
-          [
-           {
-            "t": "img",
-            "src": "/img/New-Outdoor-Pergola-232x174x0x0x232x174x1721140874.webp",
-            "alt": "alt=",
-            "href": "/wp-content/uploads/2024/07/New-Outdoor-Pergola.webp"
-           },
-           {
-            "t": "p",
-            "text": "Garden Pergola",
-            "align": "center",
-            "fs": 18,
-            "fw": 500
-           }
-          ],
-          [
-           {
-            "t": "img",
-            "src": "/img/Aluminum-pergola-suppliers-232x174x0x0x232x174x1721128395.webp",
-            "alt": "alt=",
-            "href": "/wp-content/uploads/2024/07/Aluminum-pergola-suppliers.webp"
-           },
-           {
-            "t": "p",
-            "text": "Aluminum Pergola",
-            "align": "center",
-            "fs": 18,
-            "fw": 500
-           }
-          ]
-         ]
-        },
-        {
-         "t": "row",
-         "cols": [
-          [
-           {
-            "t": "img",
-            "src": "/img/Transparent-Pergola-Shade-232x216x0x0x232x216x1721993845.webp",
-            "alt": "",
-            "href": "/wp-content/uploads/2024/07/Transparent-Pergola-Shade.webp"
-           },
-           {
-            "t": "p",
-            "text": "Outdoor Pergola",
-            "align": "center",
-            "fs": 18,
-            "fw": 500
-           }
-          ],
-          [
-           {
-            "t": "img",
-            "src": "/img/Motorized-louvered-pergolas-232x154x0x0x232x154x1718795351.webp",
-            "alt": "alt=",
-            "href": "/wp-content/uploads/2024/06/Motorized-louvered-pergolas.webp"
-           },
-           {
-            "t": "p",
-            "text": "Steel Pergola",
-            "align": "center",
-            "fs": 18,
-            "fw": 500
-           }
-          ],
-          [
-           {
-            "t": "img",
-            "src": "/img/FIBER-GLASS-PERGOLA-232x174x0x8x232x156x1721140387.webp",
-            "alt": "alt=",
-            "href": "/wp-content/uploads/2024/07/FIBER-GLASS-PERGOLA.webp"
-           },
-           {
-            "t": "p",
-            "text": "Wooden Pergola",
-            "align": "center",
-            "fs": 18,
-            "fw": 500
-           }
-          ]
-         ]
-        },
-        {
-         "t": "row",
-         "cols": [
-          [
-           {
-            "t": "img",
-            "src": "/img/Swimming-Pool-Pergola-Shade-232x174x0x0x232x174x1721998090.webp",
-            "alt": "",
-            "href": "/wp-content/uploads/2024/07/Swimming-Pool-Pergola-Shade.webp"
-           },
-           {
-            "t": "p",
-            "text": "Swimming Pool",
-            "align": "center",
-            "fs": 18,
-            "fw": 500
-           }
-          ],
-          [
-           {
-            "t": "img",
-            "src": "/img/Car-Parking-Pergola-in-Dubai-232x232x0x0x232x232x1721130252.webp",
-            "alt": "alt=",
-            "href": "/wp-content/uploads/2024/07/Car-Parking-Pergola-in-Dubai.webp"
-           },
-           {
-            "t": "p",
-            "text": "Car Parking Pergola",
-            "align": "center",
-            "fs": 18,
-            "fw": 500
-           }
-          ],
-          []
-         ]
-        }
-       ]
+      "t": "tiles",
+      "items": [
+       {
+        "img": "/img/Wooden-Pergola-Shade-306x230x36x0x232x230x1721992958.webp",
+        "label": "Outdoor Pergola",
+        "href": "/wp-content/uploads/2024/07/Wooden-Pergola-Shade.webp"
+       },
+       {
+        "img": "/img/New-Outdoor-Pergola-232x174x0x0x232x174x1721140874.webp",
+        "label": "Garden Pergola",
+        "href": "/wp-content/uploads/2024/07/New-Outdoor-Pergola.webp"
+       },
+       {
+        "img": "/img/Aluminum-pergola-suppliers-232x174x0x0x232x174x1721128395.webp",
+        "label": "Aluminum Pergola",
+        "href": "/wp-content/uploads/2024/07/Aluminum-pergola-suppliers.webp"
+       },
+       {
+        "img": "/img/Transparent-Pergola-Shade-232x216x0x0x232x216x1721993845.webp",
+        "label": "Outdoor Pergola",
+        "href": "/wp-content/uploads/2024/07/Transparent-Pergola-Shade.webp"
+       },
+       {
+        "img": "/img/Motorized-louvered-pergolas-232x154x0x0x232x154x1718795351.webp",
+        "label": "Steel Pergola",
+        "href": "/wp-content/uploads/2024/06/Motorized-louvered-pergolas.webp"
+       },
+       {
+        "img": "/img/FIBER-GLASS-PERGOLA-232x174x0x8x232x156x1721140387.webp",
+        "label": "Wooden Pergola",
+        "href": "/wp-content/uploads/2024/07/FIBER-GLASS-PERGOLA.webp"
+       },
+       {
+        "img": "/img/Swimming-Pool-Pergola-Shade-232x174x0x0x232x174x1721998090.webp",
+        "label": "Swimming Pool",
+        "href": "/wp-content/uploads/2024/07/Swimming-Pool-Pergola-Shade.webp"
+       },
+       {
+        "img": "/img/Car-Parking-Pergola-in-Dubai-232x232x0x0x232x232x1721130252.webp",
+        "label": "Car Parking Pergola",
+        "href": "/wp-content/uploads/2024/07/Car-Parking-Pergola-in-Dubai.webp"
+       }
       ]
      }
     ]
@@ -8721,38 +8623,20 @@
          "align": null
         },
         {
-         "t": "row",
-         "cols": [
-          [
-           {
-            "t": "p",
-            "text": "Happy Clients",
-            "align": "center",
-            "fs": 20,
-            "fw": 500,
-            "color": "#1F4357"
-           }
-          ],
-          [
-           {
-            "t": "p",
-            "text": "Business",
-            "align": "center",
-            "fs": 20,
-            "fw": 500,
-            "color": "#1F4357"
-           }
-          ],
-          [
-           {
-            "t": "p",
-            "text": "Completed Projects",
-            "align": "center",
-            "fs": 20,
-            "fw": 500,
-            "color": "#1F4357"
-           }
-          ]
+         "t": "stats",
+         "items": [
+          {
+           "label": "Happy Clients",
+           "value": 200
+          },
+          {
+           "label": "Business",
+           "value": 60
+          },
+          {
+           "label": "Completed Projects",
+           "value": 700
+          }
          ]
         }
        ],

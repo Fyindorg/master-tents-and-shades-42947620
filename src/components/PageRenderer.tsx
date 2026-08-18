@@ -104,7 +104,7 @@ function BlockView({ block }: { block: Block }) {
       );
     case "form":
       return (
-        <div className="mb-4 bg-white/95 p-6 shadow-sm">
+        <div className="mb-4">
           <QuoteForm />
         </div>
       );

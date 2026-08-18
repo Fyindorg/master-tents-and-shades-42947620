@@ -1218,9 +1218,10 @@
      },
      {
       "t": "p",
-      "text": "ISO helps the brand to stand out from the competition and gain customer trust easily .",
+      "text": "ISO helps the brand to stand out from the competition and gain customer trust easily.",
       "align": null,
-      "color": "#2D3842"
+      "color": "#2D3842",
+      "fw": 700
      },
      {
       "t": "p",
@@ -1231,7 +1232,13 @@
      {
       "t": "row",
       "cols": [
-       [],
+       [
+        {
+         "t": "img",
+         "src": "/img/MASTER-TENTS-AND-SHADES-LLC-90012015-ISO-CERTIFICATE_.jpg",
+         "alt": "Master Tents and Shades LLC ISO 9001:2015 Certificate"
+        }
+       ],
        [],
        []
       ]

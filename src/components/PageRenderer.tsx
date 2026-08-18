@@ -10,11 +10,12 @@ import { ReviewCards, type Review } from "./ReviewCards";
 import { OutlineIcon } from "./OutlineIcon";
 
 export type Block =
-  | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null; italic?: boolean }
-  | { t: "list"; items: string[]; align?: string | null; color?: string | null }
+  | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null; italic?: boolean; tight?: boolean }
+  | { t: "list"; items: string[]; align?: string | null; color?: string | null; fs?: number | null }
   | { t: "img"; src: string; alt?: string | null; href?: string | null }
   | { t: "btn"; text: string; href?: string | null }
   | { t: "form" }
+  | { t: "hr" }
   | { t: "accordion"; items: { title: string; body: Block[] }[] }
   | { t: "stats"; items: { label: string; value: number }[] }
   | { t: "posts"; label: string; sublabel: string; items: PostItem[] }
@@ -22,6 +23,7 @@ export type Block =
   | { t: "tiles"; items: { img: string; label: string }[] }
   | { t: "icon"; name: string }
   | { t: "row"; cols: Block[][] };
+
 
 export type Section = {
   bg?: string | null;

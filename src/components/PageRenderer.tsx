@@ -161,10 +161,10 @@ function renderBlocks(blocks: Block[]) {
   const out: React.ReactNode[] = [];
   let i = 0;
   while (i < blocks.length) {
-    const b = blocks[i];
+    const b = blocks[i]!;
     if (b.t === "img") {
       let j = i;
-      while (j < blocks.length && blocks[j].t === "img") j++;
+      while (j < blocks.length && blocks[j]!.t === "img") j++;
       const run = blocks.slice(i, j) as Extract<Block, { t: "img" }>[];
       if (run.length >= 4) {
         out.push(

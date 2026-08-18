@@ -14,7 +14,7 @@ function DropdownList({ items, level = 0 }: { items: NavItem[]; level?: number }
         <li key={item.href} className="mts-menu-item relative">
           <SiteLink
             href={item.href}
-            className="flex items-center justify-between whitespace-nowrap px-4 py-2 text-[15px] text-mts-navy hover:bg-mts-light hover:text-mts-gold"
+            className="flex items-center justify-between whitespace-nowrap px-4 py-2 text-[16px] font-medium tracking-[-0.5px] text-mts-gold hover:bg-mts-light hover:text-mts-navy"
           >
             {item.label}
             {item.children ? <span className="ml-3 text-xs">›</span> : null}

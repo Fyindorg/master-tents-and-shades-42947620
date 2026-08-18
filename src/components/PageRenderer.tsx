@@ -9,7 +9,7 @@ export type Block =
   | { t: "img"; src: string; alt?: string | null; href?: string | null }
   | { t: "btn"; text: string; href?: string | null }
   | { t: "form" }
-  | { t: "accordion"; items: { title: string; body: string }[] }
+  | { t: "accordion"; items: { title: string; body: Block[] }[] }
   | { t: "row"; cols: Block[][] };
 
 export type Section = {
@@ -111,7 +111,11 @@ function BlockView({ block }: { block: Block }) {
               <summary className="cursor-pointer list-none font-serif text-[20px] text-mts-navy">
                 {item.title}
               </summary>
-              <p className="mt-3 leading-[1.7] text-mts-grey">{item.body}</p>
+              <div className="mt-3 leading-[1.7] text-mts-grey">
+                {item.body.map((b, j) => (
+                  <BlockView key={j} block={b} />
+                ))}
+              </div>
             </details>
           ))}
         </div>

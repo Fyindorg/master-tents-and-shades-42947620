@@ -142,3 +142,54 @@
     color: var(--color-foreground);
   }
 }
+
+/* ---------------------------------------------------------------
+ * Master Tents & Shades — migrated design tokens (from the original
+ * WordPress/Brizy site). Colors and fonts mirror the source site.
+ * ------------------------------------------------------------- */
+@theme inline {
+  --color-mts-gold: var(--mts-gold);
+  --color-mts-navy: var(--mts-navy);
+  --color-mts-dark: var(--mts-dark);
+  --color-mts-grey: var(--mts-grey);
+  --color-mts-light: var(--mts-light);
+  --font-serif: var(--mts-font-serif);
+  --font-sans: var(--mts-font-sans);
+}
+
+:root {
+  --mts-gold: #bea16a;
+  --mts-navy: #1f4357;
+  --mts-dark: #23151a;
+  --mts-slate: #2d3842;
+  --mts-grey: #666666;
+  --mts-light: #f2f4f7;
+  --mts-font-serif: "DM Serif Text", Georgia, serif;
+  --mts-font-sans: Montserrat, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mts-container: 1170px;
+}
+
+@layer base {
+  body {
+    font-family: var(--mts-font-sans);
+    color: #334155;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+}
+
+@utility mts-container {
+  width: 100%;
+  max-width: var(--mts-container);
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.mts-richtext p {
+  line-height: 1.6;
+}
+
+.mts-menu-item:hover > .mts-dropdown,
+.mts-menu-item:focus-within > .mts-dropdown {
+  display: block;
+}

@@ -3154,16 +3154,18 @@
      {
       "t": "p",
       "text": "(There are a bunch of companies that make those cool awning shades that you should check out for your project. Some good ones include Sun Setter, Sunesta, Eclipse, and Solair. Make sure you look into each of them carefully, thinking about things like what they offer, how much they cost, and what customers have to say to figure out which one works best for you. Also, going with a local awning supplier might be a good idea since they usually give you custom help and can set everything up just the way you want it.)",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      },
      {
       "t": "p",
       "text": "There are lots of companies that specialize in awning shades that you might want to consider for your project. Some popular options are SunSetter, Sunesta, Eclipse, and Solair. It's important to research each of these companies thoroughly, including their product range, pricing, and customer feedback, to find the best fit for your needs. Additionally, choosing a nearby supplier could be beneficial as they often provide personalized support and professional installation services tailored to your preferences.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      }
     ]
    },
@@ -3185,9 +3187,10 @@
      {
       "t": "h1",
       "text": "Awnings, which are versatile exterior coverings typically made of fabric or other materials, provide a range of benefits for homes and businesses. They offer effective sun protection by creating shade, which not only makes outdoor areas more comfortable but also helps to reduce the heat entering the building, thus lowering energy costs. Additionally, awnings can expand usable outdoor living space by providing a sheltered area that can be utilized for various activities. They also shield outdoor furniture, such as tables, chairs, and cushions, from sun exposure, rain, and other elements, helping to prolong their lifespan. Moreover, aesthetically pleasing awnings can enhance the curb appeal of a property, adding style and character to its exterior. Lastly, these functional additions are user-friendly, as they can be easily extended or retracted to suit changing weather conditions or preferences.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      }
     ]
    },
@@ -3227,16 +3230,20 @@
         {
          "t": "p",
          "text": "Retractable awning shades are a versatile shading solution that can be easily adjusted to provide varying levels of shade and protection from the sun. They are commonly mounted over windows, doors, or outdoor living areas to offer a customizable shading option that can be extended or retracted based on the user. These shades come in a wide range of materials, colors, and designs, allowing homeowners to select a style that not only matches their home's exterior aesthetic but also enhances the overall look of their outdoor space. controlling sunlight and creating comfortable outdoor environments.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "Get A Free Quote",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 500
+         "fw": 500,
+         "color": "#000000",
+         "tight": true
         }
        ],
        [
@@ -3257,16 +3264,20 @@
         {
          "t": "p",
          "text": "An aluminum awning is a type of structure made from aluminum that is typically installed over windows, doors, or outdoor spaces to provide shade and protection from the elements. Aluminum awnings are durable, lightweight, and low-maintenance, making them a popular choice for residential and commercial applications. They come in a variety of styles, sizes, and colors to suit different architectural designs and preferences. Aluminum awnings can help reduce energy costs by blocking sunlight and heat from entering a building, and they can also enhance the curb appeal of a property.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "Get A Free Quote",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 500
+         "fw": 500,
+         "color": "#000000",
+         "tight": true
         }
        ],
        []
@@ -3309,7 +3320,9 @@
              "Swimming Pool Shades",
              "Pergola Shades"
             ],
-            "align": null
+            "align": "justify",
+            "fs": 16,
+            "color": "#000000"
            }
           ]
          ]
@@ -3341,7 +3354,9 @@
              "Tensile Shades",
              "Swimming Pool Shades"
             ],
-            "align": null
+            "align": "justify",
+            "fs": 16,
+            "color": "#000000"
            }
           ]
          ]
@@ -6743,8 +6758,16 @@
     "bg": null,
     "bgpos": null,
     "bgcolor": null,
-    "pad": "369px 0px 68px 0px",
-    "blocks": []
+    "pad": "200px 0px 200px 0px",
+    "blocks": [],
+    "slideshow": [
+     "/img/sun-slide-13.jpg",
+     "/img/sun-slide-14.jpg",
+     "/img/sun-slide-15.jpg",
+     "/img/sun-slide-16.jpg",
+     "/img/sun-slide-17.jpg",
+     "/img/sun-slide-18.jpg"
+    ]
    },
    {
     "bg": null,
@@ -6764,9 +6787,10 @@
      {
       "t": "p",
       "text": "Master tents and shades LLC Shade suppliers and developers are companies that specialize in providing shade solutions for various outdoor spaces. They offer a wide range of products such as shade sails, umbrellas, pergolas, and awnings to help create comfortable and functional outdoor environments. These companies typically work with architects, designers, and property owners to design and install custom shade structures that meet their specific needs and requirements. Shade suppliers and developers often have expertise in engineering, design, and installation to ensure that their shade solutions are durable, aesthetically pleasing, and provide effective sun protection. Shade sails are fabric canopies tensioned between anchor points. They come in various shapes (triangular, rectangular, or custom) and provide a modern, minimalist look.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      }
     ]
    },
@@ -6788,9 +6812,10 @@
      {
       "t": "p",
       "text": "There are several types of tensile shades, including Conical tensile shades, Hyper tensile shades, Umbrella tensile shades, Wave tensile shades, Barrel vault tensile shades, Hyperbolic paraboloid tensile shadesEach type of tensile shade has its own unique design and structure, making them suitable for different applications and aesthetic preferences.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      },
      {
       "t": "row",
@@ -6813,7 +6838,9 @@
         {
          "t": "p",
          "text": "Awnings, which are versatile exterior coverings typically made of fabric or other materials, provide a range of benefits for homes and businesses. They offer effective sun protection by creating shade",
-         "align": null
+         "align": "justify",
+         "color": "#000000",
+         "tight": true
         }
        ],
        [
@@ -6834,7 +6861,9 @@
         {
          "t": "p",
          "text": "Outdoor garden pergolas car parking shades in UAE, and other Gulf Regions like Oman and The best way to enjoy outdoor weather is to put a retractable pergola, fixed pergola, motorized pergola, flat roof pergola",
-         "align": null
+         "align": "justify",
+         "color": "#000000",
+         "tight": true
         }
        ],
        [
@@ -6855,7 +6884,9 @@
         {
          "t": "p",
          "text": "Awnings, which are versatile exterior coverings typically made of fabric or other materials, provide a range of benefits for homes and businesses. They offer effective sun protection by creating shade",
-         "align": null
+         "align": "justify",
+         "color": "#000000",
+         "tight": true
         }
        ],
        [
@@ -6876,9 +6907,11 @@
         {
          "t": "p",
          "text": "Everyone likes to Have fun in the outdoor swimming pool area but it’s really hard to swim in the hot summer, the harshness of the sun will not allow us to enjoy the swimming pool. To overcome this",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         }
        ]
       ]
@@ -6904,7 +6937,9 @@
         {
          "t": "p",
          "text": "Awnings, which are versatile exterior coverings typically made of fabric or other materials, provide a range of benefits for homes and businesses. They offer effective sun protection by creating shade",
-         "align": null
+         "align": "justify",
+         "color": "#000000",
+         "tight": true
         }
        ],
        [
@@ -6925,7 +6960,9 @@
         {
          "t": "p",
          "text": "Awnings, which are versatile exterior coverings typically made of fabric or other materials, provide a range of benefits for homes and businesses. They offer effective sun protection by creating shade",
-         "align": null
+         "align": "justify",
+         "color": "#000000",
+         "tight": true
         }
        ],
        [
@@ -6946,7 +6983,9 @@
         {
          "t": "p",
          "text": "Awnings, which are versatile exterior coverings typically made of fabric or other materials, provide a range of benefits for homes and businesses. They offer effective sun protection by creating shade",
-         "align": null
+         "align": "justify",
+         "color": "#000000",
+         "tight": true
         }
        ],
        []
@@ -6989,7 +7028,9 @@
              "Swimming Pool Shades",
              "Pergola Shades"
             ],
-            "align": null
+            "align": "justify",
+            "fs": 16,
+            "color": "#000000"
            }
           ]
          ]
@@ -7021,7 +7062,9 @@
              "Tensile Shades",
              "Swimming Pool Shades"
             ],
-            "align": null
+            "align": "justify",
+            "fs": 16,
+            "color": "#000000"
            }
           ]
          ]
@@ -7280,9 +7323,10 @@
      {
       "t": "p",
       "text": "Everyone likes to Have fun in the outdoor swimming pool area, but it’s really hard to swim in the hot summer, the harshness of the sun will not allow us to enjoy the swimming pool. To overcome this problem swimming pool shades help us to protect our body from harsh UV Rays. When it comes to pool enjoyment and protection from the sun’s UV rays you must make use of a swimming pool shade structure to keep yourself and your family protected. We are here to help people by providing all kinds of swimming pool shades in Dubai and all other states of the UAE with all supply and installation services. Pool shades are very important if the swimming pool is in the open outdoor area, according to Cancel Council recommendation swimming pool shades Sail is an effective solution that blocks a greater amount of incidental radiations that harm your skin. Outdoor pool shade structure often reduces up to 75% of UV exposure and 93% of UV traditions. We provide heavy-duty and normal swimming pool shade structures in UAE with 5 to 20 years of fabric and structure warranty as per client requirements. Our pool shades structure product designs are mentioned below:",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      }
     ]
    },
@@ -7304,9 +7348,10 @@
      {
       "t": "p",
       "text": "Swimming pool shades that are stylish and modern UAE Swimming Pool Shading Structure are fashionable and gorgeous in Dubai, UAE. They increase the appeal of your house, which raises its worth. Sunshade constructions are sophisticated and graceful. Additionally, they come in a variety of hues and patterns. We offer shade solutions for pool, parking lots, villa sails, schools, tents, mosques, awnings, warehouses, and more. Therefore, depending on your preferences and style, you may select a fantastic swimming pool sun cover from various shading options.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 500
+      "fw": 500,
+      "color": "#000000"
      },
      {
       "t": "p",
@@ -7320,37 +7365,42 @@
      {
       "t": "p",
       "text": "You may spend hours enjoying your pool with your loved ones and friends when you have a high-quality sunshade. Only a lovely sunshade shield over your pool makes this feasible. Our sail constructions offer the highest defence against UV rays and shield the skin from sunburns. The best solution protects you from the sun’s rays, so you don’t need to use sunscreen or tanning lotion frequently as you would at the beach.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 500
+      "fw": 500,
+      "color": "#000000"
      },
      {
       "t": "p",
       "text": "Maintains Your Cool",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 500
+      "fw": 500,
+      "color": "#000000"
      },
      {
       "t": "p",
       "text": "The intense heat and high temperature during the middle of the day may make it challenging to swim in your pool. It doesn’t matter what time of day it is because of the sun-shielding structure covering your pool. Despite the sun, you could dip in your pool whenever you wanted.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 500
+      "fw": 500,
+      "color": "#000000"
      },
      {
       "t": "p",
       "text": "Safeguards Your Swimming Pool",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 500
+      "fw": 500,
+      "color": "#000000"
      },
      {
       "t": "p",
       "text": "These sunshade constructions will shield your swimming pool from garden residue and provide shelter from the sun. This saves you the valuable time you could spend on other things, enabling you to clean your pool quickly and easily.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 500
+      "fw": 500,
+      "color": "#000000"
      }
     ]
    },
@@ -7374,9 +7424,14 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "stats",
@@ -8655,30 +8710,34 @@
      {
       "t": "p",
       "text": "Master tents and Shades LLC manufacturers and suppliers outdoor, garden pergolas, car parking shades in UAE, The best way to enjoy outdoor weather is to put a retractable pergola shade or fixed pergola canopy in your garden or somewhere nearby out of your door in any weather condition. Either you want to enjoy your summer season outdoors or winter’s shiny sun with cold air, a pergola shade canopy help you in both weather condition to make your outdoor seating area enjoyable.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      },
      {
       "t": "p",
       "text": "Our Pergola Shades structure bears a load of 140 Km/hr wind speed.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      },
      {
       "t": "p",
       "text": "Master Tents & Sheds LLC provides both waterproof pergolas and non-waterproof pergola shades in Dubai, Sharjah, Abu Dhabi, and all other states UAE. Master tents and shades provides supply and installation of retractable pergola canopy and fixed pergolas",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      },
      {
       "t": "p",
       "text": "We offer a variety of custom shade solutions for your Pergola – from retractable options to privacy side panels, all available in a wide range of colours.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      }
     ]
    },
@@ -8704,16 +8763,20 @@
         {
          "t": "p",
          "text": "Pergola Shades are used for multiple purposes at the outside of the home, in the garden, or parks . These shades come in different sizes, shapes, and types, you can customize them as per your needs and the place where you want to put these shades. To put the Pergola Canopy in your outdoor area you have to decide, what will be its purpose. Either you want a pergola parking shade area or seating area in the garden or out of your doorstep.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "Residential Sector | Commercial Sector | Car Parking | Swimming Pool Area",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         }
        ]
       ]
@@ -8734,23 +8797,29 @@
         {
          "t": "p",
          "text": "Pergola structure is very much durable and long-lasting compare to other shades like sail shades and other outdoor shades . Pergola comes with complete roof covering (hard material or fabric will put on the roof), retractable roofing (you can open and close), louver design, and flat roofing shape. Pergola Canopy comes with different structure materials like:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "Wooden Pergolas | Aluminum Frame Pergolas | Fabric Material ( PVC, HDPE, Canvas, PTFE) | Steel Frame Pergola",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "Structure Fiberglass Pergola | Corrugated Sheet Pergolas",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         }
        ]
       ]
@@ -8771,9 +8840,11 @@
         {
          "t": "p",
          "text": "Pergola canopy comes in different shapes and styles. There are various types of pergola structure shades that you can put at your home front for the purposes mentioned above. Pergola types are:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         }
        ]
       ]
@@ -8794,16 +8865,20 @@
         {
          "t": "p",
          "text": "Our classic model Flat roof pergolas are available with different shading material. Our luxury flat roof pergola shades are free-stand and can be attached with walls or on posts. These pergola shade structures are built by Powder-coated Aluminum, Powder Coated Steel and Wood. We use both fabrics and Hard material for these shades as mentioned above.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "Flat Roof Pergola’s Applications: Pergola Car Parking Areas, Swimming Pool Pergola shade, House Front, Garden Area’s, Park Areas, Hotel, Outside the Cafe and Restaurant. Customized sizes and designs will be provided on Demand. For free consultancy feel free to contact.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         }
        ]
       ]
@@ -8824,30 +8899,38 @@
         {
          "t": "p",
          "text": "Attractive and modern design retractable pergola shades are quite helpful for all weather conditions in UAE. These pergola canopies come with both opening and closing options whether you want to enjoy open sky weather or close one retractable pergola will help you in both conditions.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "The structure of these pergolas is very durable and strong. These shades are designed and made of Aluminum or powder-coated steel or wood . By putting some colorful retractable fabric on the pergola roof will increase the looks of your outdoor house. For retractable roof pergolas, we use both waterproof and non-waterproof fabrics like PVC, HDPE, Canvas, PTFE etc.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "Retractable Roof Pergola Applications: Home Front Areas, Garden areas, Swimming pool retractable roof pergola shades, Park Areas, Bus Stands, Hotel, Outside the Cafe and Restaurants.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "Customized design will be provided as per your requirements. For any assistance feel free to ask.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         }
        ]
       ]
@@ -8868,23 +8951,29 @@
         {
          "t": "p",
          "text": "The latest designs of pergola shade structures are very strong and durable and are built of metal materials like Aluminum and powder-coated steel. These shades are a little expensive but have more life than other pergola canopies. Our Luxury design louver shades are free-standing with posts or can be hung with walls.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "We provide all kinds of louver design pergola shades like Wooden louvered pergola canopies, Aluminum Louvered pergola, and Steel Louvered pergola shades.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "Application of louver pergola shade: Car parking louvered pergola shades, outdoor home front pergola shade, louver garden pergola shade, etc.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         }
        ]
       ]
@@ -8898,55 +8987,38 @@
     "pad": "15px 0px 40px 0px",
     "blocks": [
      {
-      "t": "row",
-      "cols": [
-       [
-        {
-         "t": "btn",
-         "text": "MOTORIZED PERGOLA",
-         "href": ""
-        }
-       ],
-       [
-        {
-         "t": "btn",
-         "text": "AUTOMATIC PERGOLA",
-         "href": ""
-        }
-       ],
-       [
-        {
-         "t": "btn",
-         "text": "SMART PERGOLA",
-         "href": ""
-        }
-       ]
-      ]
-     },
-     {
-      "t": "row",
-      "cols": [
-       [
-        {
-         "t": "btn",
-         "text": "RETRACTABLE PERGOLA",
-         "href": ""
-        }
-       ],
-       [
-        {
-         "t": "btn",
-         "text": "FLAT ROOF PERGOLA",
-         "href": ""
-        }
-       ],
-       [
-        {
-         "t": "btn",
-         "text": "BIOCLIMATIC PERGOLA",
-         "href": ""
-        }
-       ]
+      "t": "linktiles",
+      "items": [
+       {
+        "img": "/img/Motorized-louvered-pergolas.webp",
+        "label": "MOTORIZED PERGOLA",
+        "href": "/new-motorized-pergola-in-dubai/"
+       },
+       {
+        "img": "/img/Automatic-Pergola-in-Dubai.webp",
+        "label": "AUTOMATIC PERGOLA",
+        "href": "/new-automatic-pergola-in-dubai/"
+       },
+       {
+        "img": "/img/Smart-Pergola-in-Dubai-scaled.webp",
+        "label": "SMART PERGOLA",
+        "href": "/new-smart-pergola-in-dubai/"
+       },
+       {
+        "img": "/img/Retractable-Roof-Pergolas-1.webp",
+        "label": "RETRACTABLE PERGOLA",
+        "href": "/new-retractable-pergola-in-dubai/"
+       },
+       {
+        "img": "/img/Flat-Roof-Pergola-in-UAE.webp",
+        "label": "FLAT ROOF PERGOLA",
+        "href": "/new-flat-roof-pergola-in-dubai/"
+       },
+       {
+        "img": "/img/Bioclimatic-Pergola-Sytems.webp",
+        "label": "BIOCLIMATIC PERGOLA",
+        "href": "/new-bioclimatic-pergola-in-dubai/"
+       }
       ]
      }
     ]
@@ -9040,9 +9112,14 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "stats",
@@ -9306,9 +9383,10 @@
      {
       "t": "p",
       "text": "To avoid the summer heat wave and create an attractive outdoor space, imagine a nice shade structure being a fashionable accessory. These structures not only add to the beauty of your yard, but they also ensure proper safeguarding for you and your family against the potentially dangerous rays of the sun. Why spend your time at home when you can turn your outdoor space into an inviting and comfy hangout zone? Master tents and shades, we are specialized in the production, distribution, and installment of quality shade structures throughout the UAE (Dubai, Abu Dhabi, Sharjah, Ajman, Fujairah, the Emirates Ras Al Khaimah, Umm Al Quwain) as well as the whole Middle East region. The high quality shade structure fabric from our factory is also accompanied by a guarantee warranty of ten to fifteen years thus ensuring that the products can withstand the harsh UAE weather and provide a long term durability. We offer all kinds of Tensile Shade Structures across UAE for residential and commercial spaces. Unlike other tensile shades structures manufacturers and suppliers.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      }
     ]
    },
@@ -9330,7 +9408,8 @@
      {
       "t": "p",
       "text": "Tensile shades are a type of shade structure that uses a fabric membrane stretched between support columns to provide shade and protection from the sun. They are often used in outdoor spaces such as parks, playgrounds, and parking lots to create a comfortable and shaded area for people to gather. Tensile shades come in a variety of shapes and sizes, including square, rectangular, and triangular designs, and can be customized to fit the specific needs of the space. They are a popular choice for their modern and sleek appearance, as well as their durability and ability to withstand harsh weather conditions.",
-      "align": null
+      "align": "justify",
+      "color": "#000000"
      },
      {
       "t": "p",
@@ -9344,9 +9423,10 @@
      {
       "t": "h2",
       "text": "We at Al Khayam Al Arabiah are the leading tents and shades company in Sharjah. we are manufacturers and suppliers of tensile fabric shade structures in the UAE. we provide high-end quality tensile shade structures. We try to offer maximum quality Tensile Shades for outdoor areas, like tensile shades for school, tensile structures for parks, tensile shades for playground areas, tensile for walkways as well we provide other outdoor shades like Umbrella Shades, Sail Shades, Beach Shades, Patio Shades Swimming pool shades in Dubai, Sharjah, Abu Dhabi, Al Ain, Fujairah, RAK, Umm Al Quwain. We deliver our shades installation and supplying services in all GCC countries, especially in Saudi Arabia, Oman, etc. Our tensile shades structures are manufactured and fabricated with the world’s high-quality German and Australian fabrics. We use waterproof PVC (PolyVinyl Chloride) Fabric for Tensile Membrane Structure, HDPE (Commercial 95 Gale pacific) fabric, and PTFE Fabric for Tensile Membrane Structure, and these fabrics come with a warranty of 5 to 15 years and have a long life.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      }
     ]
    },
@@ -9370,9 +9450,14 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "stats",
@@ -9527,9 +9612,10 @@
      {
       "t": "p",
       "text": "Umbrella shades are the latest, modern and most advanced designed structured sun shades to keep you more cool and comfortable while sitting outdoor in any weather condition. Patio Umbrella Shades not just help you to prevent from burning sun but also increase the beauty of the home, hotel where ever you put it. Umbrellas are the perfect complement for patio tables during day and night. Umbrella Shades are made of world high-class fabrics like PVC fabrics, HDPE Net Fabrics, and PDF Fabrics and has powder coated aluminum pole, with steel bottom frame, this structure keeps the umbrella tough in place. Patio Umbrella Shade is adjustable and it is crank operation allows you to close or open it whenever you need and it increases the safety of shade. Big lots of Patio umbrella shades are well designed as well very much strong against the strong wind and harsh sun UV Rays. The patio umbrella is used in different places like in commercial grade (like hotels, cafe, markets), playgrounds, pool decks, walkways, and many other outdoor spaces.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      }
     ]
    },
@@ -9551,37 +9637,43 @@
      {
       "t": "p",
       "text": "We specialize in designing, manufacturing, and selling various types of umbrellas and shade structures. These manufacturers typically offer a range of products, including outdoor umbrellas, patio umbrellas, beach umbrellas, and shade sails. They may also provide custom design and fabrication services for clients looking for unique or specialized shade solutions. Some umbrella shade manufacturers focus on commercial applications, such as providing shade for outdoor dining areas, while others cater to residential customers looking to enhance their outdoor living spaces. Overall, umbrella shade manufacturers play a key role in providing functional and stylish shade solutions for a variety of outdoor environments.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      },
      {
       "t": "p",
       "text": "Master tents and shades supplies a wide variety of Patio Umbrella shades as per the client’s requirements. We offer Cantilever Umbrella Shades and large structural patio umbrella shades installation services in UAE and provide the most advanced and latest-designed structured cantilever patio umbrella shades in Dubai, Sharjah, Abu Dhabi, Ajman, Fujairah, and other cities of UAE as well we provide our services all around the world. Note: Umbrella Shades are Permanent Shades because their foundation is in the ground.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      },
      {
       "t": "h3",
       "text": "Patio Umbrella Shades Sizes:",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      },
      {
       "t": "p",
       "text": "Umbrella Shades are available in different sizes and these shades are installed according to the place and requirements.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "color": "#000000"
      },
      {
       "t": "list",
       "items": [
        "Typically sizes range from 5.5 ft to 11 ft."
       ],
-      "align": null
+      "align": "justify",
+      "fs": 16,
+      "color": "#000000"
      }
     ]
    },
@@ -9607,30 +9699,38 @@
         {
          "t": "p",
          "text": "Cantilever Patio Umbrellas, Offset Umbrella Shades,",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "Market Umbrella Costco, Patio Umbrella Costco,",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "Beach patio Umbrellas, Commercial Umbrella.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "p",
          "text": "Big Lots Of Patio Umbrellas.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         }
        ],
        [
@@ -9646,9 +9746,11 @@
         {
          "t": "p",
          "text": "Smart and Simple Shades Solution. Create a private, Cool, and Comfortable terrace. With the Smallest investment of Money. Simple and cost-effective shade solution. Increase your living area. Block 80% of Sun’s Harmful Rays. Superior durability made of 100% PVC coating. Standard and Custom sizes (On Requirements Size will be adjusted",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "color": "#000000",
+         "tight": true
         }
        ]
       ]
@@ -9675,9 +9777,14 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "stats",
@@ -9756,7 +9863,7 @@
      {
       "t": "p",
       "text": "Master Tents and Shades. We offer a wide range of sunshade structure shades products including all types of car parking shades, Tent shades, tensile fabric shade structures all types of Swimming pool shades, all types of Outdoor sunshades, all types of Beach shades, all types of Pergola shades, Shades sails, Outdoor umbrella shades or Patio shades, Awning permanent or retractable shades, School shades, Sitting area shades, masjid shades, Roof shades, many more and all types of Tents and Marquee Products includes Arabian tent, Majlis tent, Dome tent, Warehouse tent or Sheds, Wedding tent or Marquee, Pagoda tent, Gazebo tent, beach umbrella, Labor tent and many more. and we do all the services all kind of services too. If you have any questions or enquiries, please get in touch. We are here to help you. You can either contact us directly using the details provided above or you can use the enquiry form opposite.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
       "fw": 400,
       "color": "#2D3842"
@@ -9764,7 +9871,7 @@
      {
       "t": "p",
       "text": "We aim to get back to all enquiries ASAP.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
       "fw": 400,
       "color": "#2D3842"
@@ -9776,7 +9883,12 @@
     "bgpos": null,
     "bgcolor": "rgba(255, 255, 255, 1)",
     "pad": "30px 0px 15px 0px",
-    "blocks": []
+    "blocks": [
+     {
+      "t": "map",
+      "q": "Master Tents and Shades LLC, Abraj Almamzar, Dubai"
+     }
+    ]
    },
    {
     "bg": null,
@@ -9798,9 +9910,14 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "color": "#000000",
+         "tight": true
         },
         {
          "t": "stats",

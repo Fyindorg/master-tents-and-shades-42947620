@@ -204,16 +204,18 @@ function BlockView({ block }: { block: Block }) {
           ))}
         </div>
       );
-    case "row":
+    case "row": {
+      const minW = block.cols.length >= 4 ? "min-w-[200px]" : "min-w-[280px]";
       return (
         <div className="mb-2 flex flex-wrap gap-x-8">
           {block.cols.map((col, i) => (
-            <div key={i} className="min-w-[280px] flex-1 basis-0">
+            <div key={i} className={`${minW} flex-1 basis-0`}>
               {renderBlocks(col)}
             </div>
           ))}
         </div>
       );
+    }
     default:
       return null;
   }

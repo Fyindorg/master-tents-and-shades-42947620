@@ -18,6 +18,7 @@ export type Block =
   | { t: "stats"; items: { label: string; value: number }[] }
   | { t: "posts"; label: string; sublabel: string; items: PostItem[] }
   | { t: "reviews"; rows: Review[][] }
+  | { t: "tiles"; items: { img: string; label: string }[] }
   | { t: "row"; cols: Block[][] };
 
 export type Section = {

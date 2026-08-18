@@ -153,6 +153,8 @@ function BlockView({ block }: { block: Block }) {
       return <Counters items={block.items} />;
     case "posts":
       return <PostGrid label={block.label} sublabel={block.sublabel} items={block.items} />;
+    case "reviews":
+      return <ReviewCards rows={block.rows} />;
     case "row":
       return (
         <div className="mb-2 flex flex-wrap gap-x-8">

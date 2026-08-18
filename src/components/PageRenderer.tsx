@@ -21,8 +21,11 @@ export type Block =
   | { t: "posts"; label: string; sublabel: string; items: PostItem[] }
   | { t: "reviews"; rows: Review[][] }
   | { t: "tiles"; items: { img: string; label: string }[] }
+  | { t: "linktiles"; items: { img: string; label: string; href?: string | null }[] }
+  | { t: "map"; q: string }
   | { t: "icon"; name: string }
   | { t: "row"; cols: Block[][] };
+
 
 
 export type Section = {
@@ -219,7 +222,42 @@ function BlockView({ block }: { block: Block }) {
           ))}
         </div>
       );
+    case "linktiles":
+      return (
+        <div className="mb-4 grid grid-cols-1 gap-[20px] sm:grid-cols-2 lg:grid-cols-3">
+          {block.items.map((it, i) => (
+            <SiteLink
+              key={i}
+              href={it.href ?? "#"}
+              className="relative block overflow-hidden rounded-[10px]"
+            >
+              <img
+                src={it.img}
+                alt={it.label}
+                loading="lazy"
+                className="h-[186px] w-full object-cover"
+              />
+              <span className="absolute inset-0 flex items-center justify-center bg-black/10 px-3 text-center text-[22px] font-normal text-white">
+                {it.label}
+              </span>
+            </SiteLink>
+          ))}
+        </div>
+      );
+    case "map":
+      return (
+        <div className="mb-4">
+          <iframe
+            title="Master Tents and Shades location map"
+            src={`https://maps.google.com/maps?q=${encodeURIComponent(block.q)}&z=15&output=embed`}
+            loading="lazy"
+            className="h-[400px] w-full border-0"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+      );
     case "row": {
+
       const minW = block.cols.length >= 4 ? "min-w-[200px]" : "min-w-[280px]";
       return (
         <div className="mb-2 flex flex-wrap gap-x-8">

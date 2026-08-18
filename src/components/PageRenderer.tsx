@@ -3,6 +3,7 @@ import siteData from "@/data/site.json";
 import { QuoteForm } from "./QuoteForm";
 import { SiteLink } from "./SiteLink";
 import { HeroSlideshow } from "./HeroSlideshow";
+import { Counters } from "./Counters";
 
 export type Block =
   | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null }
@@ -11,6 +12,7 @@ export type Block =
   | { t: "btn"; text: string; href?: string | null }
   | { t: "form" }
   | { t: "accordion"; items: { title: string; body: Block[] }[] }
+  | { t: "stats"; items: { label: string; value: number }[] }
   | { t: "row"; cols: Block[][] };
 
 export type Section = {
@@ -140,6 +142,8 @@ function BlockView({ block }: { block: Block }) {
           ))}
         </div>
       );
+    case "stats":
+      return <Counters items={block.items} />;
     case "row":
       return (
         <div className="mb-2 flex flex-wrap gap-x-8">

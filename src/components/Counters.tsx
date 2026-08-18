@@ -22,9 +22,11 @@ function useCountUp(target: number, start: boolean, duration = 1600) {
 function Counter({ item, start }: { item: CounterItem; start: boolean }) {
   const value = useCountUp(item.value, start);
   return (
-    <div className="flex-1 px-4 text-center">
-      <p className="text-[20px] font-medium text-mts-navy">{item.label}</p>
-      <p className="mt-1 text-[50px] leading-[1.2] text-mts-gold">{value}</p>
+    <div className="flex-1 px-2 text-center">
+      <p className="whitespace-nowrap text-[clamp(14px,1.4vw,20px)] font-medium leading-[1.4] text-mts-navy">
+        {item.label}
+      </p>
+      <p className="mt-1 text-[clamp(34px,3.5vw,50px)] leading-[1.2] text-mts-gold">{value}</p>
     </div>
   );
 }

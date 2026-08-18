@@ -7,6 +7,7 @@ import { HeroSlideshow } from "./HeroSlideshow";
 import { Counters } from "./Counters";
 import { PostGrid, type PostItem } from "./PostGrid";
 import { ReviewCards, type Review } from "./ReviewCards";
+import { OutlineIcon } from "./OutlineIcon";
 
 export type Block =
   | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null; italic?: boolean }

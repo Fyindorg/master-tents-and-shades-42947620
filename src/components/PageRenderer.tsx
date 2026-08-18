@@ -29,11 +29,12 @@ export const PAGES = siteData as unknown as Record<string, Page>;
 type TextBlock = Extract<Block, { t: "p" | "h1" | "h2" | "h3" | "h4" }>;
 
 function textStyle(b: TextBlock): CSSProperties {
+  const isHeading = b.t !== "p";
   const style: CSSProperties = {};
   if (b.fs) style.fontSize = `${b.fs}px`;
-  if (b.fw) style.fontWeight = b.fw;
+  style.fontWeight = b.fw ?? (isHeading ? 400 : undefined);
   if (b.color) style.color = b.color;
-  if (b.ff === "serif") style.fontFamily = "var(--mts-font-serif)";
+  style.fontFamily = b.ff === "serif" ? "var(--mts-font-serif)" : "var(--mts-font-sans)";
   style.textAlign = (b.align as CSSProperties["textAlign"]) ?? (b.t === "p" ? "justify" : "left");
   return style;
 }
@@ -46,7 +47,7 @@ function BlockView({ block }: { block: Block }) {
     case "h4": {
       const Tag = block.t;
       return (
-        <Tag className="mb-4 font-serif leading-snug text-mts-navy" style={textStyle(block)}>
+        <Tag className="mb-4 leading-snug text-mts-navy" style={textStyle(block)}>
           {block.text}
         </Tag>
       );

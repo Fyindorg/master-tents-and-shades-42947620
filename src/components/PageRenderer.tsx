@@ -156,6 +156,27 @@ function BlockView({ block }: { block: Block }) {
       return <PostGrid label={block.label} sublabel={block.sublabel} items={block.items} />;
     case "reviews":
       return <ReviewCards rows={block.rows} />;
+    case "tiles":
+      return (
+        <div className="mb-4 grid grid-cols-1 gap-x-[30px] gap-y-[20px] sm:grid-cols-2 lg:grid-cols-3">
+          {block.items.map((it, i) => (
+            <div key={i}>
+              <img
+                src={it.img}
+                alt={it.label}
+                loading="lazy"
+                className="aspect-square w-full object-cover"
+              />
+              <p
+                className="mt-2 text-center text-mts-navy"
+                style={{ fontSize: 18, fontWeight: 500, fontFamily: "var(--mts-font-sans)" }}
+              >
+                {it.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      );
     case "row":
       return (
         <div className="mb-2 flex flex-wrap gap-x-8">

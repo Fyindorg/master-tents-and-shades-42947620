@@ -77,11 +77,11 @@ export function Header() {
       {/* Top bar */}
       <div className="border-b border-black/10 bg-white">
         <div className="mts-container flex flex-wrap items-center justify-between gap-3 py-2">
-          <SocialIcons />
+          <SocialIcons color="text-mts-gold hover:text-mts-navy" />
           <div className="flex flex-wrap items-center gap-6">
             <a
               href={CONTACT.mobileTel}
-              className="flex items-center gap-2 text-[14px] font-semibold tracking-wide text-mts-navy hover:text-mts-gold"
+              className="flex items-center gap-2 text-[15px] font-medium text-mts-gold hover:text-mts-navy"
             >
               <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
                 <path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z" />

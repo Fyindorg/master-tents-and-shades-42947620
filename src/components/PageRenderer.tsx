@@ -7,6 +7,7 @@ import { HeroSlideshow } from "./HeroSlideshow";
 import { Counters } from "./Counters";
 import { PostGrid, type PostItem } from "./PostGrid";
 import { ReviewCards, type Review } from "./ReviewCards";
+import { OutlineIcon } from "./OutlineIcon";
 
 export type Block =
   | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null; italic?: boolean }
@@ -19,6 +20,7 @@ export type Block =
   | { t: "posts"; label: string; sublabel: string; items: PostItem[] }
   | { t: "reviews"; rows: Review[][] }
   | { t: "tiles"; items: { img: string; label: string }[] }
+  | { t: "icon"; name: string }
   | { t: "row"; cols: Block[][] };
 
 export type Section = {
@@ -169,6 +171,12 @@ function BlockView({ block }: { block: Block }) {
           ))}
         </div>
       );
+    case "icon":
+      return (
+        <div className="mb-3 flex justify-center text-mts-navy">
+          <OutlineIcon name={block.name} />
+        </div>
+      );
     case "stats":
       return <Counters items={block.items} />;
     case "posts":
@@ -196,16 +204,18 @@ function BlockView({ block }: { block: Block }) {
           ))}
         </div>
       );
-    case "row":
+    case "row": {
+      const minW = block.cols.length >= 4 ? "min-w-[200px]" : "min-w-[280px]";
       return (
         <div className="mb-2 flex flex-wrap gap-x-8">
           {block.cols.map((col, i) => (
-            <div key={i} className="min-w-[280px] flex-1 basis-0">
+            <div key={i} className={`${minW} flex-1 basis-0`}>
               {renderBlocks(col)}
             </div>
           ))}
         </div>
       );
+    }
     default:
       return null;
   }
@@ -216,6 +226,28 @@ function renderBlocks(blocks: Block[]) {
   let i = 0;
   while (i < blocks.length) {
     const b = blocks[i]!;
+    if (b.t === "btn") {
+      let j = i;
+      while (j < blocks.length && blocks[j]!.t === "btn") j++;
+      const run = blocks.slice(i, j) as Extract<Block, { t: "btn" }>[];
+      if (run.length > 1) {
+        out.push(
+          <div key={`b${i}`} className="mb-4 flex flex-wrap items-center justify-center gap-x-[10px] gap-y-[10px]">
+            {run.map((btn, k) => (
+              <SiteLink
+                key={k}
+                href={btn.href ?? "#"}
+                className="inline-block rounded-[15px] border border-[#9e9e9e] bg-white px-[25px] py-[6px] text-[16px] text-mts-navy transition-colors hover:border-mts-gold hover:text-mts-gold"
+              >
+                {btn.text}
+              </SiteLink>
+            ))}
+          </div>,
+        );
+        i = j;
+        continue;
+      }
+    }
     if (b.t === "img") {
       let j = i;
       while (j < blocks.length && blocks[j]!.t === "img") j++;

@@ -106,11 +106,11 @@ export function Header() {
         <div className="mts-container flex items-center justify-between py-3">
           <SiteLink href="/" ariaLabel="Master Tents and Shades">
             <img
-              src="/img/Master-Only-Icon-376x126x0x22x376x80x1720163472.jpg"
+              src="/img/site-icon.jpg"
               alt="Master Tents and Shades"
-              width={231}
-              height={48}
-              className="h-[48px] w-auto"
+              width={117}
+              height={60}
+              className="h-[60px] w-auto"
             />
           </SiteLink>
 

@@ -1745,38 +1745,20 @@
          "align": null
         },
         {
-         "t": "row",
-         "cols": [
-          [
-           {
-            "t": "p",
-            "text": "Happy Clients",
-            "align": "center",
-            "fs": 20,
-            "fw": 500,
-            "color": "#1F4357"
-           }
-          ],
-          [
-           {
-            "t": "p",
-            "text": "Business",
-            "align": "center",
-            "fs": 20,
-            "fw": 500,
-            "color": "#1F4357"
-           }
-          ],
-          [
-           {
-            "t": "p",
-            "text": "Completed Projects",
-            "align": "center",
-            "fs": 20,
-            "fw": 500,
-            "color": "#1F4357"
-           }
-          ]
+         "t": "stats",
+         "items": [
+          {
+           "label": "Happy Clients",
+           "value": 200
+          },
+          {
+           "label": "Business",
+           "value": 60
+          },
+          {
+           "label": "Completed Projects",
+           "value": 700
+          }
          ]
         }
        ],

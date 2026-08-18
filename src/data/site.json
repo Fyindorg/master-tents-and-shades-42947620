@@ -618,16 +618,19 @@
      {
       "t": "p",
       "text": "Master Tents and Shades New Bottom Support Car Parking Shade is the latest and most modern design of parking shades, and it is available in different sizes, colors, and attractive designs. Bottom support parking shades help to protect your vehicles from UV Rays that are very harmful to vehicles’ windscreens and produce cracks on dashboards. The Structure of the Bottom Support shades is very strong against wind load. This Product has great importance to people due to the heat of the scorching sun mainly in UAE to protect the car and its body from damage and to decrease the rate of heat inside the car. Bottom support car parking shade helps them to solve all the problems by its shade on the car.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      },
      {
       "t": "list",
       "items": [
        "Bottom Support Car Parking Shades are manufactured with the highest-level fabric like PVC, PTFE, and HDPE which are very strong against UV Rays and block the rays and protect the vehicle."
       ],
-      "align": null
+      "align": null,
+      "fs": 16,
+      "color": "#000000"
      }
     ]
    },
@@ -644,7 +647,7 @@
         {
          "t": "p",
          "text": "New Bottom Support Car Parking Shade Features",
-         "align": "center",
+         "align": "left",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -653,30 +656,35 @@
         {
          "t": "p",
          "text": "AVAILABLE SIZES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "Bottom Support Car Parking Shade Available in Different Sizes and steel material",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "according to the requirements and parking shade Design.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "Standard Sizes Are:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "list",
@@ -685,70 +693,83 @@
           "6.0m x 6.0m (Good For 2 Car)",
           "2.5m Open Height (Height can be modified on Request)"
          ],
-         "align": null
+         "align": null,
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "p",
          "text": "Size can be Modified as Per request.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "FABRIC:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "PVC, PTFE, and HDPE",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "MS Structure, GI Structure, and Hot Deep Galvanize.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "COLORS OPTIONS:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "White | Cream | Green | Dark Green Dark Grey | Grey | Orange | Yellow Black | Red | Blue | Dark Blue.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "PROPERTIES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "Flame Radiant | Tear Resistant | Visual Comfort | Dimensional | Thermal Comfort UV Resistant | Snow Resistant | Wind Resistant | Installation.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         }
        ],
        [
         {
          "t": "p",
          "text": "Bottom Support Parking Fabric",
-         "align": "center",
+         "align": "right",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -765,7 +786,9 @@
           "APPROX TEAR RESISTANCE – Warp 187N, Weft 359N",
           "WON’T ROT OR ABSORB MOISTURE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "list",
@@ -776,7 +799,9 @@
           "TENSILE STRENGTH-4300/4200N/50 mm",
           "WATERPROOF AND FIRE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         }
        ]
       ]
@@ -801,16 +826,18 @@
      {
       "t": "p",
       "text": "Master Tents and Shades, Some potential benefits of collaborating with a bottom support parking shade manufacturer include a wide range of customization options tailored to meet your specific needs and preferences. These manufacturers typically utilize top-tier materials known for their durability and longevity, ensuring that the parking shades can withstand various weather conditions. Furthermore, their expertise and experience in the field enable them to efficiently design and install parking shades, providing optimal solutions for your requirements.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      },
      {
       "t": "p",
       "text": "In addition to the quality of their work, working with a manufacturer can also lead to cost-effective solutions, ultimately saving you money in the long term. Manufacturers often offer warranties and ongoing support for their products, which can give you peace of mind knowing that your investment is safeguarded, and that assistance is readily available if needed.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -834,9 +861,13 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "tight": true
         },
         {
          "t": "stats",
@@ -2558,9 +2589,10 @@
      {
       "t": "p",
       "text": "Master tents and shades Arch Design Car Parking Shade is a modern design of car parking shades. Arch design parking shade design will mingle with any architectural structure and building. Affordable Arch parking shade is the ideal parking shade for residential buildings and commercial establishments. Arch Design car parking shades offer maximum shade for your parking lots and park with minimal physical obstruction and best alternative to block the sun’s damaging UV rays. Our Arch parking shades are built to commercial standards means these shades are heavy-duty and long-lasting. Arch Design shade is made of world high-class fabrics like PVC, PTFE, and HDPE which protect your products from UV Rays. You can take a high level of advantages by standing Arch Parking shades because it is Flame Radiant, Tear Resistant, Visual Comfort, Dimensional Thermal Comfort, UV Resistant, Snow Resistant, and Wind Resistant.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -2584,14 +2616,16 @@
       "text": "Arch Design Parking Shade Developers:",
       "align": "center",
       "fs": 18,
-      "fw": 400
+      "fw": 400,
+      "italic": true
      },
      {
       "t": "p",
       "text": "Master Tents and Shades Arch Design parking shade developer is a skilled individual with expertise in conceptualizing, planning, and executing the construction of parking shade structures. Their primary role involves crafting unique and practical designs that offer shelter and safeguarding for vehicles within parking areas. Collaborating closely with architects, engineers, and construction crews, the developer ensures that the shade structures meet stringent quality and safety criteria. Additionally, they meticulously evaluate elements like the surrounding environment, regulatory requirements, and client specifications to tailor parking shade solutions that are both functional and aesthetically pleasing.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -2608,7 +2642,7 @@
         {
          "t": "p",
          "text": "Arch Design Car Parking Shade Features",
-         "align": "center",
+         "align": "left",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -2617,23 +2651,27 @@
         {
          "t": "p",
          "text": "SIZES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "Arch Design Car Parking Shade is Available in Different Sizes and steel material",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "according to the requirements and parking shade Design. Standard Sizes Are:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "list",
@@ -2641,70 +2679,83 @@
           "6.0m x 3.0m (Good For 1 Car)",
           "6.0m x 6.0m (Good For 2 Car)"
          ],
-         "align": null
+         "align": null,
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "p",
          "text": "Size can be Modified as Per request.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "FABRIC:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "PVC, PTFE, and HDPE",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "MS Structure, GI Structure, and Hot Deep Galvanize.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "COLORS:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "White | Cream | Green | Dark Green Dark Grey | Grey | Orange | Yellow Black | Red | Blue | Dark Blue",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "PROPERTIES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "Flame Radiant | Tear Resistant | Visual Comfort | Dimensional | Thermal Comfort UV Resistant | Snow Resistant | Wind Resistant | Installation.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         }
        ],
        [
         {
          "t": "p",
          "text": "Arch Design Car Parking Shade Fabric",
-         "align": "center",
+         "align": "right",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -2721,7 +2772,9 @@
           "APPROX TEAR RESISTANCE – Warp 187N, Weft 359N",
           "WON’T ROT OR ABSORB MOISTURE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "list",
@@ -2732,7 +2785,9 @@
           "TENSILE STRENGTH-4300/4200N/50 mm",
           "WATERPROOF AND FIRE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         }
        ]
       ]
@@ -2763,7 +2818,9 @@
        "Make your electronics Keep Safe.",
        "Reduce Heat in the Car."
       ],
-      "align": null
+      "align": "center",
+      "fs": 16,
+      "color": "#000000"
      }
     ]
    },
@@ -2787,9 +2844,13 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "tight": true
         },
         {
          "t": "stats",
@@ -3816,16 +3877,18 @@
      {
       "t": "p",
       "text": "Master Tents and Shades Conical Double Pole Car Parking Shade are the most beautifully designed and attractive parking shades in UAE’s Car Parking Shades industry. These shades are manufactured by highly skilled engineers and manpower and the world-class fabric is used in their development so these shades protect cars perfectly and effectively. Conical parking shades are lightweight structures’ architectural solutions.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      },
      {
       "t": "p",
       "text": "Master Tents and Shades Conical Double Pole Car Parking Shade are fabricated by the world’s high-class fabrics PVC and PTFE HDPE which are very strong against the burning sun’s UV Rays, and it is also very suitable for Rainy and stormy weather. Conical Parking Shades are Flame Radiant | Tear Resistant | Dimensional | UV Resistant | Snow Resistant | Wind Resistant which increases the life of conical parking shades and the main life of cars. We provide of conical shade installation services in all cities of UAE like Dubai, Sharjah, Ajman, Abu Dhabi, Fujairah, etc.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -3842,7 +3905,7 @@
         {
          "t": "p",
          "text": "Conical Double Pole Parking Shade Features",
-         "align": "center",
+         "align": "left",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -3851,23 +3914,27 @@
         {
          "t": "p",
          "text": "AVAILABLE SIZES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "CONICAL CAR PARKING SHADES Available in Different Sizes and steel material according to the requirements and parking shade Design.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "Standard Sizes Are:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "list",
@@ -3876,70 +3943,83 @@
           "6.0m x 6.0m (Good For 2 Car)",
           "2.5m Open Height (Height can be modified on Request)"
          ],
-         "align": null
+         "align": null,
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "p",
          "text": "Size can be Modified as Per request.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "FABRIC:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "PVC, PTFE, and HDPE",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "MS Structure, GI Structure, and Hot Deep Galvanize.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "COLORS OPTIONS:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "White | Cream | Green | Dark Green Dark Grey | Grey | Orange | Yellow Black | Red | Blue | Dark Blue.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "PROPERTIES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "Flame Radiant | Tear Resistant | Visual Comfort | Dimensional | Thermal Comfort UV Resistant | Snow Resistant | Wind Resistant | Installation.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         }
        ],
        [
         {
          "t": "p",
          "text": "Conical Double Pole Parking Fabric",
-         "align": "center",
+         "align": "right",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -3956,7 +4036,9 @@
           "APPROX TEAR RESISTANCE – Warp 187N, Weft 359N",
           "WON’T ROT OR ABSORB MOISTURE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "list",
@@ -3967,7 +4049,9 @@
           "TENSILE STRENGTH-4300/4200N/50 mm",
           "WATERPROOF AND FIRE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         }
        ]
       ]
@@ -3992,9 +4076,10 @@
      {
       "t": "p",
       "text": "Master Tents and Shades Conical Double Pole Parking Shade manufacturers are companies that specialize in designing, manufacturing, and installing conical double pole parking shades. These shades are typically used in parking lots, carports, and other outdoor spaces to provide shade and protection for vehicles from the sun and other elements. Conical double pole parking shades are known for their durability, strength, and aesthetic appeal. Manufacturers of these shades use high-quality materials and advanced technology to ensure that their products meet the highest standards of quality and performance.",
-      "align": "center",
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -4018,9 +4103,13 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "tight": true
         },
         {
          "t": "stats",
@@ -4099,9 +4188,10 @@
      {
       "t": "p",
       "text": "Master Tents and Shades, A Cone single pole car parking shade is available in different sizes, colors, and attractive designs. As Cone single Pole Parking shade is manufactured world high-class fabrics like PVC, PTFE, and HDPE so it helps you for the maximum shade for your parking lot and car park with minimal physical obstruction and is the best alternative to block Sun’s damaging UV Rays. Master Tents and Shades Conical Single Pole Parking Shade is one of the most elegant parking shades that is used for both residential and commercial parking places. Mostly People like its structure and design which is very much strong and attractive, and this parking shade is widely accepted for single or multiple parking. Cone single-pole shades maintain the cooler environment of the car by blocking the rays of the Hot Sun on it which will reduce the amount of energy needed to cool it down. A conical single pole parking shade is a type of shade structure that features a conical-shaped canopy supported by a single central pole. This design provides a sleek and modern look while offering shade and protection for vehicles in parking lots or outdoor spaces.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -4118,7 +4208,7 @@
         {
          "t": "p",
          "text": "Conical Single Pole Parking Shade Features",
-         "align": null,
+         "align": "left",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -4127,30 +4217,35 @@
         {
          "t": "p",
          "text": "AVAILABLE SIZES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "CONE SINGLE POLE CAR PARKING SHADE Available in Different Sizes and steel material",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "according to the requirements and parking shade Design.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "Standard Sizes Are:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "list",
@@ -4159,70 +4254,83 @@
           "6.0m x 6.0m (Good For 2 Car)",
           "2.5m Open Height (Height can be modified on Request)"
          ],
-         "align": null
+         "align": null,
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "p",
          "text": "Size can be Modified as Per request.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "FABRIC:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "PVC, PTFE, and HDPE",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "MS Structure, GI Structure, and Hot Deep Galvanize.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "COLORS OPTIONS:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "White | Cream | Green | Dark Green Dark Grey | Grey | Orange | Yellow Black | Red | Blue | Dark Blue.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "PROPERTIES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "Flame Radiant | Tear Resistant | Visual Comfort | Dimensional | Thermal Comfort UV Resistant | Snow Resistant | Wind Resistant | Installation.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         }
        ],
        [
         {
          "t": "p",
          "text": "Conical Single Pole Shade Fabric",
-         "align": "center",
+         "align": "right",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -4239,7 +4347,9 @@
           "APPROX TEAR RESISTANCE – Warp 187N, Weft 359N",
           "WON’T ROT OR ABSORB MOISTURE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "list",
@@ -4250,7 +4360,9 @@
           "TENSILE STRENGTH-4300/4200N/50 mm",
           "WATERPROOF AND FIRE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         }
        ]
       ]
@@ -4275,9 +4387,10 @@
      {
       "t": "h1",
       "text": "Master Tents and Shades A conical single pole parking shade is a type of shade structure that is designed to provide shade and protection for vehicles in parking lots. It typically consists of a single pole that supports a conical-shaped canopy made of durable and weather-resistant fabric. The canopy is stretched over the pole to create a shaded area for vehicles to park under. Conical single pole parking shades are popular for their sleek and modern design, as well as their ability to provide shade without obstructing views or airflow. They are commonly used in commercial parking lots, car dealerships, and other outdoor parking areas.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -4301,9 +4414,13 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "tight": true
         },
         {
          "t": "stats",
@@ -5785,9 +5902,10 @@
      {
       "t": "p",
       "text": "PYRAMID ARCH PARKING SHADE considered the architecture of the new generation offers the best solution for your car parking shades that helps to maintain the life of your car by protecting it from hot sun UV Rays. Pyramid car parking shade is manufactured with the world’s most superior fabrics like PVC, PTFE, and HDPE, these fabrics are Flame Radiant, Tear Resistant, UV Resistant, Snow Resistant, and Wind Resistant and help you to prevent any damage like cars windscreen breaking, Protect electronics the car, reduce the heat inside the car, protect cars dashboard from cracking and maintain the gloss and shine of your car. We provide parking shade supplier & service in all over the UAE. PYRAMID ARCH DESIGN PARKING SHADES is a pre-engineered shade structure ready to install as per the needs and these shades are visually pleasing and efficient solutions for many environmental and aesthetic challenges. Pyramid Arch Shades are available in different sizes and attractive designs, its standard sizes are 6.0m x 3.0m (Good For 1 Car) 6.0m x 6.0m (Good For 2 Cars), and 2.5m Open Height. Sizes and Height can be modified as per request.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -5804,7 +5922,7 @@
         {
          "t": "p",
          "text": "Pyramid Arch Design Parking Shades Features",
-         "align": "center",
+         "align": "left",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -5813,23 +5931,27 @@
         {
          "t": "p",
          "text": "AVAILABLE SIZES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "PYRAMID ARCH DESIGN PARKING SHADES Available in Different Sizes and steel material according to the requirements and parking shade Design.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "Standard Sizes Are:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "list",
@@ -5838,70 +5960,83 @@
           "6.0m x 6.0m (Good For 2 Car)",
           "2.5m Open Height (Height can be modified on Request)"
          ],
-         "align": null
+         "align": null,
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "p",
          "text": "Size can be Modified as Per request.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "FABRIC:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "PVC, PTFE, and HDPE",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "MS Structure, GI Structure, and Hot Deep Galvanize.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "COLORS OPTIONS:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "White | Cream | Green | Dark Green Dark Grey | Grey | Orange | Yellow Black | Red | Blue | Dark Blue.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "PROPERTIES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "Flame Radiant | Tear Resistant | Visual Comfort | Dimensional | Thermal Comfort UV Resistant | Snow Resistant | Wind Resistant | Installation.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         }
        ],
        [
         {
          "t": "p",
          "text": "Pyramid Arch Parking Fabric",
-         "align": "center",
+         "align": "right",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -5918,7 +6053,9 @@
           "APPROX TEAR RESISTANCE – Warp 187N, Weft 359N",
           "WON’T ROT OR ABSORB MOISTURE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "list",
@@ -5929,7 +6066,9 @@
           "TENSILE STRENGTH-4300/4200N/50 mm",
           "WATERPROOF AND FIRE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         }
        ]
       ]
@@ -6003,9 +6142,13 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "tight": true
         },
         {
          "t": "stats",
@@ -6084,9 +6227,10 @@
      {
       "t": "p",
       "text": "Master Tents and Shades Pyramid Top Support Car Parking Shades are manufactured and designed in the world’s premium class fabrics like PVC Fabrics , PTFE Fabrics, and HDPE Fabrics, and these fabrics are very much effective for the UAE weather. These Parking shades are Flame Radiant, Tear Resistant, Dimensional, Thermal Comfort, UV Resistant, Snow Resistant, and Wind Resistant. By containing these properties Pyramid top support park shades increase the safety of your car and maintain the glow and shine of the car as well they reduce the chance of windscreen cracking and keep the dashboard and electronics in the car safer. Pyramid Top Support Car Parking Shades are the most attractive and well-designed car parking shades , offer maximum protection and these shades are very much pleasing to the eye and the environment. Pyramid top support shades are well-engineered and well-structured that brings more safety to the cars. AKAA Tents and Sheds LLC., Deliver its car parking shades in Dubai , Abu-Dhabi, Sharjah, Ajman, Fujairah, Umm Al Quwain, and Al Ain as well as deliver our products in all Gulf countries on demand.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -6099,7 +6243,7 @@
      {
       "t": "p",
       "text": "Pyramid Top Support Parking Features",
-      "align": "center",
+      "align": "left",
       "fs": 25,
       "fw": 400,
       "ff": "serif",
@@ -6108,14 +6252,15 @@
      {
       "t": "p",
       "text": "Pyramid Top Support Car Parking Shades are manufactured and designed in the world’s premium class fabrics like PVC Fabrics , PTFE Fabrics, and HDPE Fabrics, and these fabrics are very much effective for the UAE weather. These Parking shades are Flame Radiant, Tear Resistant, Dimensional, Thermal Comfort, UV Resistant, Snow Resistant, and Wind Resistant. By containing these properties Pyramid top support park shades increase the safety of your car and maintain the glow and shine of the car as well they reduce the chance of windscreen cracking and keep the dashboard and electronics in the car safer.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      },
      {
       "t": "p",
       "text": "Pyramid Arch Design Parking Shades Developers & Manufacturers",
-      "align": "center",
+      "align": "left",
       "fs": 25,
       "fw": 400,
       "ff": "serif",
@@ -6124,9 +6269,10 @@
      {
       "t": "p",
       "text": "Master Tents and Shades Pyramid Arch Design Parking Shades is a company that specializes in the design, development, and installation of innovative parking shade structures. They offer a range of parking shade solutions, including pyramid arch designs that provide both aesthetic appeal and functional protection from the elements. Their team of experienced developers and engineers work closely with clients to create custom parking shade solutions that meet their specific needs and requirements. With a focus on quality, durability, and customer satisfaction, Pyramid Arch Design Parking Shades is a trusted choice for parking shade solutions.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -6150,9 +6296,13 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "tight": true
         },
         {
          "t": "stats",
@@ -7305,9 +7455,10 @@
      {
       "t": "p",
       "text": "Master Tents and Shades Top Support Car Parking Shades are designed and manufactured using the latest technologies and highly developed machinery in UAE. This is the most demanding and strongest car parking shade in car parking shades list and it helps you either its burning sun UV rays or maybe its hard weather or it helps to maintain the car of your life and maintain its color and glow. Top Support Car Parking Shades are specially manufactured for the UAE, these park shades are developed with the world’s top-class fabrics like PVC Fabric, PTFE Fabric, and HDPE Fabrics which are very strong against any kind of environment. Top Support Car Parking Shades give cars more protection as these shades are Flame Radiant | Tear Resistant | Visual Comfort | Dimensional | Thermal Comfort | UV Resistant | Snow Resistant | Wind Resistant by containing these properties Top Support Car Parking Shades provide safety to your car electronics, Reduce windscreen cracking, Reduce heat in the car and the most important it maintains the shine and glow of the car. Master Tents and Shades Provide installation services in all cities of UAE like Dubai, Sharjah, Abu-Dhabi, Ajman, Fujairah, Al Ain, and Umm Al Quwain.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -7324,7 +7475,7 @@
         {
          "t": "p",
          "text": "Top Support Parking Shade Features",
-         "align": "center",
+         "align": "left",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -7333,107 +7484,125 @@
         {
          "t": "p",
          "text": "SIZES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "Top Support Car Parking Shades are Available in Different Sizes and steel materials according to the requirements and parking shade Design.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "Standard Sizes Are:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "6.0m x 3.0m (Good For 1 Car)",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "6.0m x 6.0m (Good For 2 Car)",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "2.5m Open Height (Height can be modified on Request)Size can be Modified as Per request.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "FABRIC:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "PVC, PTFE, and HDPE",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "MS Structure, GI Structure, and Hot Dip Galvanize.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "COLORS:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "White | Cream | Green | Dark Green | Dark Grey | Grey | Orange | Yellow",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "Black | Red | Blue | Dark Blue.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "PROPERTIES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "Flame Radiant | Tear Resistant | Visual Comfort | Dimensional | Thermal Comfort UV Resistant | Snow Resistant | Wind Resistant | Installation.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         }
        ],
        [
         {
          "t": "p",
          "text": "Top Support Parking Shade Fabric",
-         "align": "center",
+         "align": "right",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -7450,7 +7619,9 @@
           "APPROX TEAR RESISTANCE – Warp 187N, Weft 359N",
           "WON’T ROT OR ABSORB MOISTURE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "list",
@@ -7462,7 +7633,9 @@
           "WATERPROOF AND FIRE RETARDANT",
           "COLOR – WHITE & BEIGE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         }
        ]
       ]
@@ -7487,9 +7660,10 @@
      {
       "t": "p",
       "text": "Cantilever car parking shade: This type of shade structure is supported by a single post, allowing for maximum coverage without obstructing the parking area. Tensile car parking shade: Tensile fabric structures provide a modern and aesthetically pleasing solution for car parking shade. These shades are supported by a series of tensioned cables or rods. Steel frame car parking shade: Steel frame structures offer a durable and long-lasting solution for car parking shade. These shades are supported by a sturdy steel frame that can withstand harsh weather conditions. Retractable car parking shade: Retractable shades provide flexibility and convenience for car parking shade. These shades can be easily extended or retracted as needed to provide shade when required. Solar car parking shade: Solar car parking shades incorporate solar panels into the shade structure, providing a dual-purpose solution that generates renewable energy while providing shade for parked cars.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -7513,9 +7687,13 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "tight": true
         },
         {
          "t": "stats",
@@ -7780,9 +7958,10 @@
      {
       "t": "p",
       "text": "Wave Design Car Parking Shade parking shade is the most advanced, modern, and attractive designed car parking shade in the parking shades list. Wave design shades are the best option in parking shades for a larger area. These shades are the best possible option for larger commercial areas, festivals areas, residential areas, playground areas, etc. Wave Design Car Parking Shades are manufactured with extremely quality fabrics like PVC Fabric, PTFE Fabric, and HDPE Fabric which are very much strong against the burning sun’s UV Rays and helps to increase the life and maintenance of cars. Wave shades are very helpful for the vehicle’s life as these parking shades contain high-quality properties like these shades are Flame Radiant, Tear Resistant, Dimensional, Thermal Comfort, UV Resistant, Snow Resistant, and Wind Resistant which protect the car from all damage.",
-      "align": null,
+      "align": "justify",
       "fs": 16,
-      "fw": 400
+      "fw": 400,
+      "tight": true
      }
     ]
    },
@@ -7799,7 +7978,7 @@
         {
          "t": "p",
          "text": "Wave Design Parking Shade Features",
-         "align": "center",
+         "align": "left",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -7808,23 +7987,27 @@
         {
          "t": "p",
          "text": "AVAILABLE SIZES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "Wave Design Car Parking Shades are Available in Different Sizes and steel material according to the requirements and parking shade Design.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "Standard Sizes Are:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "list",
@@ -7833,70 +8016,83 @@
           "6.0m x 6.0m (Good For 2 Car)",
           "2.5m Open Height (Height can be modified on Request)"
          ],
-         "align": null
+         "align": null,
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "p",
          "text": "Size can be Modified as Per request.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "FABRIC:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "PVC, PTFE, and HDPE",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "MS Structure, GI Structure, and Hot Deep Galvanize.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "COLORS OPTIONS:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "White | Cream | Green | Dark Green Dark Grey | Grey | Orange | Yellow | Black | Red | Blue  Dark Blue.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         },
         {
          "t": "p",
          "text": "PROPERTIES:",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true,
+         "italic": true
         },
         {
          "t": "p",
          "text": "Flame Radiant | Tear Resistant | Visual Comfort | Dimensional | Thermal Comfort UV Resistant | Snow Resistant | Wind Resistant | Installation.",
-         "align": null,
+         "align": "justify",
          "fs": 16,
-         "fw": 400
+         "fw": 400,
+         "tight": true
         }
        ],
        [
         {
          "t": "p",
          "text": "Wave Design Parking Fabric",
-         "align": "center",
+         "align": "right",
          "fs": 25,
          "fw": 400,
          "ff": "serif",
@@ -7913,7 +8109,9 @@
           "APPROX TEAR RESISTANCE – Warp 187N, Weft 359N",
           "WON’T ROT OR ABSORB MOISTURE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         },
         {
          "t": "list",
@@ -7924,7 +8122,9 @@
           "TENSILE STRENGTH-4300/4200N/50 mm",
           "WATERPROOF AND FIRE"
          ],
-         "align": null
+         "align": "right",
+         "fs": 16,
+         "color": "#000000"
         }
        ]
       ]
@@ -7951,9 +8151,13 @@
          "color": "#1F4357"
         },
         {
+         "t": "hr"
+        },
+        {
          "t": "p",
          "text": "Our team in Dubai specializes in supplying a diverse range of car parking shades and tents tailored for various sectors, including aviation, sports, and military. We provide customized solutions to meet the specific requirements of each industry, ensuring high-quality and durable structures that cater to their unique needs. Our expertise extends to designing and installing parking shades and tents that are not only functional but also aesthetically pleasing, enhancing the overall environment and functionality of the spaces they serve.",
-         "align": null
+         "align": "justify",
+         "tight": true
         },
         {
          "t": "stats",

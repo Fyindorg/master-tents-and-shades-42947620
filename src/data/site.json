@@ -4679,14 +4679,16 @@
 "It works out fantastic, looks nice and added the shade that is needed.",
 "It also holds up on a windy day and is durable."
 ],
-"align": null
+"align": "center"
 },
 {
 "t": "p",
 "text": "VARIETY OF STYLE",
 "align": "center",
 "fs": 16,
-"fw": 400
+"fw": 400,
+"italic": true,
+"color": "#1F4357"
 },
 {
 "t": "list",
@@ -4697,7 +4699,7 @@
 "·Shade Sail – Ideal for Patio, swimming pool, carports, or another outdoor area",
 "We provide a variety of conventional sizes: 4′, 6′, 8′, 10′, 12′,20′"
 ],
-"align": null
+"align": "center"
 }
 ]
 },

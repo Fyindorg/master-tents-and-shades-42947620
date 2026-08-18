@@ -9,7 +9,7 @@ import { PostGrid, type PostItem } from "./PostGrid";
 import { ReviewCards, type Review } from "./ReviewCards";
 
 export type Block =
-  | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null }
+  | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null; italic?: boolean }
   | { t: "list"; items: string[]; align?: string | null; color?: string | null }
   | { t: "img"; src: string; alt?: string | null; href?: string | null }
   | { t: "btn"; text: string; href?: string | null }
@@ -42,6 +42,7 @@ function textStyle(b: TextBlock): CSSProperties {
   if (b.fs) style.fontSize = `${b.fs}px`;
   style.fontWeight = b.fw ?? (isHeading ? 400 : undefined);
   if (b.color) style.color = b.color;
+  if (b.italic) style.fontStyle = "italic";
   style.fontFamily = b.ff === "serif" ? "var(--mts-font-serif)" : "var(--mts-font-sans)";
   style.textAlign = (b.align as CSSProperties["textAlign"]) ?? "left";
   return style;
@@ -66,7 +67,23 @@ function BlockView({ block }: { block: Block }) {
           {block.text}
         </p>
       );
-    case "list":
+    case "list": {
+      const centered = block.align === "center";
+      if (centered) {
+        return (
+          <ul
+            className="mb-4 list-none p-0 text-center text-[18px] font-medium leading-[27px]"
+            style={{ color: block.color ?? "var(--mts-navy)" }}
+          >
+            {block.items.map((item, i) => (
+              <li key={i}>
+                <span className="mr-[6px] align-middle text-[0.7em]">•</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        );
+      }
       return (
         <ul
           className="mb-4 ml-[-5px] list-disc pl-[24px] text-[18px] font-medium leading-[27px] marker:text-[0.7em]"
@@ -82,6 +99,8 @@ function BlockView({ block }: { block: Block }) {
           ))}
         </ul>
       );
+    }
+
     case "img": {
       const img = (
         <img

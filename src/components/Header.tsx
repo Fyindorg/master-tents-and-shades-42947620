@@ -120,8 +120,8 @@ export function Header() {
                 <li key={item.href} className="mts-menu-item relative">
                   <SiteLink
                     href={item.href}
-                    className="block py-4 text-[16px] text-mts-navy hover:text-mts-gold"
-                    activeClassName="block py-4 text-[16px] text-mts-gold"
+                    className="block py-4 text-[18px] font-medium tracking-[-0.4px] text-mts-navy hover:text-mts-gold"
+                    activeClassName="block py-4 text-[18px] font-medium tracking-[-0.4px] text-mts-gold"
                   >
                     {item.label}
                   </SiteLink>

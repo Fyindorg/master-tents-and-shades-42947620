@@ -138,7 +138,6 @@ function RootComponent() {
       <Header />
       <Outlet />
       {!isRawPage && <Footer />}
-      {!isRawPage && <MobileFooterUtility />}
     </QueryClientProvider>
   );
 }

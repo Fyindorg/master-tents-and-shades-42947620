@@ -164,11 +164,11 @@ export function Header() {
         <div className="mx-auto flex max-w-full items-stretch">
           <SiteLink href="/" className="hidden shrink-0 items-center bg-mts-gold px-8 py-3 sm:flex">
             <img
-              src="/img/Master-Only-Icon-188x63x0x11x188x40x1720163472.jpg"
+              src="/img/Master-Only-Icon-376x126x0x22x376x80x1720163472.jpg"
               alt="Master Tents and Shades"
-              width={188}
-              height={63}
-              className="h-[63px] w-auto mix-blend-multiply"
+              width={231}
+              height={48}
+              className="h-[48px] w-auto mix-blend-multiply"
             />
           </SiteLink>
           <div className="grid flex-1 grid-cols-1 divide-x divide-white/40 border-l border-white/40 sm:grid-cols-3">

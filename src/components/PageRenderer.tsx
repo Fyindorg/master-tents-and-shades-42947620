@@ -66,7 +66,23 @@ function BlockView({ block }: { block: Block }) {
           {block.text}
         </p>
       );
-    case "list":
+    case "list": {
+      const centered = block.align === "center";
+      if (centered) {
+        return (
+          <ul
+            className="mb-4 list-none p-0 text-center text-[18px] font-medium leading-[27px]"
+            style={{ color: block.color ?? "var(--mts-navy)" }}
+          >
+            {block.items.map((item, i) => (
+              <li key={i}>
+                <span className="mr-[6px] align-middle text-[0.7em]">•</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        );
+      }
       return (
         <ul
           className="mb-4 ml-[-5px] list-disc pl-[24px] text-[18px] font-medium leading-[27px] marker:text-[0.7em]"
@@ -82,6 +98,8 @@ function BlockView({ block }: { block: Block }) {
           ))}
         </ul>
       );
+    }
+
     case "img": {
       const img = (
         <img

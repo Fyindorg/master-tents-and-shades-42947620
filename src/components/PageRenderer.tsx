@@ -24,7 +24,9 @@ export type Page = { title: string; desc: string; sections: Section[] };
 
 export const PAGES = siteData as unknown as Record<string, Page>;
 
-function textStyle(b: Extract<Block, { t: "p" }>): CSSProperties {
+type TextBlock = Extract<Block, { t: "p" | "h1" | "h2" | "h3" | "h4" }>;
+
+function textStyle(b: TextBlock): CSSProperties {
   const style: CSSProperties = {};
   if (b.fs) style.fontSize = `${b.fs}px`;
   if (b.fw) style.fontWeight = b.fw;
@@ -42,7 +44,7 @@ function BlockView({ block }: { block: Block }) {
     case "h4": {
       const Tag = block.t;
       return (
-        <Tag className="mb-4 font-serif leading-snug text-mts-navy" style={textStyle(block as never)}>
+        <Tag className="mb-4 font-serif leading-snug text-mts-navy" style={textStyle(block)}>
           {block.text}
         </Tag>
       );

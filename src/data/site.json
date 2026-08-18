@@ -2388,7 +2388,15 @@
 "bgpos": null,
 "bgcolor": null,
 "pad": "369px 0px 68px 0px",
-"blocks": []
+"blocks": [],
+"slideshow": [
+"/img/1.webp",
+"/img/2.webp",
+"/img/3.webp",
+"/img/4.webp",
+"/img/5.webp",
+"/img/6.webp"
+]
 },
 {
 "bg": null,

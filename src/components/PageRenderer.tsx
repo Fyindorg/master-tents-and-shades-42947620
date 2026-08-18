@@ -4,6 +4,7 @@ import { QuoteForm } from "./QuoteForm";
 import { SiteLink } from "./SiteLink";
 import { HeroSlideshow } from "./HeroSlideshow";
 import { Counters } from "./Counters";
+import { PostGrid, type PostItem } from "./PostGrid";
 
 export type Block =
   | { t: "h1" | "h2" | "h3" | "h4" | "p"; text: string; align?: string | null; fs?: number | null; fw?: number | null; ff?: string | null; color?: string | null }
@@ -145,6 +146,8 @@ function BlockView({ block }: { block: Block }) {
       );
     case "stats":
       return <Counters items={block.items} />;
+    case "posts":
+      return <PostGrid label={block.label} sublabel={block.sublabel} items={block.items} />;
     case "row":
       return (
         <div className="mb-2 flex flex-wrap gap-x-8">

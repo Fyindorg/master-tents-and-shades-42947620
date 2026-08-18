@@ -39,7 +39,7 @@ function textStyle(b: TextBlock): CSSProperties {
   style.fontWeight = b.fw ?? (isHeading ? 400 : undefined);
   if (b.color) style.color = b.color;
   style.fontFamily = b.ff === "serif" ? "var(--mts-font-serif)" : "var(--mts-font-sans)";
-  style.textAlign = (b.align as CSSProperties["textAlign"]) ?? (b.t === "p" ? "justify" : "left");
+  style.textAlign = (b.align as CSSProperties["textAlign"]) ?? "left";
   return style;
 }
 
@@ -65,14 +65,16 @@ function BlockView({ block }: { block: Block }) {
     case "list":
       return (
         <ul
-          className="mb-4 list-disc pl-5 leading-[1.6] marker:text-[0.7em]"
+          className="mb-4 ml-[-5px] list-disc pl-[24px] text-[18px] font-medium leading-[27px] marker:text-[0.7em]"
           style={{
-            color: block.color ?? undefined,
-            textAlign: (block.align as CSSProperties["textAlign"]) ?? undefined,
+            color: block.color ?? "var(--mts-navy)",
+            textAlign: (block.align as CSSProperties["textAlign"]) ?? "justify",
           }}
         >
           {block.items.map((item, i) => (
-            <li key={i}>{item}</li>
+            <li key={i} className="ml-[10px]">
+              {item}
+            </li>
           ))}
         </ul>
       );

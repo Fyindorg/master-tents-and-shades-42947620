@@ -4,7 +4,6 @@ import { SocialIcons } from "./SocialIcons";
 import { SiteLink } from "./SiteLink";
 import logoAsset from "@/assets/mastr-tents-and-shades-logo.jpg.asset.json";
 
-
 function DropdownList({ items, level = 0 }: { items: NavItem[]; level?: number }) {
   return (
     <ul
@@ -115,7 +114,6 @@ export function Header() {
               className="h-[48px] w-auto sm:h-[60px]"
             />
           </SiteLink>
-
 
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-8">

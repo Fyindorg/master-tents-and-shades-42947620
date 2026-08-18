@@ -535,120 +535,62 @@
    {
     "bg": null,
     "bgpos": null,
-    "bgcolor": null,
+    "bgcolor": "rgba(240,245,249,1)",
     "pad": "15px 0px 15px 0px",
     "blocks": [
      {
-      "t": "row",
-      "cols": [
-       [
-        {
-         "t": "p",
-         "text": "ALL",
-         "align": "right",
-         "fs": 60,
-         "fw": 400,
-         "color": "#1F4357"
-        },
-        {
-         "t": "p",
-         "text": "Listings",
-         "align": "right",
-         "fs": 30,
-         "fw": 400,
-         "color": "#1F4357"
-        }
-       ],
-       [
-        {
-         "t": "img",
-         "src": "/img/Car-Parking-Shade-Suppliers-861x646x0x0x860x646x1721130432.webp",
-         "alt": "alt=",
-         "href": null
-        },
-        {
-         "t": "btn",
-         "text": "Read More",
-         "href": "/2024/06/23/why-is-car-parking-shade-important-in-dubai/"
-        },
-        {
-         "t": "img",
-         "src": "/img/Sail-Type-Parking-Shade-860x860x0x107x860x646x1721140808.webp",
-         "alt": "alt=",
-         "href": null
-        },
-        {
-         "t": "btn",
-         "text": "Read More",
-         "href": "/2024/07/09/quick-guide-to-know-benefits-of-sail-shades/"
-        },
-        {
-         "t": "img",
-         "src": "/img/car-parking-shade-suppliers-1-861x646x0x0x860x646x1721140768.webp",
-         "alt": "alt=",
-         "href": null
-        },
-        {
-         "t": "btn",
-         "text": "Read More",
-         "href": "/2024/07/10/the-best-useful-types-of-car-parking-shades/"
-        },
-        {
-         "t": "img",
-         "src": "/img/Tensile-Shades-861x646x0x0x860x646x1721112646.webp",
-         "alt": "alt=",
-         "href": null
-        },
-        {
-         "t": "btn",
-         "text": "Read More",
-         "href": "/2024/07/11/how-can-tensile-structure-gives-good-value/"
-        },
-        {
-         "t": "img",
-         "src": "/img/New-Outdoor-Pergola-861x646x0x0x860x646x1721140874.webp",
-         "alt": "alt=",
-         "href": null
-        },
-        {
-         "t": "btn",
-         "text": "Read More",
-         "href": "/2024/07/16/this-is-what-beautiful-pergolas-used-for/"
-        },
-        {
-         "t": "img",
-         "src": "/img/sail-shade-benefits-861x646x0x0x860x646x1721211588.webp",
-         "alt": "alt=",
-         "href": null
-        },
-        {
-         "t": "btn",
-         "text": "Read More",
-         "href": "/2024/07/17/exploring-the-benefits-of-sail-shades-in-dubai/"
-        },
-        {
-         "t": "img",
-         "src": "/img/Arch-design-Parking-shades-861x646x0x0x860x646x1721129040.webp",
-         "alt": "alt=",
-         "href": null
-        },
-        {
-         "t": "btn",
-         "text": "Read More",
-         "href": "/2024/07/23/is-it-good-to-park-your-car-in-the-shade/"
-        },
-        {
-         "t": "img",
-         "src": "/img/no-image.png",
-         "alt": "",
-         "href": null
-        },
-        {
-         "t": "btn",
-         "text": "Read More",
-         "href": "/2024/08/21/5-popular-types-of-car-parking-shades-in-dubai/"
-        }
-       ]
+      "t": "posts",
+      "label": "ALL",
+      "sublabel": "Listings",
+      "items": [
+       {
+        "title": "The Reason Why is Parking Shade Important",
+        "excerpt": "the reason why is parking shade important is a roof for your car that keeps it out of the sun […]",
+        "img": "/img/Car-Parking-Shade-Suppliers-861x646x0x0x860x646x1721130432.webp",
+        "href": "/2024/06/23/why-is-car-parking-shade-important-in-dubai/"
+       },
+       {
+        "title": "Quick Guide To Know Benefits Of Sail Shades",
+        "excerpt": "Quick guide to know benefits of Sail shades provide a protective covering over outdoor areas to shield them from the […]",
+        "img": "/img/Sail-Type-Parking-Shade-860x860x0x107x860x646x1721140808.webp",
+        "href": "/2024/07/09/quick-guide-to-know-benefits-of-sail-shades/"
+       },
+       {
+        "title": "The Best Useful Types of Car Parking Shades",
+        "excerpt": "The best useful types of car parking shades are a roof for your car that keeps it out of the […]",
+        "img": "/img/car-parking-shade-suppliers-1-861x646x0x0x860x646x1721140768.webp",
+        "href": "/2024/07/10/the-best-useful-types-of-car-parking-shades/"
+       },
+       {
+        "title": "How Can Tensile Structure Gives Good Value",
+        "excerpt": "This is how can Tensile structure gives good value of your property by adding aesthetic appeal, providing shade and shelter, […]",
+        "img": "/img/Tensile-Shades-861x646x0x0x860x646x1721112646.webp",
+        "href": "/2024/07/11/how-can-tensile-structure-gives-good-value/"
+       },
+       {
+        "title": "This Is What Beautiful Pergolas Used For!",
+        "excerpt": "Pergolas are beautiful additions to any outdoor space. They can be used to create a shaded area for entertaining guests […]",
+        "img": "/img/New-Outdoor-Pergola-861x646x0x0x860x646x1721140874.webp",
+        "href": "/2024/07/16/this-is-what-beautiful-pergolas-used-for/"
+       },
+       {
+        "title": "Exploring the Benefits of Sail Shades in Dubai",
+        "excerpt": "Sail shades are a great way to add shade to your outdoor living space. The benefits of sail shades are […]",
+        "img": "/img/sail-shade-benefits-861x646x0x0x860x646x1721211588.webp",
+        "href": "/2024/07/17/exploring-the-benefits-of-sail-shades-in-dubai/"
+       },
+       {
+        "title": "Is it good to park your car in the shade?",
+        "excerpt": "When it comes to parking, nothing beats a nicely shaded parking spot protected from the sun’s heat. Even if it […]",
+        "img": "/img/Arch-design-Parking-shades-861x646x0x0x860x646x1721129040.webp",
+        "href": "/2024/07/23/is-it-good-to-park-your-car-in-the-shade/"
+       },
+       {
+        "title": "5 Popular Types of Car Parking Shades in Dubai",
+        "excerpt": "",
+        "img": "/img/no-image.png",
+        "href": "/2024/08/21/5-popular-types-of-car-parking-shades-in-dubai/"
+       }
       ]
      }
     ]

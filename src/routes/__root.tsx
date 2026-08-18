@@ -129,14 +129,16 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const params = useParams({ strict: false });
+  const isRawPage = typeof params.slug === "string" && !!RAW_PAGES[params.slug];
 
   return (
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Header />
       <Outlet />
-      <Footer />
-      <MobileFooterUtility />
+      {!isRawPage && <Footer />}
+      {!isRawPage && <MobileFooterUtility />}
     </QueryClientProvider>
   );
 }

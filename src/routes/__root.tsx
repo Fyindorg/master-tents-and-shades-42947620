@@ -100,7 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.bunny.net" },
       {
         rel: "stylesheet",
-        href: "https://fonts.bunny.net/css?family=dm-serif-text:400,400i|montserrat:300,400,500,600,700",
+        href: "https://fonts.bunny.net/css?family=dm-serif-text:400,400i|montserrat:300,400,500,600,700|poppins:400,500,600,700,800|inter:400,500,600,700",
       },
     ],
   }),

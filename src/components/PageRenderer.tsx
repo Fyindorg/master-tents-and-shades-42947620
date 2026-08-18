@@ -170,6 +170,12 @@ function BlockView({ block }: { block: Block }) {
           ))}
         </div>
       );
+    case "icon":
+      return (
+        <div className="mb-3 flex justify-center text-mts-navy">
+          <OutlineIcon name={block.name} />
+        </div>
+      );
     case "stats":
       return <Counters items={block.items} />;
     case "posts":

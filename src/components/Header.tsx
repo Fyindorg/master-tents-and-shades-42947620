@@ -109,9 +109,9 @@ export function Header() {
             <img
               src={logoAsset.url}
               alt="Master Tents and Shades"
-              width={231}
-              height={48}
-              className="h-[48px] w-auto sm:h-[60px]"
+              width={173}
+              height={36}
+              className="h-[36px] w-auto sm:h-[44px]"
             />
           </SiteLink>
 

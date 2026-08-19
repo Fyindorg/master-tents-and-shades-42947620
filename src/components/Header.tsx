@@ -78,7 +78,7 @@ export function Header() {
       {/* Top bar */}
       <div className="bg-white">
         <div className="mts-header-container flex flex-wrap items-center justify-between gap-3 border-b border-black/10 py-3">
-          <SocialIcons className="gap-5" color="text-mts-gold hover:text-mts-navy" iconClassName="h-[26px] w-[26px]" />
+          <SocialIcons className="gap-[18px] pl-1" color="text-mts-gold hover:text-mts-navy" iconClassName="h-[22px] w-[22px]" />
           <div className="flex flex-wrap items-center gap-10">
             <a
               href={CONTACT.mobileTel}

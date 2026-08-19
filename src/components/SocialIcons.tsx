@@ -5,7 +5,11 @@ import { CONTACT } from "@/data/nav";
 function LinkedIn({ cls }: { cls: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={cls} aria-hidden="true">
-      <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21H17.6v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z" />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M3.5 2h17A1.5 1.5 0 0 1 22 3.5v17a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 20.5v-17A1.5 1.5 0 0 1 3.5 2zm2.4 2.9a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5zM4.4 19.1h3v-9.2h-3v9.2zm5 0h3v-5.1c0-1.2.55-1.9 1.6-1.9 1 0 1.4.7 1.4 1.9v5.1h3v-5.6c0-2.5-1.3-3.8-3.2-3.8-1.4 0-2.2.7-2.6 1.4h-.05V9.9h-3.15c.04.85 0 9.2 0 9.2z"
+      />
     </svg>
   );
 }
